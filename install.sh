@@ -27,3 +27,6 @@ source scripts/shell.sh
 title "Git Setup"
 ln -sfn $PWD/configs/.gitconfig ~/.gitconfig
 echo Git config linked
+
+title "NPM Setup"
+source scripts/npm.sh
