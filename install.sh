@@ -23,3 +23,6 @@ brew bundle
 
 title "Shell Setup"
 source scripts/shell.sh
+
+title "Git Setup"
+ln -sfn $PWD/configs/.gitconfig ~/.gitconfig
