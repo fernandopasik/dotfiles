@@ -1,3 +1,5 @@
+#!/bin/sh
+
 OH_MY_ZSH_DIR=~/.oh-my-zsh/
 POWERLINE_FONT_DIR=~/Library/Fonts/powerline/
 CURRENT_DIR=$PWD
