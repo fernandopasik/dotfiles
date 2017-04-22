@@ -20,3 +20,6 @@ yes '' | /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebr
 
 title "Install Homebrew packages"
 brew bundle
+
+title "Shell Setup"
+source scripts/shell.sh
