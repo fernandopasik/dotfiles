@@ -14,3 +14,9 @@ title "DOTFILES Installation"
 
 title "Install OS X Command Line Tools"
 xcode-select --install
+
+title "Install Homebrew"
+yes '' | /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+title "Install Homebrew packages"
+brew bundle
