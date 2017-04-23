@@ -30,3 +30,6 @@ echo Git config linked
 
 title "NPM Setup"
 source scripts/npm.sh
+
+title "Atom Setup"
+source scripts/atom.sh
