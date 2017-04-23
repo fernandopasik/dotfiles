@@ -1,7 +1,7 @@
 module.exports = {
   config: {
     // default font size in pixels for all tabs
-    fontSize: 14,
+    fontSize: 16,
 
     // font family with optional fallbacks
     fontFamily: '"Ubuntu Mono derivative Powerline"',
@@ -22,7 +22,7 @@ module.exports = {
     css: '',
 
     // custom css to embed in the terminal window
-    termCSS: '',
+    termCSS: 'x-row > .unicode-node { margin-top: 1px; height: 1em; }',
 
     // custom padding (css format, i.e.: `top right bottom left`)
     padding: '12px 14px',
