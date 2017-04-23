@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# Link atom config
+ln -sfn $PWD/configs/atom.cson ~/.atom/config.cson
+
 # Themes
 apm i gruvbox-plus-syntax
 
@@ -12,7 +15,6 @@ apm i autoclose-html
 apm i atom-beautify
 
 # Utils
-apm i sync-settings
 apm i auto-update-packages
 apm i compare-files
 apm i todo-show
