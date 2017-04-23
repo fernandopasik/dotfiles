@@ -33,3 +33,6 @@ source scripts/npm.sh
 
 title "Atom Setup"
 source scripts/atom.sh
+
+title "Install Fonts"
+source scripts/fonts.sh
