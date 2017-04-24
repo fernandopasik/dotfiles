@@ -1,5 +1,7 @@
 #!/bin/sh
 
+cd `dirname $0`
+
 function title {
   WIDTH=80
   PADDING=$(($WIDTH - ${#1}))
@@ -22,20 +24,20 @@ title "Install Homebrew packages"
 brew bundle
 
 title "Shell Setup"
-source scripts/shell.sh
+source $PWD/scripts/shell.sh
 
 title "Git Setup"
 ln -sfn $PWD/configs/.gitconfig ~/.gitconfig
 echo Git config linked
 
 title "NPM Setup"
-source scripts/npm.sh
+source $PWD/scripts/npm.sh
 
 title "Atom Setup"
-source scripts/atom.sh
+source $PWD/scripts/atom.sh
 
 title "Install Fonts"
-source scripts/fonts.sh
+source $PWD/scripts/fonts.sh
 
 title "Setup OS X options"
-source scripts/osx.sh
+source $PWD/scripts/osx.sh
