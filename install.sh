@@ -36,3 +36,6 @@ source scripts/atom.sh
 
 title "Install Fonts"
 source scripts/fonts.sh
+
+title "Setup OS X options"
+source scripts/osx.sh
