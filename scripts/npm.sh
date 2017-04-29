@@ -6,7 +6,8 @@ AUTHOR_EMAIL="fernando@pasik.com"
 AUTHOR_URL="https://fernandopasik.com"
 
 # Installing npm global packages
-npm i -g npm@next npm-check-updates yo
+npm i -g npm@next
+yarn global add npm-check-updates yo
 
 # Setting up username
 npm set username $NPM_USERNAME
