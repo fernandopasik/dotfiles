@@ -12,4 +12,4 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
 
 source $ZSH/oh-my-zsh.sh
 
-alias up!="brew update >/dev/null; brew outdated;brew upgrade;brew cleanup;npm -g outdated --parseable=true | cut -d : -f 4 | xargs -n 1 npm -g install;"
+alias up!="brew update >/dev/null; brew outdated;brew upgrade;brew cleanup;yarn global upgrade"
