@@ -8,7 +8,7 @@ plugins=(osx git npm docker httpie)
 
 # User configuration
 export DEFAULT_USER=fernandopasik
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:$HOME/.config/yarn/global/node_modules/.bin"
 
 source $ZSH/oh-my-zsh.sh
 
