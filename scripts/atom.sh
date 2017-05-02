@@ -1,7 +1,13 @@
 #!/bin/sh
 
+ATOM_DIR=~/.atom
+
+if [ ! -d "$ATOM_DIR" ]; then
+  mkdir $ATOM_DIR;
+fi
+
 # Link atom config
-ln -sfn $PWD/configs/atom.cson ~/.atom/config.cson
+ln -sfn $PWD/configs/atom.cson $ATOM_DIR/config.cson
 
 # Themes
 apm i gruvbox-plus-syntax
