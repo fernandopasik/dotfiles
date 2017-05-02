@@ -57,8 +57,8 @@ function addAppToDock {
   defaults write com.apple.dock persistent-apps -array-add "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/$1.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>"
 }
 
-# Set the icon size of Dock items to 48 pixels
-defaults write com.apple.dock tilesize -int 48
+# Set the icon size of Dock items
+defaults write com.apple.dock tilesize -int 52
 # Change minimize/maximize window effect
 defaults write com.apple.dock mineffect -string "scale"
 # Enable spring loading for all Dock items
