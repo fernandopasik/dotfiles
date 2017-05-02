@@ -43,6 +43,7 @@ declare -a apps=(
   "Google Chrome"
   Facetime
   Messages
+  Slack
   WhatsApp
   Notes
   Photos
