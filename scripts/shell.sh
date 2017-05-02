@@ -18,6 +18,3 @@ ln -sfn $PWD/configs/.zshrc ~/.zshrc
 
 # Link my hyper config file
 ln -sfn $PWD/configs/.hyper.js ~/.hyper.js
-
-# Startup zsh config
-source ~/.zshrc
