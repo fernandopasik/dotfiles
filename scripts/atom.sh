@@ -48,6 +48,7 @@ apm i linter-package-json-validator
 apm i linter-stylelint
 apm i linter-ui-default
 apm i linter-write-good
+apm i linter-flow
 
 # User Interface
 apm i highlight-selected

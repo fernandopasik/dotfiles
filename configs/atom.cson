@@ -14,6 +14,8 @@
     softWrap: true
   "exception-reporting":
     userId: "c3e419a6-250a-4e79-85f8-48fdda7d7718"
+  "linter-flow":
+    executablePath: "./node_modules/.bin/flow"
   "linter-stylelint":
     disableWhenNoConfig: true
     enableHtmlLinting: true
