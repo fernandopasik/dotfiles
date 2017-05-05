@@ -116,4 +116,16 @@ defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebK
 # Add a context menu item for showing the Web Inspector in web views
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
+###############################################################################
+# Custom Apps                                                                 #
+###############################################################################
+
+defaults write com.divisiblebyzero.Spectacle StatusItemEnabled -bool false
+osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Spectacle.app", hidden:true, name:"Spectacle"}'
+
+defaults write com.if.Amphetamine Show\ Welcome\ Window -bool false
+defaults write com.if.Amphetamine Show\ Dock\ Icon -bool false
+defaults write com.if.Amphetamine Allow\ Display\ Sleep -bool true
+osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Amphetamine.app", hidden:true, name:"Amphetamine"}'
+
 echo OS X setup finished
