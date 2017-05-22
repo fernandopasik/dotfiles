@@ -1,30 +1,30 @@
 [user]
-  name = Fernando Pasik
-  email = fernando@pasik.com.ar
+	name = Fernando Pasik
+	email = fernando@pasik.com.ar
 
 [filter "lfs"]
-  clean = git-lfs clean %f
-  smudge = git-lfs smudge %f
-  required = true
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
 
 [credential]
-  helper = osxkeychain
+	helper = osxkeychain
 
 [push]
-  default = simple
-  followTags = true
+	default = simple
+	followTags = true
 
 [core]
-  editor = atom --wait
+	editor = atom --wait
 
 [color]
-  ui = auto
-  status = auto
-  branch = auto
-  diff = auto
+	ui = auto
+	status = auto
+	branch = auto
+	diff = auto
 
 [diff]
-  tool = atom
+	tool = atom
 
 [merge]
-  tool = atom
+	tool = atom

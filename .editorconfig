@@ -15,6 +15,9 @@ trim_trailing_whitespace = true
 [*{.html,.php}]
 indent_style = tab
 
+[.gitconfig]
+indent_style = tab
+
 [*.md]
 trim_trailing_whitespace = false
 
