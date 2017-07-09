@@ -45,6 +45,20 @@ defaults write com.apple.screencapture disable-shadow -bool true
 # Dock, Dashboard, and hot corners                                            #
 ###############################################################################
 
+# Set the icon size of Dock items
+defaults write com.apple.dock tilesize -int 52
+# Change minimize/maximize window effect
+defaults write com.apple.dock mineffect -string "scale"
+# Enable spring loading for all Dock items
+defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
+# Show indicator lights for open applications in the Dock
+defaults write com.apple.dock show-process-indicators -bool true
+# Automatically hide and show the Dock
+defaults write com.apple.dock autohide -bool true
+# Top left screen corner → Put display to sleep
+defaults write com.apple.dock wvous-tl-corner -int 10
+defaults write com.apple.dock wvous-tl-modifier -int 0
+
 declare -a apps=(
   Launchpad
   "Google Chrome"
@@ -64,19 +78,6 @@ function addAppToDock {
   defaults write com.apple.dock persistent-apps -array-add "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/$1.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>"
 }
 
-# Set the icon size of Dock items
-defaults write com.apple.dock tilesize -int 52
-# Change minimize/maximize window effect
-defaults write com.apple.dock mineffect -string "scale"
-# Enable spring loading for all Dock items
-defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
-# Show indicator lights for open applications in the Dock
-defaults write com.apple.dock show-process-indicators -bool true
-# Automatically hide and show the Dock
-defaults write com.apple.dock autohide -bool true
-# Top left screen corner → Put display to sleep
-defaults write com.apple.dock wvous-tl-corner -int 10
-defaults write com.apple.dock wvous-tl-modifier -int 0
 # Delete all dock apps
 defaults delete com.apple.dock persistent-apps
 # Add apps to Dock
