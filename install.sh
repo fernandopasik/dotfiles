@@ -23,9 +23,6 @@ yes '' | /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebr
 title "Install Homebrew packages"
 brew bundle
 
-title "Shell Setup"
-source $PWD/scripts/shell.sh
-
 title "Git Setup"
 ln -sfn $PWD/configs/.gitconfig ~/.gitconfig
 echo Git config linked
@@ -41,3 +38,6 @@ source $PWD/scripts/fonts.sh
 
 title "Setup OS X options"
 source $PWD/scripts/osx.sh
+
+title "Shell Setup"
+source $PWD/scripts/shell.sh
