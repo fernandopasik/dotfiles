@@ -9,6 +9,9 @@
 
 # Use a dark menu bar / dock
 defaults write NSGlobalDomain AppleInterfaceStyle -string "Dark"
+# Show remaining battery time; hide percentage
+defaults write com.apple.menuextra.battery ShowPercent -string "YES"
+defaults write com.apple.menuextra.battery ShowTime -string "YES"
 
 ###############################################################################
 # Finder                                                                      #
