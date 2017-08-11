@@ -7,7 +7,7 @@ AUTHOR_URL="https://fernandopasik.com"
 
 # Installing npm global packages
 npm i -g npm@next
-yarn global add npm-check-updates yo
+yarn global add npm-check-updates yo firebase-tools
 
 # Setting up username
 npm set username $NPM_USERNAME
