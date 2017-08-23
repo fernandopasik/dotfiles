@@ -1,6 +1,4 @@
 "*":
-  "atom-beautify":
-    general: {}
   core:
     telemetryConsent: "limited"
     themes: [
