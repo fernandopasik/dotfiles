@@ -22,10 +22,7 @@ module.exports = {
     css: '',
 
     // custom css to embed in the terminal window
-    termCSS: 'x-row > .unicode-node { margin-top: 1px; height: 1em; }',
-
-    // custom padding (css format, i.e.: `top right bottom left`)
-    padding: '12px 14px',
+    termCSS: '',
 
     // some color overrides. see http://bit.ly/29k1iU2 for
     // the full list
