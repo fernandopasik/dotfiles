@@ -10,4 +10,4 @@ fi
 ln -sfn $PWD/configs/atom.cson $ATOM_DIR/config.cson
 
 # Install all starred packages and themes
-apm stars --user fernandopasik --install
+apm-beta stars --user fernandopasik --install
