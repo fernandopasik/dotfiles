@@ -14,8 +14,6 @@
   "linter-stylelint":
     disableWhenNoConfig: true
     enableHtmlLinting: true
-  "linter-ui-default":
-    showPanel: true
   "markdown-preview":
     useGitHubStyle: true
   "tree-view":
