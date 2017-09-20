@@ -56,6 +56,9 @@ defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 # Show language menu in the top right corner of the boot screen
 sudo defaults write /Library/Preferences/com.apple.loginwindow showInputMenu -bool true
 
+# Enable feedback when changing volume
+defaults write NSGlobalDomain com.apple.sound.beep.feedback -bool true
+
 ###############################################################################
 # Dock, Dashboard, and hot corners                                            #
 ###############################################################################
