@@ -5,9 +5,14 @@ AUTHOR_NAME="Fernando Pasik"
 AUTHOR_EMAIL="fernando@pasik.com"
 AUTHOR_URL="https://fernandopasik.com"
 
-# Installing npm global packages
+# Updating npm
 npm i -g npm@next
-yarn global add npm-check-updates yo firebase-tools
+
+# Installing yarn global packages
+yarn global add \
+  npm-check-updates \
+  yo \
+  firebase-tools \
 
 # Setting up username
 npm set username $NPM_USERNAME
