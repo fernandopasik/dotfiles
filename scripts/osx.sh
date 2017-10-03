@@ -82,14 +82,13 @@ declare -a apps=(
   "Google Chrome"
   Facetime
   Messages
-  Slack
   WhatsApp
   Notes
   Photos
-  Spotify
   Hyper
-  Atom
+  "Atom Beta"
   "Github Desktop"
+  Sketch
 )
 
 function addAppToDock {
