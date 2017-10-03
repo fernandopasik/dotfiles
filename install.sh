@@ -23,6 +23,9 @@ yes '' | /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebr
 title "Install Homebrew packages"
 brew bundle
 
+# Set chrome as default browser
+open -a "Google Chrome" --args --make-default-browser
+
 title "Git Setup"
 ln -sfn $PWD/configs/.gitconfig ~/.gitconfig
 echo Git config linked
