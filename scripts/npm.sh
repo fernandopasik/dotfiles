@@ -13,6 +13,8 @@ yarn global add \
   npm-check-updates \
   yo \
   firebase-tools \
+  imagemin-cli \
+  react-native-cli \
 
 # Setting up username
 npm set username $NPM_USERNAME
