@@ -44,3 +44,6 @@ source $PWD/scripts/osx.sh
 
 title "Shell Setup"
 source $PWD/scripts/shell.sh
+
+# Restart computer
+osascript -e 'tell app "loginwindow" to «event aevtrrst»'
