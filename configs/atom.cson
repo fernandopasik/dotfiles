@@ -1,6 +1,10 @@
 "*":
   "atom-beautify":
     general: {}
+  "atom-package-deps":
+    ignored: [
+      "linter-package-json-validator"
+    ]
   core:
     telemetryConsent: "limited"
   editor:
