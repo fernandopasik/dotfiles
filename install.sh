@@ -45,5 +45,8 @@ source $PWD/scripts/osx.sh
 title "Shell Setup"
 source $PWD/scripts/shell.sh
 
+# Create empty profile file
+touch ~/.profile
+
 # Restart computer
 osascript -e 'tell app "loginwindow" to «event aevtrrst»'
