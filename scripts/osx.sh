@@ -83,6 +83,7 @@ declare -a apps=(
   Facetime
   Messages
   WhatsApp
+  Slack
   Notes
   Photos
   Hyper
