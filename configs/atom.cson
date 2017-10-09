@@ -4,6 +4,7 @@
   "atom-package-deps":
     ignored: [
       "linter-package-json-validator"
+      "linter-jsonlint"
     ]
   core:
     telemetryConsent: "limited"
