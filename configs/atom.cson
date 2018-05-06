@@ -16,6 +16,8 @@
     softWrap: true
   "exception-reporting":
     userId: "c3e419a6-250a-4e79-85f8-48fdda7d7718"
+  filesize:
+    UseDecimal: true
   "ide-flowtype":
     tryFlowBin: true
   "linter-stylelint":
