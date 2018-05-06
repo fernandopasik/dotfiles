@@ -6,6 +6,7 @@ module.exports = {
     foregroundColor: '#839496',
     backgroundColor: '#002b36',
     borderColor: '#073642',
+    lineHeight: 1.2,
     colors: [
       '#073642',
       '#dc322f',
