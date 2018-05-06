@@ -1,31 +1,13 @@
 module.exports = {
   config: {
-    // default font size in pixels for all tabs
     fontSize: 16,
-
-    // font family with optional fallbacks
     fontFamily: '"Ubuntu Mono derivative Powerline"',
-
-    // terminal cursor background color (hex)
     cursorColor: '#eee8d5',
-
-    // color of the text
     foregroundColor: '#839496',
-
-    // terminal background color
     backgroundColor: '#002b36',
-
-    // border color (window, tabs)
     borderColor: '#073642',
-
-    // custom css to embed in the main window
     css: '',
-
-    // custom css to embed in the terminal window
     termCSS: '',
-
-    // some color overrides. see http://bit.ly/29k1iU2 for
-    // the full list
     colors: [
       '#073642',
       '#dc322f',
@@ -45,20 +27,9 @@ module.exports = {
       '#fdf6e3'
     ]
   },
-
-  // a list of plugins to fetch and install from npm
-  // format: [@org/]project[#version]
-  // examples:
-  //   `hyperpower`
-  //   `@company/project`
-  //   `project#1.0.1`
   plugins: [
     'hyperlinks',
     'hyper-quit'
   ],
-
-  // in development, you can create a directory under
-  // `~/.hyperterm_plugins/local/` and include it here
-  // to load it and avoid it being `npm install`ed
   localPlugins: []
 };
