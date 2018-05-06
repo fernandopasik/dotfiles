@@ -6,8 +6,6 @@ module.exports = {
     foregroundColor: '#839496',
     backgroundColor: '#002b36',
     borderColor: '#073642',
-    css: '',
-    termCSS: '',
     colors: [
       '#073642',
       '#dc322f',
