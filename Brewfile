@@ -57,6 +57,7 @@ cask 'suspicious-package'
 cask 'skype'
 cask 'slack'
 cask 'caprine'
+cask 'whatsapp'
 
 # Apps
 cask 'vlc'
