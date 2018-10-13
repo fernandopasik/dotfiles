@@ -17,4 +17,7 @@ alias up!="brew update >/dev/null; brew outdated;brew upgrade;brew cask outdated
 alias npmlsg="npm ls -g --depth 0"
 alias npmls="npm ls --depth 0"
 
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
+
 source ~/.profile

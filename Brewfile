@@ -10,8 +10,8 @@ brew 'zsh'
 # Dev
 brew 'git'
 brew 'git-lfs'
-brew 'node'
-brew 'yarn'
+brew 'nvm'
+brew 'yarn', args: ['without-node']
 brew 'ruby'
 brew 'httpie'
 brew 'go'
