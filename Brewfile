@@ -15,7 +15,6 @@ brew 'yarn', args: ['without-node']
 brew 'ruby'
 brew 'httpie'
 brew 'go'
-brew 'the_silver_searcher'
 cask 'docker'
 
 # Utils
@@ -28,7 +27,6 @@ cask 'coconutbattery'
 cask 'google-chrome'
 cask 'google-chrome-canary'
 cask 'google-backup-and-sync'
-cask 'google-hangouts'
 cask 'firefox'
 
 # Dev Apps
