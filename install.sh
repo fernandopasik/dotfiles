@@ -30,8 +30,8 @@ title "Git Setup"
 ln -sfn $PWD/configs/.gitconfig ~/.gitconfig
 echo Git config linked
 
-title "NPM Setup"
-source $PWD/scripts/npm.sh
+title "Yarn Setup"
+source $PWD/scripts/yarn.sh
 
 title "Install Fonts"
 source $PWD/scripts/fonts.sh
