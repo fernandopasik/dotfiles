@@ -11,7 +11,7 @@ brew 'zsh'
 brew 'git'
 brew 'git-lfs'
 brew 'nvm'
-brew 'yarn', args: ['without-node']
+brew 'yarn', args: ['ignore-dependencies']
 brew 'ruby'
 brew 'httpie'
 brew 'go'
