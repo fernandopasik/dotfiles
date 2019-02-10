@@ -31,7 +31,7 @@ cask 'firefox'
 
 # Dev Apps
 cask 'visual-studio-code'
-cask 'github-desktop'
+cask 'github-beta'
 cask 'hyper'
 cask 'graphiql'
 cask 'react-native-debugger'
