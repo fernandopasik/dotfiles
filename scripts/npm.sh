@@ -17,10 +17,13 @@ yarn global add \
 npm set username $NPM_USERNAME
 npm set email $AUTHOR_EMAIL
 
-# Setting up default npm init options
-npm set init.author.name $AUTHOR_NAME
-npm set init.author.email $AUTHOR_EMAIL
-npm set init.author.url $AUTHOR_URL
+# Setting up default yarn init options
+yarn config set init-author-url $AUTHOR_URL
+yarn config set init-author-email $AUTHOR_EMAIL
+yarn config set init-author-name $AUTHOR_NAME
+yarn config set init-license UNLICENSED
+yarn config set init-version 0.0.0
+yarn config set init-private true
 
 # Login to npmjs.org
 npm adduser
