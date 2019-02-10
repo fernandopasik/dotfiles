@@ -87,9 +87,8 @@ declare -a apps=(
   Notes
   Photos
   Hyper
-  "Atom Beta"
   "Github Desktop"
-  Sketch
+  "Visual Studio Code"
 )
 
 function addAppToDock {
