@@ -5,9 +5,6 @@ AUTHOR_NAME="Fernando Pasik"
 AUTHOR_EMAIL="fernando@pasik.com"
 AUTHOR_URL="https://fernandopasik.com"
 
-# Updating npm
-npm i -g npm@next
-
 # Installing yarn global packages
 yarn global add \
   npm-check-updates \
