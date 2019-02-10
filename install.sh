@@ -33,9 +33,6 @@ echo Git config linked
 title "NPM Setup"
 source $PWD/scripts/npm.sh
 
-title "Atom Setup"
-source $PWD/scripts/atom.sh
-
 title "Install Fonts"
 source $PWD/scripts/fonts.sh
 

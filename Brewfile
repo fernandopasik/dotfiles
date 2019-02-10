@@ -30,7 +30,7 @@ cask 'google-backup-and-sync'
 cask 'firefox'
 
 # Dev Apps
-cask 'atom-beta'
+cask 'visual-studio-code'
 cask 'github-desktop'
 cask 'hyper'
 cask 'graphiql'
