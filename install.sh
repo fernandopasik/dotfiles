@@ -30,6 +30,9 @@ title "Git Setup"
 ln -sfn $PWD/configs/.gitconfig ~/.gitconfig
 echo Git config linked
 
+title "Node Setup"
+nvm install --lts
+
 title "Yarn Setup"
 source $PWD/scripts/yarn.sh
 
