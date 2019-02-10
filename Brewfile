@@ -45,7 +45,6 @@ cask 'qlstephen'
 cask 'qlmarkdown'
 cask 'quicklook-json'
 cask 'quicklook-csv'
-cask 'qlimagesize'
 cask 'webpquicklook'
 cask 'suspicious-package'
 
