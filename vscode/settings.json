@@ -1,0 +1,17 @@
+{
+  "editor.fontFamily": "Hack",
+  "editor.fontSize": 15,
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "html.autoClosingTags": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "window.titleBarStyle": "native",
+  "window.zoomLevel": 0,
+  "workbench.editor.showTabs": true,
+  "workbench.sideBar.location": "right",
+  "workbench.activityBar.visible": true,
+  "workbench.statusBar.visible": true,
+  "workbench.commandPalette.preserveInput": false,
+  "workbench.startupEditor": "none"
+}

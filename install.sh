@@ -45,6 +45,9 @@ source $PWD/scripts/osx.sh
 title "Shell Setup"
 source $PWD/scripts/shell.sh
 
+title "VS Code Setup"
+source $PWD/vscode/setup.sh
+
 # Create empty profile file
 touch ~/.profile
 
