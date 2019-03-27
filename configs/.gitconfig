@@ -1,31 +1,83 @@
 [user]
+
 	name = Fernando Pasik
 	email = fernando@pasik.com.ar
 
 [filter "lfs"]
+
 	required = true
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 
 [credential]
+
 	helper = osxkeychain
 
-[push]
-	default = simple
-	followTags = true
-
 [core]
+
 	editor = code --wait
 
+	# Make `git rebase` safer on macOS
+	# More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
+	trustctime = false
+
+	# Prevent showing files whose names contain non-ASCII symbols as unversioned.
+	# http://michael-kuehnel.de/git/2014/11/21/git-mac-osx-and-german-umlaute.html
+	precomposeunicode = false
+
+	# Speed up commands involving untracked files such as `git status`.
+	# https://git-scm.com/docs/git-update-index#_untracked_cache
+	untrackedCache = true
+
 [color]
+
+	# Use colors in Git commands that are capable of colored output when
+	# outputting to the terminal. (This is the default setting in Git ≥ 1.8.4.)
 	ui = auto
-	status = auto
-	branch = auto
-	diff = auto
+
+[color "branch"]
+
+	current = yellow reverse
+	local = yellow
+	remote = green
+
+[color "diff"]
+
+	meta = blue
+	frag = white # line info
+	old = red # deletions
+	new = green # additions
+
+[color "status"]
+
+	added = yellow
+	changed = green
+	untracked = cyan
 
 [diff]
+
 	tool = code
 
+	# Detect copies as well as renames
+	renames = copies
+
+[help]
+
+	# Automatically correct and execute mistyped commands
+	autocorrect = 1
+
 [merge]
+
 	tool = code
+
+	# Include summaries of merged commits in newly created merge commit messages
+	log = true
+
+[push]
+
+	# https://git-scm.com/docs/git-config#git-config-pushdefault
+	default = simple
+
+	# Make `git push` push relevant annotated tags when pushing branches out.
+	followTags = true
