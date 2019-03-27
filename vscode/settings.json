@@ -1,6 +1,7 @@
 {
   "editor.fontFamily": "Hack",
   "editor.fontSize": 15,
+  "editor.wordWrap": "on",
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "html.autoClosingTags": true,
