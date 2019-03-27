@@ -1,31 +1,60 @@
 #!/usr/bin/env bash
 
+COMPUTERNAME="Fernando's MacBook Pro"
+LOCALHOSTNAME="Fernando-s-MacBook-Pro"
+
 # Thanks @mathiasbynens !
-# https://github.com/mathiasbynens/dotfiles/blob/master/.osx
+# https://mths.be/macos
+
+# Close any open System Preferences panes, to prevent them from overriding
+# settings we’re about to change
+osascript -e 'tell application "System Preferences" to quit'
+
+# Ask for the administrator password upfront
+sudo -v
+
+# Keep-alive: update existing `sudo` time stamp until `.osx` has finished
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 ###############################################################################
-# OS X General Settings                                                       #
+# General UI/UX                                                               #
 ###############################################################################
 
-# Use a dark menu bar / dock
-defaults write NSGlobalDomain AppleInterfaceStyle -string "Dark"
-# Show remaining battery time; hide percentage
+# Set computer name (as done via System Preferences → Sharing)
+sudo scutil --set ComputerName "${COMPUTERNAME}"
+sudo scutil --set HostName "${COMPUTERNAME}"
+sudo scutil --set LocalHostName $LOCALHOSTNAME
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string $LOCALHOSTNAME
+
+# Show remaining battery percentage and time
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 defaults write com.apple.menuextra.battery ShowTime -string "YES"
 
+# Use a dark menu bar / dock
+defaults write NSGlobalDomain AppleInterfaceStyle -string "Dark"
+
+# Check for software updates daily, not just once per week
+defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
+
 ###############################################################################
-# Finder                                                                      #
+# Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
 ###############################################################################
 
-# Show the ~/Library folder
-chflags nohidden ~/Library
+# Trackpad: enable tap to click for this user and for the login screen
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
-# Calculate all sizes in folders
-/usr/libexec/PlistBuddy "$HOME/Library/Preferences/com.apple.finder.plist" -c 'Delete "StandardViewSettings:ExtendedListViewSettings:calculateAllSizes" bool'
-/usr/libexec/PlistBuddy "$HOME/Library/Preferences/com.apple.finder.plist" -c 'Add "StandardViewSettings:ExtendedListViewSettings:calculateAllSizes" bool true'
+# Don't illuminate built-in MacBook keyboard in low light
+defaults write com.apple.BezelServices kDim -bool false
+# Turn off keyboard illumination when computer is not used for 5 minutes
+defaults write com.apple.BezelServices kDimTime -int 300
 
-/usr/libexec/PlistBuddy "$HOME/Library/Preferences/com.apple.finder.plist" -c 'Delete "StandardViewSettings:ListViewSettings:calculateAllSizes" bool'
-/usr/libexec/PlistBuddy "$HOME/Library/Preferences/com.apple.finder.plist" -c 'Add "StandardViewSettings:ListViewSettings:calculateAllSizes" bool true'
+# Show language menu in the top right corner of the boot screen
+sudo defaults write /Library/Preferences/com.apple.loginwindow showInputMenu -bool true
+
+# Enable feedback when changing volume
+defaults write NSGlobalDomain com.apple.sound.beep.feedback -bool true
 
 ###############################################################################
 # Screen                                                                      #
@@ -44,20 +73,37 @@ defaults write com.apple.screencapture type -string "png"
 # Disable shadow in screenshots
 defaults write com.apple.screencapture disable-shadow -bool true
 
+# Enable subpixel font rendering on non-Apple LCDs
+defaults write NSGlobalDomain AppleFontSmoothing -int 2
+
+# Enable HiDPI display modes (requires restart)
+sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
+
 ###############################################################################
-# Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
+# Finder                                                                      #
 ###############################################################################
 
-# Trackpad: enable tap to click for this user and for the login screen
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
-defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
-defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+# When performing a search, search the current folder by default
+defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 
-# Show language menu in the top right corner of the boot screen
-sudo defaults write /Library/Preferences/com.apple.loginwindow showInputMenu -bool true
+# Disable the warning when changing a file extension
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
-# Enable feedback when changing volume
-defaults write NSGlobalDomain com.apple.sound.beep.feedback -bool true
+# Disable the warning before emptying the Trash
+#defaults write com.apple.finder WarnOnEmptyTrash -bool false
+
+# Empty Trash securely by default
+defaults write com.apple.finder EmptyTrashSecurely -bool true
+
+# Show the ~/Library folder
+chflags nohidden ~/Library
+
+# Calculate all sizes in folders
+/usr/libexec/PlistBuddy "$HOME/Library/Preferences/com.apple.finder.plist" -c 'Delete "StandardViewSettings:ExtendedListViewSettings:calculateAllSizes" bool'
+/usr/libexec/PlistBuddy "$HOME/Library/Preferences/com.apple.finder.plist" -c 'Add "StandardViewSettings:ExtendedListViewSettings:calculateAllSizes" bool true'
+
+/usr/libexec/PlistBuddy "$HOME/Library/Preferences/com.apple.finder.plist" -c 'Delete "StandardViewSettings:ListViewSettings:calculateAllSizes" bool'
+/usr/libexec/PlistBuddy "$HOME/Library/Preferences/com.apple.finder.plist" -c 'Add "StandardViewSettings:ListViewSettings:calculateAllSizes" bool true'
 
 ###############################################################################
 # Dock, Dashboard, and hot corners                                            #
@@ -83,9 +129,11 @@ declare -a apps=(
   Facetime
   Messages
   WhatsApp
-  Slack
   Notes
+  Reminders
+  Stocks
   Photos
+  Spotify
   Hyper
   "Github Desktop"
   "Visual Studio Code"
@@ -147,6 +195,5 @@ defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
 defaults write com.divisiblebyzero.Spectacle StatusItemEnabled -bool false
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Spectacle.app", hidden:true, name:"Spectacle"}'
-osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Lungo.app", hidden:true, name:"Lungo"}'
 
 echo OS X setup finished
