@@ -16,7 +16,7 @@
 	followTags = true
 
 [core]
-	editor = atom-beta --wait
+	editor = code --wait
 
 [color]
 	ui = auto
@@ -25,7 +25,7 @@
 	diff = auto
 
 [diff]
-	tool = atom-beta
+	tool = code
 
 [merge]
-	tool = atom-beta
+	tool = code
