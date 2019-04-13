@@ -3,12 +3,8 @@
 cd `dirname $0`
 
 function title {
-  WIDTH=80
-  PADDING=$(($WIDTH - ${#1}))
   echo
-  printf "\033[44;97m%*s\n" $WIDTH
-  printf "%*s%*s\n" $(( $PADDING / 2 + ${#1} )) "$1" $(( $PADDING / 2 + $PADDING % 2 ))
-  printf "%*s\n\033[0;0m" $WIDTH
+  echo "\033[31;1m$1\033[0m"
   echo
 }
 
