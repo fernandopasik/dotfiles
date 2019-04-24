@@ -44,8 +44,8 @@
 
 [color "diff"]
 
-	meta = blue
-	frag = white # line info
+	meta = blue bold
+	frag = white bold # line info
 	old = red # deletions
 	new = green # additions
 
