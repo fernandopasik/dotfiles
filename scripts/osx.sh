@@ -148,6 +148,15 @@ function addAppToDock {
   defaults write com.apple.dock persistent-apps -array-add "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/$1.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>"
 }
 
+function setLaunchPadGrid {
+  defaults write com.apple.dock springboard-columns -int $1;
+  defaults write com.apple.dock springboard-rows -int $2;
+  defaults write com.apple.dock ResetLaunchPad -bool TRUE;
+}
+
+# Set LaunchPad grid size
+setLaunchPadGrid 8 6
+
 # Delete all dock apps
 defaults delete com.apple.dock persistent-apps
 
