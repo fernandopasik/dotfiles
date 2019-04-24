@@ -14,9 +14,19 @@
 
 	helper = osxkeychain
 
+[apply]
+
+	# Detect whitespace errors when applying a patch
+	whitespace = fix
+
 [core]
 
 	editor = code --wait
+
+	# Treat spaces before tabs and all kinds of trailing whitespace as an error
+	# [default] trailing-space: looks for spaces at the end of a line
+	# [default] space-before-tab: looks for spaces before tabs at the beginning of a line
+	whitespace = space-before-tab,-indent-with-non-tab,trailing-space
 
 	# Make `git rebase` safer on macOS
 	# More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
