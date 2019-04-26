@@ -2,11 +2,7 @@
 
 cd `dirname $0`
 
-function title {
-  echo
-  echo "\033[31;1m$1\033[0m"
-  echo
-}
+. .utils
 
 title "DOTFILES Installation"
 
