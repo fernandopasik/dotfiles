@@ -22,10 +22,10 @@ log "Create empty profile file"
 touch ~/.profile
 
 log "Link my zsh config file"
-ln -sfn $PWD/configs/.zshrc ~/.zshrc
+ln -sfn $PWD/.zshrc ~/.zshrc
 
 log "Link my hyper config file"
-ln -sfn $PWD/configs/.hyper.js ~/.hyper.js
+ln -sfn $PWD/.hyper.js ~/.hyper.js
 
 log "Install Oh My Zsh"
 if [ ! -d $OH_MY_ZSH_DIR.git ]
