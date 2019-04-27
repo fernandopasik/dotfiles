@@ -8,9 +8,7 @@ title "DOTFILES Installation"
 
 . .brew
 . .git-setup
-
-# Set chrome as default browser
-open -a "Google Chrome" --args --make-default-browser
+. .macos
 
 title "Node Setup"
 nvm install --lts
@@ -20,9 +18,6 @@ source $PWD/scripts/yarn.sh
 
 title "Install Fonts"
 source $PWD/scripts/fonts.sh
-
-title "Setup OS X options"
-source $PWD/scripts/osx.sh
 
 title "Shell Setup"
 source $PWD/scripts/shell.sh
