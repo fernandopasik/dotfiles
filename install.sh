@@ -6,19 +6,11 @@ cd `dirname $0`
 
 title "DOTFILES Installation"
 
-title "Install OS X Command Line Tools"
-xcode-select --install
-
-title "Install Homebrew"
-yes '' | /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-title "Install Homebrew packages"
-brew bundle
+. .brew
+. .git-setup
 
 # Set chrome as default browser
 open -a "Google Chrome" --args --make-default-browser
-
-. .git-setup
 
 title "Node Setup"
 nvm install --lts

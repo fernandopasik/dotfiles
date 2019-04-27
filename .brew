@@ -1,0 +1,13 @@
+#!/bin/sh
+. .utils
+
+title "Homebrew"
+
+log "Check & Install OS X Command Line Tools"
+xcode-select --install
+
+log "Install package manager"
+yes '' | /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+log "Install packages"
+brew bundle
