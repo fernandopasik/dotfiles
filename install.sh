@@ -18,9 +18,7 @@ brew bundle
 # Set chrome as default browser
 open -a "Google Chrome" --args --make-default-browser
 
-title "Git Setup"
-ln -sfn $PWD/configs/.gitconfig ~/.gitconfig
-echo Git config linked
+. .git-setup
 
 title "Node Setup"
 nvm install --lts

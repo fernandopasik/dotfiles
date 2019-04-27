@@ -1,7 +1,6 @@
-[user]
+[include]
 
-	name = Fernando Pasik
-	email = fernando@pasik.com.ar
+	path = .gitconfig.local
 
 [filter "lfs"]
 
