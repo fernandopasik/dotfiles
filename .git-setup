@@ -10,7 +10,7 @@ GIT_USERNAME="Fernando Pasik"
 GIT_EMAIL="fernando@pasik.com.ar"
 
 log "What's your git username? ($GIT_USERNAME)"
-username=$(prompt $GIT_USERNAME)
+username=$(prompt "$GIT_USERNAME")
 log "What's your git email? ($GIT_EMAIL)"
 email=$(prompt "$GIT_EMAIL")
 
