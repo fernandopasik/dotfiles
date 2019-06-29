@@ -12,7 +12,7 @@
   "workbench.editor.showTabs": true,
   "workbench.sideBar.location": "right",
   "workbench.activityBar.visible": true,
-  "workbench.statusBar.visible": true,
+  "workbench.statusBar.visible": false,
   "workbench.commandPalette.preserveInput": false,
   "workbench.startupEditor": "none"
 }
