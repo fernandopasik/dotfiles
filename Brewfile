@@ -46,7 +46,6 @@ cask 'qlmarkdown'
 cask 'quicklook-json'
 cask 'quicklook-csv'
 cask 'webpquicklook'
-cask 'suspicious-package'
 
 # Chat
 cask 'skype'
