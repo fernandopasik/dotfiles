@@ -9,10 +9,10 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "window.titleBarStyle": "native",
   "window.zoomLevel": 0,
+  "workbench.activityBar.visible": true,
+  "workbench.commandPalette.preserveInput": false,
   "workbench.editor.showTabs": true,
   "workbench.sideBar.location": "right",
-  "workbench.activityBar.visible": true,
-  "workbench.statusBar.visible": false,
-  "workbench.commandPalette.preserveInput": false,
-  "workbench.startupEditor": "none"
+  "workbench.startupEditor": "none",
+  "workbench.statusBar.visible": false
 }
