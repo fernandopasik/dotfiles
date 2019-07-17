@@ -3,10 +3,15 @@
 
 title "Dev Env Setup"
 
+# ------------------
 log "Node Setup"
+# ------------------
 nvm install --lts
 
+# ------------------
 log "Yarn Setup"
+# ------------------
+
 NPM_USERNAME="fernandopasik"
 AUTHOR_NAME="Fernando Pasik"
 AUTHOR_EMAIL="fernando@pasik.com"
@@ -31,7 +36,10 @@ yarn config set init-private true
 # Login to yarn
 yarn login
 
+# ------------------
 log "VS Code Setup"
+# ------------------
+
 # VS Code folder for settings and more
 VSCODE_USER_FOLDER=~/Library/Application\ Support/Code/User
 
