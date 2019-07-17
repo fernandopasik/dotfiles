@@ -48,3 +48,21 @@ mkdir -p "${VSCODE_USER_FOLDER}"
 
 # Link settings file
 ln -sfn $PWD/.vscode.json "${VSCODE_USER_FOLDER}/settings.json"
+
+# Install extensions
+
+code --install-extensions \
+  # Docker
+  ms-azuretools.vscode-docker \
+  # EditorConfig
+  EditorConfig.EditorConfig \
+  # Eslint
+  dbaeumer.vscode-eslint \
+  # GitLens
+  eamodio.gitlens \
+  # GraphQL
+  kumar-harsh.graphql-for-vscode \
+  # Npm
+  eg2.vscode-npm-script \
+  # Prettier
+  esbenp.prettier-vscode \
