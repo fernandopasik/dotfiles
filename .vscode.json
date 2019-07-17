@@ -1,9 +1,13 @@
 {
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontFamily": "Hack",
   "editor.fontSize": 15,
+  "editor.formatOnSave": true,
   "editor.wordWrap": "on",
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.enabled": false,
   "html.autoClosingTags": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
