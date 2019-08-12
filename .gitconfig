@@ -94,8 +94,8 @@
 [alias]
 
 	delete-branch = "!f() { \
-										export CURRENT=$(git rev-parse --abbrev-ref HEAD); \
-										echo \"$CURRENT\"; \
-										git checkout master; \
-										git branch -D $CURRENT; \
-									};f"
+						export CURRENT=$(git rev-parse --abbrev-ref HEAD); \
+						echo \"$CURRENT\"; \
+						git checkout master; \
+						git branch -D $CURRENT; \
+					};f"
