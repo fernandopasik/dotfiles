@@ -1,7 +1,7 @@
 #!/bin/sh
 . .utils
 
-# title "Dev Env Setup"
+title "Dev Env Setup"
 
 # ------------------
 log "Node Setup"
