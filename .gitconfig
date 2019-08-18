@@ -106,5 +106,4 @@
 						git pull; \
 						git checkout $CURRENT; \
 						git rebase master; \
-						git push --force-with-lease; \
 					};f"
