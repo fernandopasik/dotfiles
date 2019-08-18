@@ -107,3 +107,4 @@
 										git checkout $CURRENT; \
 										git rebase master; \
 									};f"
+	force-push = "git push --force-with-lease"
