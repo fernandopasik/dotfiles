@@ -16,6 +16,8 @@ brew 'ruby'
 brew 'httpie'
 brew 'go'
 cask 'docker'
+brew 'kubernetes-cli'
+cask 'minikube'
 
 # Utils
 cask 'the-unarchiver'
