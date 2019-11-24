@@ -22,8 +22,6 @@ cask 'minikube'
 # Utils
 cask 'the-unarchiver'
 cask 'spectacle'
-cask 'smcfancontrol'
-cask 'coconutbattery'
 
 # Browsers
 cask 'google-chrome'
