@@ -14,7 +14,7 @@ log "Yarn Setup"
 
 NPM_USERNAME="fernandopasik"
 AUTHOR_NAME="Fernando Pasik"
-AUTHOR_EMAIL="fernando@pasik.com"
+AUTHOR_EMAIL="fernando@pasik.com.ar"
 AUTHOR_URL="https://fernandopasik.com"
 
 # Installing yarn global packages
