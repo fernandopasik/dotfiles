@@ -41,7 +41,6 @@ cask 'java'
 
 # QuickLook plugins
 cask 'qlcolorcode'
-cask 'qlstephen'
 cask 'qlmarkdown'
 cask 'quicklook-json'
 cask 'quicklook-csv'
