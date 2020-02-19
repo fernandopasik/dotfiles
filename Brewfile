@@ -3,6 +3,7 @@ tap 'caskroom/versions'
 tap 'homebrew/bundle'
 tap 'homebrew/core'
 tap 'homebrew/services'
+tap 'homebrew/cask-fonts'
 
 # Shell
 brew 'zsh'
@@ -38,6 +39,7 @@ cask 'react-native-debugger'
 cask 'sketch'
 cask 'zeplin'
 cask 'java'
+cask 'font-jetbrains-mono'
 
 # QuickLook plugins
 cask 'qlcolorcode'
