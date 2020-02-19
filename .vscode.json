@@ -1,6 +1,6 @@
 {
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.fontFamily": "Hack",
+  "editor.fontFamily": "JetBrains Mono",
   "editor.fontSize": 15,
   "editor.formatOnSave": true,
   "editor.wordWrap": "on",
