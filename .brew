@@ -16,4 +16,4 @@ else
 fi
 
 log "Install packages"
-brew bundle
+brew bundle --no-lock
