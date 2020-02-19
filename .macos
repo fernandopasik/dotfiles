@@ -215,6 +215,9 @@ defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 # Custom Apps                                                                 #
 ###############################################################################
 
+# Add support for quicklook plugins in macOS >= 10.15
+xattr -d -r com.apple.quarantine ~/Library/QuickLook
+
 # Set chrome as default browser
 open -a "Google Chrome" --args --make-default-browser
 
