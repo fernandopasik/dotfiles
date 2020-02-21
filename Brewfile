@@ -29,6 +29,7 @@ cask 'google-chrome'
 cask 'google-chrome-canary'
 cask 'google-backup-and-sync'
 cask 'firefox'
+cask 'microsoft-edge'
 
 # Dev Apps
 cask 'visual-studio-code'
