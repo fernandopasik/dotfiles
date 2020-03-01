@@ -32,6 +32,7 @@ cask 'firefox'
 cask 'microsoft-edge'
 
 # Dev Apps
+brew 'github/gh/gh'
 cask 'visual-studio-code'
 cask 'github-beta'
 cask 'hyper'
