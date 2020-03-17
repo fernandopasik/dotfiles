@@ -1,5 +1,5 @@
 #!/bin/sh
-. .utils
+. utils.sh
 
 title "Homebrew"
 
