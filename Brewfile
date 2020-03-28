@@ -59,3 +59,4 @@ cask 'zoomus'
 
 # Apps
 cask 'vlc'
+cask 'spotify'
