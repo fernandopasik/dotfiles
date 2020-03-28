@@ -55,6 +55,7 @@ cask 'skype'
 cask 'slack-beta'
 cask 'caprine'
 cask 'whatsapp'
+cask 'zoomus'
 
 # Apps
 cask 'vlc'
