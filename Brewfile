@@ -23,11 +23,11 @@ brew 'minikube'
 # Utils
 cask 'the-unarchiver'
 cask 'spectacle'
+cask 'google-backup-and-sync'
 
 # Browsers
 cask 'google-chrome'
 cask 'google-chrome-canary'
-cask 'google-backup-and-sync'
 cask 'firefox'
 cask 'microsoft-edge'
 
