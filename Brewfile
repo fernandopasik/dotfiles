@@ -52,7 +52,7 @@ cask 'webpquicklook'
 
 # Chat
 cask 'skype'
-cask 'slack'
+cask 'slack-beta'
 cask 'caprine'
 cask 'whatsapp'
 
