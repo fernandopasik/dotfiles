@@ -60,3 +60,8 @@ cask 'zoomus'
 # Apps
 cask 'vlc'
 cask 'spotify'
+
+# Games
+# cask 'openemu-experimental'
+# cask 'battle-net'
+# cask 'steam'
