@@ -19,6 +19,7 @@ brew 'go'
 cask 'docker'
 brew 'kubernetes-cli'
 brew 'minikube'
+brew 'helm'
 
 # Utils
 cask 'the-unarchiver'
