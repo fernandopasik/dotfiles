@@ -2,7 +2,7 @@
 
 ## Reporting Bugs or suggesting features
 
-Ensure the bug or feature has not been reported before searching by [searching](/issues) first. If no similar issue is found please submit a [new](/issues/new/choose) one.
+Ensure the bug or feature has not been reported before searching by [searching](https://github.com/fernandopasik/.dotfiles/issues) first. If no similar issue is found please submit a [new](https://github.com/fernandopasik/.dotfiles/issues/new/choose) one.
 
 ## Submitting changes
 
