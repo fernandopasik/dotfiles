@@ -1,6 +1,6 @@
 module.exports = {
   config: {
-    updateChannel: 'stable',
+    updateChannel: 'canary',
     fontSize: 14,
     fontFamily: 'JetBrains Mono',
     lineHeight: 1.2,
