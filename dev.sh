@@ -6,7 +6,7 @@ title "Dev Env Setup"
 # ------------------
 log "Node Setup"
 # ------------------
-nvm install --lts
+nvm install 14
 
 # ------------------
 log "Yarn Setup"
