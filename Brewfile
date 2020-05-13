@@ -34,7 +34,7 @@ cask 'microsoft-edge'
 
 # Dev Apps
 brew 'github/gh/gh'
-cask 'visual-studio-code'
+cask 'visual-studio-code-insiders'
 cask 'github-beta'
 cask 'hyper'
 cask 'graphiql'

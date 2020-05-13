@@ -41,7 +41,7 @@ log "VS Code Setup"
 # ------------------
 
 # VS Code folder for settings and more
-VSCODE_USER_FOLDER=~/Library/Application\ Support/Code/User
+VSCODE_USER_FOLDER=~/Library/Application\ Support/Code\ -\ Insiders/User
 
 # Create settings folder if not exists
 mkdir -p "${VSCODE_USER_FOLDER}"
@@ -68,9 +68,11 @@ declare -a extensions=(
   eg2.vscode-npm-script
   # Prettier
   esbenp.prettier-vscode
+  # Lit-html
+  runem.lit-plugin
 )
 
 for extension in "${extensions[@]}"
 do
-  code --install-extensions "$extension" --force
+  code-insiders --install-extension "$extension" --force
 done
