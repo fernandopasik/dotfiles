@@ -49,6 +49,9 @@ mkdir -p "${VSCODE_USER_FOLDER}"
 # Link settings file
 ln -sfn $PWD/.vscode.json "${VSCODE_USER_FOLDER}/settings.json"
 
+# Alias beta vscode as non-beta
+ln -sfn /usr/local/bin/code-insiders /usr/local/bin/code
+
 # Install extensions
 
 declare -a extensions=(
