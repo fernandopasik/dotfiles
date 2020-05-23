@@ -4,6 +4,8 @@
   "editor.fontSize": 15,
   "editor.formatOnSave": true,
   "editor.wordWrap": "on",
+  "eslint.alwaysShowStatus": true,
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "gitlens.codeLens.authors.enabled": false,
@@ -18,7 +20,5 @@
   "workbench.commandPalette.preserveInput": false,
   "workbench.editor.showTabs": true,
   "workbench.sideBar.location": "right",
-  "workbench.startupEditor": "none",
-  "eslint.alwaysShowStatus": true,
-  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"]
+  "workbench.startupEditor": "none"
 }
