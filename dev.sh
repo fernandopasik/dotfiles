@@ -73,6 +73,8 @@ declare -a extensions=(
   esbenp.prettier-vscode
   # Lit-html
   runem.lit-plugin
+  # Github Pull Requests
+  github.vscode-pull-request-github
 )
 
 for extension in "${extensions[@]}"
