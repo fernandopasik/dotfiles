@@ -14,6 +14,7 @@
   "window.titleBarStyle": "native",
   "window.zoomLevel": 0,
   "workbench.activityBar.visible": true,
+  "workbench.colorTheme": "GitHub Dark",
   "workbench.commandPalette.preserveInput": false,
   "workbench.editor.showTabs": true,
   "workbench.sideBar.location": "right",

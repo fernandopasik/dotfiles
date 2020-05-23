@@ -77,6 +77,8 @@ declare -a extensions=(
   runem.lit-plugin
   # Github Pull Requests
   github.vscode-pull-request-github
+  # Github Theme
+  github.github-vscode-theme
 )
 
 for extension in "${extensions[@]}"
