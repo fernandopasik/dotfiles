@@ -57,6 +57,8 @@ mv /usr/local/bin/code-insiders /usr/local/bin/code
 declare -a extensions=(
   # Docker
   ms-azuretools.vscode-docker
+  # Kubernetes
+  ms-kubernetes-tools.vscode-kubernetes-tools
   # EditorConfig
   EditorConfig.EditorConfig
   # Eslint
