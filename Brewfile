@@ -54,6 +54,7 @@ cask 'webpquicklook'
 # Chat
 cask 'skype'
 cask 'slack-beta'
+cask 'discord-canary'
 cask 'caprine'
 cask 'signal-beta'
 cask 'whatsapp'
