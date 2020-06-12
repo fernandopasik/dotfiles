@@ -24,6 +24,7 @@ cask 'docker'
 brew 'kubernetes-cli'
 brew 'minikube'
 brew 'helm'
+brew 'github/gh/gh'
 
 # Utils
 cask 'the-unarchiver'
@@ -37,13 +38,12 @@ cask 'firefox'
 cask 'microsoft-edge'
 
 # Dev Apps
-brew 'github/gh/gh'
+cask 'font-jetbrains-mono'
 cask 'visual-studio-code-insiders'
 cask 'github-beta'
-cask 'hyper'
+cask 'hyper-canary'
 cask 'sketch'
 cask 'zeplin'
-cask 'font-jetbrains-mono'
 
 # QuickLook plugins
 cask 'qlcolorcode'
