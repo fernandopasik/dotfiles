@@ -59,6 +59,7 @@ cask 'slack-beta'
 cask 'discord-canary'
 cask 'caprine'
 cask 'signal-beta'
+cask 'telegram-desktop'
 cask 'whatsapp'
 cask 'zoomus'
 
