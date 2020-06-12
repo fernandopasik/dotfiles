@@ -8,14 +8,18 @@ tap 'homebrew/cask-fonts'
 # Shell
 brew 'zsh'
 
-# Dev
+# Languages
+brew 'go'
+cask 'java'
+brew 'python'
+brew 'ruby'
+
+# Dev Tools
 brew 'git'
 brew 'git-lfs'
 brew 'nvm'
 brew 'yarn', args: ['ignore-dependencies']
-brew 'ruby'
 brew 'httpie'
-brew 'go'
 cask 'docker'
 brew 'kubernetes-cli'
 brew 'minikube'
@@ -41,7 +45,6 @@ cask 'graphiql'
 cask 'react-native-debugger'
 cask 'sketch'
 cask 'zeplin'
-cask 'java'
 cask 'font-jetbrains-mono'
 
 # QuickLook plugins
