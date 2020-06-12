@@ -26,12 +26,6 @@ brew 'minikube'
 brew 'helm'
 brew 'github/gh/gh'
 
-# Utils
-cask 'coconutbattery'
-cask 'google-backup-and-sync'
-cask 'spectacle'
-cask 'the-unarchiver'
-
 # Browsers
 cask 'google-chrome'
 cask 'google-chrome-canary'
@@ -64,7 +58,13 @@ cask 'whatsapp'
 cask 'zoomus'
 
 # Apps
+cask 'coconutbattery'
+cask 'google-backup-and-sync'
+cask 'imageoptim'
+cask 'smcfancontrol'
+cask 'spectacle'
 cask 'spotify'
+cask 'the-unarchiver'
 cask 'vlc'
 
 # Games
