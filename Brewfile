@@ -27,9 +27,10 @@ brew 'helm'
 brew 'github/gh/gh'
 
 # Utils
-cask 'the-unarchiver'
-cask 'spectacle'
+cask 'coconutbattery'
 cask 'google-backup-and-sync'
+cask 'spectacle'
+cask 'the-unarchiver'
 
 # Browsers
 cask 'google-chrome'
@@ -62,8 +63,8 @@ cask 'whatsapp'
 cask 'zoomus'
 
 # Apps
-cask 'vlc'
 cask 'spotify'
+cask 'vlc'
 
 # Games
 # cask 'openemu-experimental'
