@@ -71,6 +71,6 @@ cask 'the-unarchiver'
 cask 'vlc'
 
 # Games
-# cask 'openemu-experimental'
-# cask 'battle-net'
-# cask 'steam'
+cask 'openemu-experimental'
+cask 'battle-net'
+cask 'steam'
