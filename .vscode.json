@@ -1,5 +1,4 @@
 {
-  "editor.codeActionsOnSave": { "source.organizeImports": true },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontFamily": "JetBrains Mono",
   "editor.fontSize": 15,
