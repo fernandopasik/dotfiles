@@ -14,3 +14,11 @@ function prompt {
   read input
   echo ${input:-$1}
 }
+
+function currentName {
+  echo $(id -F)
+}
+
+function currentEmail {
+  echo $(/usr/libexec/PlistBuddy -c "print :Accounts:0:AccountID" ~/Library/Preferences/MobileMeAccounts.plist)
+}
