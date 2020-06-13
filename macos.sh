@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 COMPUTERNAME="Fernando's MacBook Pro"
 LOCALHOSTNAME="Fernando-s-MacBook-Pro"
