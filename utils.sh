@@ -19,6 +19,10 @@ function currentName {
   echo $(id -F)
 }
 
+function currentFirstName {
+  echo $(id -F | grep -o "^\S*")
+}
+
 function currentEmail {
   echo $(/usr/libexec/PlistBuddy -c "print :Accounts:0:AccountID" ~/Library/Preferences/MobileMeAccounts.plist)
 }

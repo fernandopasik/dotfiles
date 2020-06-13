@@ -1,7 +1,8 @@
 #!/bin/sh
+. utils.sh
 
-COMPUTERNAME="Fernando's MacBook Pro"
-LOCALHOSTNAME="Fernando-s-MacBook-Pro"
+COMPUTERNAME="$(currentFirstName)'s MacBook Pro"
+LOCALHOSTNAME="$(currentFirstName)-s-MacBook-Pro"
 
 # Thanks @mathiasbynens !
 # https://mths.be/macos
