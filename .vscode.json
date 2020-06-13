@@ -12,6 +12,7 @@
   "gitlens.codeLens.enabled": false,
   "html.autoClosingTags": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "prettier.requireConfig": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "window.titleBarStyle": "native",
   "window.zoomLevel": 0,
