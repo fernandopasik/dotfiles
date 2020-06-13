@@ -24,6 +24,7 @@ cask 'docker'
 brew 'kubernetes-cli'
 brew 'minikube'
 brew 'helm'
+tap 'github/gh'
 brew 'github/gh/gh'
 
 # Browsers
