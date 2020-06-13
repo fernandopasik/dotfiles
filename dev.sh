@@ -12,10 +12,10 @@ nvm install 14
 log "Yarn Setup"
 # ------------------
 
-NPM_USERNAME="fernandopasik"
-AUTHOR_NAME="Fernando Pasik"
-AUTHOR_EMAIL="fernando@pasik.com.ar"
-AUTHOR_URL="https://fernandopasik.com"
+NPM_USERNAME=$(currentUser)
+AUTHOR_NAME=$(currentName)
+AUTHOR_EMAIL=$(currentEmail)
+AUTHOR_URL="https://$(currentUser).com"
 
 # Installing yarn global packages
 yarn global add \
