@@ -5,6 +5,6 @@ module.exports = {
     fontFamily: 'JetBrains Mono',
     lineHeight: 1.2,
   },
-  plugins: ['hyper-one-dark', 'hyperlinks', 'hyper-quit'],
+  plugins: ['hyper-one-dark', 'hyperlinks', 'hyper-quit', 'git-falcon9'],
   localPlugins: [],
 };
