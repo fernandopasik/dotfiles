@@ -11,8 +11,8 @@ log() {
 }
 
 prompt() {
-  read input
-  echo ${input:-$1}
+  read -r input
+  echo "${input:-$1}"
 }
 
 currentName() {
