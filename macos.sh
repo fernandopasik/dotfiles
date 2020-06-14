@@ -145,13 +145,13 @@ APPS="
   Visual\ Studio\ Code
 "
 
-function addAppToDock {
+addAppToDock() {
   defaults write com.apple.dock persistent-apps -array-add "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/$1.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>"
 }
 
-function setLaunchPadGrid {
   defaults write com.apple.dock springboard-columns -int $1;
   defaults write com.apple.dock springboard-rows -int $2;
+setLaunchPadGrid() {
   defaults write com.apple.dock ResetLaunchPad -bool TRUE;
 }
 
