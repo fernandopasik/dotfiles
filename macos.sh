@@ -134,6 +134,7 @@ APPS="
   Applications/Google*Chrome
   System/Applications/Facetime
   System/Applications/Messages
+  Applications/Signal*Beta
   Applications/WhatsApp
   System/Applications/Notes
   System/Applications/Reminders
