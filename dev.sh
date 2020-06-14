@@ -22,9 +22,6 @@ yarn global add \
   npm-check-updates \
   pure-prompt \
   yo \
-  firebase-tools \
-  imagemin-cli \
-  react-native-cli \
 
 # Setting up default yarn init options
 yarn config set init-author-url "$AUTHOR_URL"
