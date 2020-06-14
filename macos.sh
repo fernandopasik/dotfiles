@@ -137,10 +137,6 @@ APPS="
   Applications/Signal*Beta
   Applications/WhatsApp
   System/Applications/Notes
-  System/Applications/Reminders
-  System/Applications/Stocks
-  System/Applications/Photos
-  Applications/Spotify
   Applications/Hyper
   Applications/Github*Desktop
   Applications/Visual*Studio*Code*-*Insiders
