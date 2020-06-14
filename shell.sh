@@ -26,7 +26,7 @@ then
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 else
   log "Updating..."
-  cd $OH_MY_ZSH_DIR
+  cd "$OH_MY_ZSH_DIR" || exit
   git pull
-  cd $CURRENT_DIR
+  cd "$CURRENT_DIR" || exit
 fi
