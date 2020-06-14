@@ -44,7 +44,7 @@ VSCODE_USER_FOLDER=~/Library/Application\ Support/Code\ -\ Insiders/User
 mkdir -p "${VSCODE_USER_FOLDER}"
 
 # Link settings file
-ln -sfn $PWD/.vscode.json "${VSCODE_USER_FOLDER}/settings.json"
+ln -sfn "$PWD"/.vscode.json "${VSCODE_USER_FOLDER}/settings.json"
 
 # Alias beta vscode as non-beta
 mv /usr/local/bin/code-insiders /usr/local/bin/code

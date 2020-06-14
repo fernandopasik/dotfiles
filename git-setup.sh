@@ -4,7 +4,7 @@
 title "Git Setup"
 
 log "Link gitconfig file in user home dir"
-ln -sfn $PWD/.gitconfig ~/.gitconfig
+ln -sfn "$PWD"/.gitconfig ~/.gitconfig
 
 GIT_USERNAME=$(currentName)
 GIT_EMAIL=$(currentEmail)

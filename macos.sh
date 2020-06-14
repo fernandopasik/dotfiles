@@ -24,8 +24,8 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # Set computer name (as done via System Preferences → Sharing)
 sudo scutil --set ComputerName "${COMPUTERNAME}"
 sudo scutil --set HostName "${COMPUTERNAME}"
-sudo scutil --set LocalHostName $LOCALHOSTNAME
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string $LOCALHOSTNAME
+sudo scutil --set LocalHostName "${LOCALHOSTNAME}"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "${LOCALHOSTNAME}"
 
 # Show remaining battery percentage and time
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"
@@ -149,9 +149,9 @@ addAppToDock() {
   defaults write com.apple.dock persistent-apps -array-add "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/$1.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>"
 }
 
-  defaults write com.apple.dock springboard-columns -int $1;
-  defaults write com.apple.dock springboard-rows -int $2;
 setLaunchPadGrid() {
+  defaults write com.apple.dock springboard-columns -int "$1";
+  defaults write com.apple.dock springboard-rows -int "$2";
   defaults write com.apple.dock ResetLaunchPad -bool TRUE;
 }
 
