@@ -17,6 +17,7 @@ Inspiration and some code came from these sources:
 
 - [@nicksp](https://github.com/nicksp) (Nick S. Plekhanov) [https://github.com/nicksp/dotfiles](https://github.com/nicksp/dotfiles)
 - [@mathiasbynens](https://github.com/mathiasbynens) (Mathias Bynens) [https://github.com/mathiasbynens/dotfiles](https://github.com/mathiasbynens/dotfiles)
+- [@jespada](https://github.com/jespada) (Jorge Espada) Shell Script tips
 
 ## License
 
