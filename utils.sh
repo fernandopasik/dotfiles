@@ -16,17 +16,17 @@ prompt() {
 }
 
 currentName() {
-  echo $(id -F)
+  id -F
 }
 
 currentFirstName() {
-  echo $(id -F | grep -o "^\S*")
+  id -F | grep -o "^\S*"
 }
 
 currentUser() {
-  echo $(whoami)
+  whoami
 }
 
 currentEmail() {
-  echo $(/usr/libexec/PlistBuddy -c "print :Accounts:0:AccountID" ~/Library/Preferences/MobileMeAccounts.plist)
+  /usr/libexec/PlistBuddy -c "print :Accounts:0:AccountID" ~/Library/Preferences/MobileMeAccounts.plist
 }
