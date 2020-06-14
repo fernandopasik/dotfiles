@@ -6,7 +6,7 @@ title "Homebrew"
 log "Check & Install OS X Command Line Tools"
 xcode-select --install
 
-if [ ! -f "$(which brew)" ]; then
+if [ ! -f "$(command -v brew)" ]; then
   log "Installing Package manager"
   yes '' | /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 else
