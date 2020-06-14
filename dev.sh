@@ -12,7 +12,6 @@ nvm install 14
 log "Yarn Setup"
 # ------------------
 
-NPM_USERNAME=$(currentUser)
 AUTHOR_NAME=$(currentName)
 AUTHOR_EMAIL=$(currentEmail)
 AUTHOR_URL="https://$(currentUser).com"
