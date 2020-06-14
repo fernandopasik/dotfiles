@@ -1,5 +1,10 @@
 # dotfiles
 
+[![Build Status][badge-ci]][url-ci]
+
+[badge-ci]: https://circleci.com/gh/fernandopasik/dotfiles.svg?style=svg
+[url-ci]: https://circleci.com/gh/fernandopasik/dotfiles 'Build Status'
+
 > My personal dotfiles for bootstrapping my computer
 
 ```shell
