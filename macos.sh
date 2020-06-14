@@ -129,9 +129,9 @@ defaults write com.apple.dock autohide -bool true
 defaults write com.apple.dock wvous-tl-corner -int 10
 defaults write com.apple.dock wvous-tl-modifier -int 0
 
-declare -a apps=(
+APPS="
   Launchpad
-  "Google Chrome"
+  Google\ Chrome
   Facetime
   Messages
   WhatsApp
@@ -141,9 +141,9 @@ declare -a apps=(
   Photos
   Spotify
   Hyper
-  "Github Desktop"
-  "Visual Studio Code"
-)
+  Github\ Desktop
+  Visual\ Studio\ Code
+"
 
 function addAppToDock {
   defaults write com.apple.dock persistent-apps -array-add "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/$1.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>"
@@ -162,9 +162,9 @@ setLaunchPadGrid 8 6
 defaults delete com.apple.dock persistent-apps
 
 # Add apps to Dock
-for app in "${apps[@]}"
+for APP in ${APPS}
 do
-  addAppToDock "$app"
+  addAppToDock "${APP}"
 done
 
 # Refresh Dock

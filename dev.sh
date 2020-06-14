@@ -51,34 +51,22 @@ mv /usr/local/bin/code-insiders /usr/local/bin/code
 
 # Install extensions
 
-declare -a extensions=(
-  # Docker
+EXTENSIONS="
   ms-azuretools.vscode-docker
-  # Kubernetes
   ms-kubernetes-tools.vscode-kubernetes-tools
-  # EditorConfig
   EditorConfig.EditorConfig
-  # Eslint
   dbaeumer.vscode-eslint
-  # GitLens
   eamodio.gitlens
-  # GraphQL
   kumar-harsh.graphql-for-vscode
-  # Jest
   orta.vscode-jest
-  # Npm
   eg2.vscode-npm-script
-  # Prettier
   esbenp.prettier-vscode
-  # Lit-html
   runem.lit-plugin
-  # Github Pull Requests
   github.vscode-pull-request-github
-  # Github Theme
   github.github-vscode-theme
-)
+"
 
-for extension in "${extensions[@]}"
+for EXTENSION in ${EXTENSIONS}
 do
-  code --install-extension "$extension" --force
+  code --install-extension "${EXTENSION}" --force
 done
