@@ -131,7 +131,7 @@ defaults write com.apple.dock wvous-tl-modifier -int 0
 
 APPS="
   Launchpad
-  Google\ Chrome
+  Google*Chrome
   Facetime
   Messages
   WhatsApp
@@ -141,8 +141,8 @@ APPS="
   Photos
   Spotify
   Hyper
-  Github\ Desktop
-  Visual\ Studio\ Code
+  Github*Desktop
+  Visual*Studio*Code*-*Insiders
 "
 
 addAppToDock() {
@@ -164,7 +164,7 @@ defaults delete com.apple.dock persistent-apps
 # Add apps to Dock
 for APP in ${APPS}
 do
-  addAppToDock "${APP}"
+  addAppToDock "${APP//\*/ }"
 done
 
 # Refresh Dock
