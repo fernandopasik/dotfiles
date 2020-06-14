@@ -1,32 +1,32 @@
 #!/bin/sh
 
-function title {
+title() {
   echo
   echo "\033[34;1m$1\033[0m"
   echo
 }
 
-function log {
+log() {
   echo "\033[37;1m$1\033[0m"
 }
 
-function prompt {
+prompt() {
   read input
   echo ${input:-$1}
 }
 
-function currentName {
+currentName() {
   echo $(id -F)
 }
 
-function currentFirstName {
+currentFirstName() {
   echo $(id -F | grep -o "^\S*")
 }
 
-function currentUser {
+currentUser() {
   echo $(whoami)
 }
 
-function currentEmail {
+currentEmail() {
   echo $(/usr/libexec/PlistBuddy -c "print :Accounts:0:AccountID" ~/Library/Preferences/MobileMeAccounts.plist)
 }
