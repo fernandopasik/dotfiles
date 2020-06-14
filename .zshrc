@@ -20,6 +20,10 @@ alias npmls="npm ls --depth 0"
 export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
 
+# Pure prompt init
+autoload -U promptinit; promptinit
+prompt pure
+
 source ~/.profile
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

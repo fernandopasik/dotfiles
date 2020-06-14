@@ -20,6 +20,7 @@ AUTHOR_URL="https://$(currentUser).com"
 # Installing yarn global packages
 yarn global add \
   npm-check-updates \
+  pure-prompt \
   yo \
   firebase-tools \
   imagemin-cli \
