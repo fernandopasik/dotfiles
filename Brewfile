@@ -8,6 +8,7 @@ tap 'homebrew/services'
 
 # Shell
 brew 'zsh'
+brew 'zsh-syntax-highlighting'
 
 # Languages
 brew 'go'

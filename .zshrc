@@ -21,3 +21,5 @@ export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
 
 source ~/.profile
+
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
