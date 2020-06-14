@@ -84,5 +84,5 @@ declare -a extensions=(
 
 for extension in "${extensions[@]}"
 do
-  code-insiders --install-extension "$extension" --force
+  code --install-extension "$extension" --force
 done
