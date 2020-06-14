@@ -130,23 +130,23 @@ defaults write com.apple.dock wvous-tl-corner -int 10
 defaults write com.apple.dock wvous-tl-modifier -int 0
 
 APPS="
-  Launchpad
-  Google*Chrome
-  Facetime
-  Messages
-  WhatsApp
-  Notes
-  Reminders
-  Stocks
-  Photos
-  Spotify
-  Hyper
-  Github*Desktop
-  Visual*Studio*Code*-*Insiders
+  System/Applications/Launchpad
+  Applications/Google*Chrome
+  System/Applications/Facetime
+  System/Applications/Messages
+  Applications/WhatsApp
+  System/Applications/Notes
+  System/Applications/Reminders
+  System/Applications/Stocks
+  System/Applications/Photos
+  Applications/Spotify
+  Applications/Hyper
+  Applications/Github*Desktop
+  Applications/Visual*Studio*Code*-*Insiders
 "
 
 addAppToDock() {
-  defaults write com.apple.dock persistent-apps -array-add "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/$1.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>"
+  defaults write com.apple.dock persistent-apps -array-add "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/$1.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>"
 }
 
 setLaunchPadGrid() {
