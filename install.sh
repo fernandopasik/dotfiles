@@ -1,7 +1,5 @@
 #!/bin/sh
 
-cd `dirname $0`
-
 . utils.sh
 
 title "DOTFILES Installation"
