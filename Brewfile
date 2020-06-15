@@ -10,6 +10,7 @@ tap 'homebrew/services'
 brew 'zsh'
 brew 'zsh-syntax-highlighting'
 brew 'shellcheck'
+brew 'pre-commit'
 
 # Languages
 brew 'go'
