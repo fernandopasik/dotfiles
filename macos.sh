@@ -161,7 +161,8 @@ defaults delete com.apple.dock persistent-apps
 # Add apps to Dock
 for APP in ${APPS}
 do
-  addAppToDock "${APP//\*/ }"
+  APP_NAME=$(sed "s/*/ /g" <<< "${APP}")
+  addAppToDock "$APP_NAME"
 done
 
 # Refresh Dock
