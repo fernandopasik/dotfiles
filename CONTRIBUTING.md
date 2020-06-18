@@ -14,3 +14,4 @@ Ensure the bug or feature has not been reported before searching by [searching](
 6. Please add a clear description of the problem and solution
 7. Include any related issue number
 8. Please ensure the PR passes the automated checks
+   - [Circle CI](https://circleci.com/gh/fernandopasik/.dotfiles)
