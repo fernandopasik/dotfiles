@@ -28,3 +28,4 @@ prompt pure
 source ~/.profile
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+export PATH="/usr/local/opt/ruby/bin:$PATH"
