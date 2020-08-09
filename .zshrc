@@ -28,4 +28,7 @@ prompt pure
 source ~/.profile
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-export PATH="/usr/local/opt/ruby/bin:$PATH"
+export RUBY_HOME=/usr/local/opt/ruby/bin
+export GEM_PATH=/usr/local/opt/ruby/lib/ruby/gems/2.7.0
+export GEM_HOME=$GEM_PATH
+export PATH=$RUBY_HOME:$GEM_HOME/bin:$PATH
