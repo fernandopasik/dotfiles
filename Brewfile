@@ -43,8 +43,6 @@ cask 'font-jetbrains-mono'
 cask 'visual-studio-code-insiders'
 cask 'github-beta'
 cask 'hyper-canary'
-cask 'sketch'
-cask 'zeplin'
 
 # QuickLook plugins
 cask 'qlcolorcode'
@@ -67,11 +65,13 @@ cask 'zoomus'
 cask 'coconutbattery'
 cask 'google-backup-and-sync'
 cask 'imageoptim'
+cask 'sketch'
 cask 'smcfancontrol'
 cask 'spectacle'
 cask 'spotify'
 cask 'the-unarchiver'
 cask 'vlc'
+cask 'zeplin'
 
 # Games
 cask 'openemu-experimental'
