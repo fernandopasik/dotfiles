@@ -14,5 +14,13 @@ else
   brew update
 fi
 
-log "Install packages"
-brew bundle --no-lock
+log "Do you want to install only dev packages? (y/N)"
+MORE=$(prompt "N")
+if [ "$MORE" = "Y" ] || [ "$MORE" = "y" ];
+  then
+    log "Installing only dev packages"
+    brew bundle --no-lock --file Brewfile.dev
+  else
+    log "Installing all packages"
+    brew bundle --no-lock
+fi;
