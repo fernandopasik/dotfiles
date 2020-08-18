@@ -61,16 +61,18 @@ cask 'telegram-desktop'
 cask 'whatsapp'
 cask 'zoomus'
 
+# Essential Apps
+cask 'spectacle'
+cask 'the-unarchiver'
+cask 'vlc'
+
 # Apps
 cask 'coconutbattery'
 cask 'google-backup-and-sync'
 cask 'imageoptim'
 cask 'sketch'
 cask 'smcfancontrol'
-cask 'spectacle'
 cask 'spotify'
-cask 'the-unarchiver'
-cask 'vlc'
 cask 'zeplin'
 
 # Games
