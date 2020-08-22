@@ -26,6 +26,7 @@ brew 'yarn', args: ['ignore-dependencies']
 brew 'httpie'
 brew 'docker'
 brew 'docker-compose'
+brew 'docker-machine'
 brew 'kubernetes-cli'
 brew 'minikube'
 brew 'helm'
