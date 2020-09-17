@@ -29,8 +29,7 @@ brew 'kubernetes-cli'
 brew 'minikube'
 brew 'helm'
 brew 'circleci'
-tap 'github/gh'
-brew 'github/gh/gh'
+brew 'gh'
 
 # Browsers
 cask 'google-chrome'
