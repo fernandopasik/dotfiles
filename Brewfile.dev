@@ -61,6 +61,7 @@ cask 'whatsapp'
 cask 'zoomus'
 
 # Essential Apps
+cask 'logitech-options'
 cask 'spectacle'
 cask 'the-unarchiver'
 cask 'vlc'
