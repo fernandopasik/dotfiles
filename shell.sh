@@ -5,15 +5,6 @@ CURRENT_DIR=$PWD
 
 title "Shell Setup"
 
-log "Create empty profile file"
-touch ~/.profile
-
-log "Link my zsh config file"
-ln -sfn "$PWD"/.zshrc ~/.zshrc
-
-log "Link my hyper config file"
-ln -sfn "$PWD"/.hyper.js ~/.hyper.js
-
 # ------------------
 log "Oh My Zsh"
 # ------------------
@@ -30,3 +21,12 @@ else
   git pull
   cd "$CURRENT_DIR" || exit
 fi
+
+log "Create empty profile file"
+touch ~/.profile
+
+log "Link my zsh config file"
+ln -sfn "$PWD"/.zshrc ~/.zshrc
+
+log "Link my hyper config file"
+ln -sfn "$PWD"/.hyper.js ~/.hyper.js
