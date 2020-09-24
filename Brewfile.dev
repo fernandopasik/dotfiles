@@ -14,7 +14,7 @@ brew 'pre-commit'
 
 # Languages
 brew 'go'
-cask 'java'
+brew 'openjdk'
 brew 'python'
 brew 'ruby'
 
