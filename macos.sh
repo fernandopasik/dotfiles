@@ -225,14 +225,18 @@ defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebK
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
 ###############################################################################
+# Google Chrome                                        #
+###############################################################################
+
+# Set chrome as default browser
+open -a "Google Chrome" --args --make-default-browser
+
+###############################################################################
 # Custom Apps                                                                 #
 ###############################################################################
 
 # Add support for quicklook plugins in macOS >= 10.15
 xattr -d -r com.apple.quarantine ~/Library/QuickLook
-
-# Set chrome as default browser
-open -a "Google Chrome" --args --make-default-browser
 
 defaults write com.divisiblebyzero.Spectacle StatusItemEnabled -bool false
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Spectacle.app", hidden:true, name:"Spectacle"}'
