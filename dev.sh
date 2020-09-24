@@ -1,6 +1,8 @@
 #!/bin/sh
 . utils.sh
 
+export PATH=/usr/local/bin:$PATH
+
 title "Dev Env Setup"
 
 # ------------------
