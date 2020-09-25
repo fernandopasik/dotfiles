@@ -45,7 +45,9 @@ cask 'hyper-canary'
 
 # QuickLook plugins
 cask 'qlcolorcode'
+cask 'qlimagesize'
 cask 'qlmarkdown'
+cask 'qlstephen'
 cask 'quicklook-json'
 cask 'quicklook-csv'
 cask 'webpquicklook'

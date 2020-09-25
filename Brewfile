@@ -7,6 +7,7 @@ cask 'imageoptim'
 cask 'sketch'
 cask 'smcfancontrol'
 cask 'spotify'
+cask 'transmission'
 cask 'zeplin'
 
 # Games
