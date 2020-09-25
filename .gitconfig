@@ -112,3 +112,9 @@
 										git rebase master; \
 									};f"
 	force-push = "git push --force-with-lease"
+
+	past-commit = "!f() { \
+										GIT_AUTHOR_DATE=$(date -v \"-$1\" '+%a %h %d %H:%M:%S %Y %z') \
+										GIT_COMMITTER_DATE=$(date -v \"-$1\" '+%a %h %d %H:%M:%S %Y %z') \
+										git commit; \
+									};f"
