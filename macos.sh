@@ -114,11 +114,11 @@ chflags nohidden ~/Library
 # Set the icon size of Dock items to 60 pixels
 defaults write com.apple.dock tilesize -int 60
 
-# Enable spring loading for all Dock items
-defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
-
 # Change minimize/maximize window effect
 defaults write com.apple.dock mineffect -string "scale"
+
+# Enable spring loading for all Dock items
+defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
 
 # Show indicator lights for open applications in the Dock
 defaults write com.apple.dock show-process-indicators -bool true
