@@ -54,6 +54,8 @@ mv /usr/local/bin/code-insiders /usr/local/bin/code
 # Install extensions
 
 EXTENSIONS="
+  dart-code.dart-code
+  dart-code.flutter
   ms-azuretools.vscode-docker
   ms-kubernetes-tools.vscode-kubernetes-tools
   EditorConfig.EditorConfig
