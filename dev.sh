@@ -56,18 +56,18 @@ mv /usr/local/bin/code-insiders /usr/local/bin/code
 EXTENSIONS="
   dart-code.dart-code
   dart-code.flutter
-  ms-azuretools.vscode-docker
-  ms-kubernetes-tools.vscode-kubernetes-tools
-  editorconfig.editorconfig
   dbaeumer.vscode-eslint
   eamodio.gitlens
-  kumar-harsh.graphql-for-vscode
-  orta.vscode-jest
+  editorconfig.editorconfig
   eg2.vscode-npm-script
   esbenp.prettier-vscode
-  runem.lit-plugin
-  github.vscode-pull-request-github
   github.github-vscode-theme
+  github.vscode-pull-request-github
+  kumar-harsh.graphql-for-vscode
+  ms-azuretools.vscode-docker
+  ms-kubernetes-tools.vscode-kubernetes-tools
+  orta.vscode-jest
+  runem.lit-plugin
 "
 
 for EXTENSION in ${EXTENSIONS}
