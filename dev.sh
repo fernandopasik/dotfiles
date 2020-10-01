@@ -58,7 +58,7 @@ EXTENSIONS="
   dart-code.flutter
   ms-azuretools.vscode-docker
   ms-kubernetes-tools.vscode-kubernetes-tools
-  EditorConfig.EditorConfig
+  editorconfig.editorconfig
   dbaeumer.vscode-eslint
   eamodio.gitlens
   kumar-harsh.graphql-for-vscode
