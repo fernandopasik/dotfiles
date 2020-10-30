@@ -63,6 +63,7 @@ EXTENSIONS="
   esbenp.prettier-vscode
   github.github-vscode-theme
   github.vscode-pull-request-github
+  golang.go
   kumar-harsh.graphql-for-vscode
   ms-azuretools.vscode-docker
   ms-kubernetes-tools.vscode-kubernetes-tools
