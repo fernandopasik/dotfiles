@@ -10,6 +10,13 @@
   "files.trimTrailingWhitespace": true,
   "gitlens.codeLens.authors.enabled": false,
   "gitlens.codeLens.enabled": false,
+  "go.useLanguageServer": true,
+  "[go]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    },
+    "editor.defaultFormatter": "golang.go"
+  },
   "html.autoClosingTags": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "prettier.requireConfig": true,
