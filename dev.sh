@@ -54,8 +54,6 @@ mv /usr/local/bin/code-insiders /usr/local/bin/code
 # Install extensions
 
 EXTENSIONS="
-  dart-code.dart-code
-  dart-code.flutter
   dbaeumer.vscode-eslint
   eamodio.gitlens
   editorconfig.editorconfig
