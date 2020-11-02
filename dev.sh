@@ -65,6 +65,7 @@ EXTENSIONS="
   kumar-harsh.graphql-for-vscode
   ms-azuretools.vscode-docker
   ms-kubernetes-tools.vscode-kubernetes-tools
+  msjsdiag.vscode-react-native
   orta.vscode-jest
   runem.lit-plugin
 "
