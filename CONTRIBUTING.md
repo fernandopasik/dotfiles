@@ -15,3 +15,7 @@ Ensure the bug or feature has not been reported before searching by [searching](
 7. Include any related issue number
 8. Please ensure the PR passes the automated checks
    - [Circle CI](https://circleci.com/gh/fernandopasik/.dotfiles)
+
+## Styleguides
+
+- Shell scripts styles are checked with [shellcheck](https://www.shellcheck.net/).
