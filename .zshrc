@@ -12,7 +12,8 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:$HOME/
 
 source $ZSH/oh-my-zsh.sh
 
-alias up!="brew update >/dev/null; brew outdated;brew upgrade;brew cleanup;yarn global upgrade"
+alias yarn_up!="yarn global upgrade 2>&1 | grep -Fv -e 'warning' -e 'info' -e '├─' -e '└─'"
+alias up!="brew update >/dev/null; brew outdated;brew upgrade;brew cleanup;yarn_up!"
 
 alias npmlsg="npm ls -g --depth 0"
 alias npmls="npm ls --depth 0"
