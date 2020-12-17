@@ -6,9 +6,12 @@ export ZSH_THEME="agnoster"
 # Which plugins would you like to load?
 plugins=(osx git npm docker httpie)
 
+# Go config
+export GOPATH=$HOME/.go
+
 # User configuration
 export DEFAULT_USER=$(whoami)
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:$HOME/.config/yarn/global/node_modules/.bin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:$HOME/.config/yarn/global/node_modules/.bin:$GOPATH/bin"
 
 source $ZSH/oh-my-zsh.sh
 
