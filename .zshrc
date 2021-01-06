@@ -21,6 +21,8 @@ alias up!="brew update >/dev/null; brew outdated;brew upgrade;brew cleanup;yarn_
 alias npmlsg="npm ls -g --depth 0"
 alias npmls="npm ls --depth 0"
 
+alias dir_size="du -sh"
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
