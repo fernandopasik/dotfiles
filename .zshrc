@@ -21,7 +21,14 @@ alias up!="brew update >/dev/null; brew outdated;brew upgrade;brew cleanup;yarn_
 alias npmlsg="npm ls -g --depth 0"
 alias npmls="npm ls --depth 0"
 
-alias delete_xcode="sudo rm -rf $(xcode-select --print-path)"
+reset_command_line_tools() {
+  if [[ $(xcode-select --print-path) == *"CommandLineTools"* ]]; then
+    sudo rm -rf $(xcode-select --print-path)
+    echo "Command Line Tools deleted"
+  else
+    echo "Command Line Tools not present"
+  fi
+}
 
 alias dir_size="du -sh"
 
