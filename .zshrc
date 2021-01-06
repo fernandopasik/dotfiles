@@ -21,6 +21,8 @@ alias up!="brew update >/dev/null; brew outdated;brew upgrade;brew cleanup;yarn_
 alias npmlsg="npm ls -g --depth 0"
 alias npmls="npm ls --depth 0"
 
+alias delete_xcode="sudo rm -rf $(xcode-select --print-path)"
+
 alias dir_size="du -sh"
 
 # Exclude failed commands from history
