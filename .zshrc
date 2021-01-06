@@ -32,6 +32,8 @@ reset_command_line_tools() {
   fi
 }
 
+alias flush_dns="sudo killall -HUP mDNSResponder"
+
 alias dir_size="du -sh"
 
 # Exclude failed commands from history
