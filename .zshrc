@@ -23,6 +23,10 @@ alias npmls="npm ls --depth 0"
 
 alias dir_size="du -sh"
 
+# Exclude failed commands from history
+# https://superuser.com/questions/902241/how-to-make-zsh-not-store-failed-command
+zshaddhistory() { whence ${${(z)1}[1]} >| /dev/null || return 1 }
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
