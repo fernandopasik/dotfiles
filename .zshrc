@@ -32,6 +32,10 @@ reset_command_line_tools() {
   fi
 }
 
+kcdebug() {
+  kubectl run -i --tty --rm debug --image=busybox --restart=Never -- sh
+}
+
 alias flush_dns="sudo killall -HUP mDNSResponder"
 
 alias dir_size="du -sh"
