@@ -54,7 +54,7 @@ cask 'quicklook-csv'
 cask 'webpquicklook'
 
 # Chat
-cask 'slack-beta'
+cask 'slack'
 cask 'zoomus'
 
 # Essential Apps

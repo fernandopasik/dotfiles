@@ -2,7 +2,7 @@ instance_eval(File.read("Brewfile.dev"))
 
 # Chat
 cask 'skype'
-cask 'discord-canary'
+cask 'discord'
 cask 'messenger'
 cask 'signal-beta'
 cask 'telegram-desktop'
