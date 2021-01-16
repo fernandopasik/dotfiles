@@ -22,7 +22,6 @@
   "prettier.requireConfig": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "window.titleBarStyle": "native",
-  "window.zoomLevel": 0,
   "workbench.activityBar.visible": true,
   "workbench.colorTheme": "GitHub Dark",
   "workbench.commandPalette.preserveInput": false,
