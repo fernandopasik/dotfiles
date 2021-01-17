@@ -54,6 +54,7 @@ mv /usr/local/bin/code-insiders /usr/local/bin/code
 # Install extensions
 
 EXTENSIONS="
+  davidanson.vscode-markdownlint
   dbaeumer.vscode-eslint
   eamodio.gitlens
   editorconfig.editorconfig
@@ -67,6 +68,7 @@ EXTENSIONS="
   ms-kubernetes-tools.vscode-kubernetes-tools
   msjsdiag.vscode-react-native
   orta.vscode-jest
+  redhat.vscode-yaml
   runem.lit-plugin
 "
 
