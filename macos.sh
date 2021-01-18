@@ -210,10 +210,13 @@ defaults write com.apple.dock wvous-tl-modifier -int 0
 APPS="
   System/Applications/Launchpad
   Applications/Google*Chrome
+  System/Applications/Home
+  Applications/Todoist
   System/Applications/Facetime
   System/Applications/Messages
-  Applications/Signal*Beta
   Applications/WhatsApp
+  Applications/Messenger
+  Applications/Signal*Beta
   System/Applications/Notes
   Applications/Hyper
   Applications/Github*Desktop
