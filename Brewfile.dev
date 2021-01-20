@@ -41,7 +41,7 @@ cask 'microsoft-edge'
 # Dev Apps
 cask 'font-jetbrains-mono'
 cask 'visual-studio-code-insiders'
-cask 'github-beta'
+cask 'github'
 cask 'hyper-canary'
 
 # QuickLook plugins
