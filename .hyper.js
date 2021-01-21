@@ -1,10 +1,11 @@
 module.exports = {
   config: {
     updateChannel: 'canary',
-    fontSize: 14,
-    fontFamily: 'JetBrains Mono',
-    lineHeight: 1.2,
+    verminal: {
+      fontSize: 16,
+      fontFamily: 'JetBrains Mono',
+    },
   },
-  plugins: ['hyper-snazzy', 'hyperlinks', 'hyper-quit'],
+  plugins: ['hyperlinks', 'hyper-quit', 'verminal'],
   localPlugins: [],
 };
