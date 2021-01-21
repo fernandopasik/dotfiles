@@ -40,7 +40,7 @@ cask 'microsoft-edge'
 
 # Dev Apps
 cask 'font-jetbrains-mono'
-cask 'visual-studio-code-insiders'
+cask 'visual-studio-code'
 cask 'github'
 cask 'hyper-canary'
 

@@ -220,7 +220,7 @@ APPS="
   System/Applications/Notes
   Applications/Hyper
   Applications/Github*Desktop
-  Applications/Visual*Studio*Code*-*Insiders
+  Applications/Visual*Studio*Code
 "
 
 addAppToDock() {
