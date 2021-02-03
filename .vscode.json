@@ -28,5 +28,6 @@
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.showTabs": true,
   "workbench.sideBar.location": "right",
-  "workbench.startupEditor": "none"
+  "workbench.startupEditor": "none",
+  "spellright.ignoreFiles": ["**/yarn.lock", "**/.gitignore", "**/.spellignore"]
 }

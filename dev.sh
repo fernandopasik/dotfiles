@@ -51,6 +51,7 @@ ln -sfn "$PWD"/.vscode.json "${VSCODE_USER_FOLDER}/settings.json"
 # Install extensions
 
 EXTENSIONS="
+  ban.spellright
   davidanson.vscode-markdownlint
   dbaeumer.vscode-eslint
   eamodio.gitlens
