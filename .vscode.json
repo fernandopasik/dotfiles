@@ -29,5 +29,8 @@
   "workbench.editor.showTabs": true,
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "none",
+  "vs-kubernetes": {
+    "vs-kubernetes.minikube-path.mac": "~/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
+  },
   "spellright.ignoreFiles": ["**/yarn.lock", "**/.gitignore", "**/.spellignore"]
 }
