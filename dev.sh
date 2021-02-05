@@ -59,11 +59,14 @@ EXTENSIONS="
   eg2.vscode-npm-script
   esbenp.prettier-vscode
   github.github-vscode-theme
+  github.vscode-codeql
   github.vscode-pull-request-github
   golang.go
+  hbenl.vscode-test-explorer
   kumar-harsh.graphql-for-vscode
   ms-azuretools.vscode-docker
   ms-kubernetes-tools.vscode-kubernetes-tools
+  msjsdiag.debugger-for-chrome
   msjsdiag.vscode-react-native
   orta.vscode-jest
   redhat.vscode-yaml
