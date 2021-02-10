@@ -60,5 +60,6 @@ cask 'zoom'
 # Essential Apps
 cask 'logitech-options'
 cask 'spectacle'
+cask 'stats'
 cask 'the-unarchiver'
 cask 'vlc'
