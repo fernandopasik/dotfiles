@@ -17,6 +17,7 @@ brew 'go'
 brew 'openjdk'
 brew 'python'
 brew 'ruby'
+brew 'rust'
 
 # Dev Tools
 brew 'git'
