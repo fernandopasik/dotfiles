@@ -14,6 +14,8 @@ else
   brew update
 fi
 
+touch ~/.Brewfile.custom
+
 log "Do you want to install only dev packages? (y/N)"
 MORE=$(prompt "N")
 if [ "$MORE" = "Y" ] || [ "$MORE" = "y" ];
