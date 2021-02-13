@@ -4,7 +4,7 @@ instance_eval(File.read("Brewfile.dev"))
 cask 'skype'
 cask 'discord'
 cask 'messenger'
-cask 'signal-beta'
+cask 'signal'
 cask 'telegram-desktop'
 cask 'whatsapp'
 
