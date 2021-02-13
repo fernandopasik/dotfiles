@@ -17,6 +17,7 @@ cask 'sketch'
 cask 'smcfancontrol'
 cask 'spotify'
 cask 'transmission'
+cask 'vnc-viewer'
 cask 'zeplin'
 
 # Games
