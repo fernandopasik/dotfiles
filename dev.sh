@@ -62,6 +62,7 @@ EXTENSIONS="
   github.vscode-codeql
   github.vscode-pull-request-github
   golang.go
+  exiasr.hadolint
   hbenl.vscode-test-explorer
   kumar-harsh.graphql-for-vscode
   ms-azuretools.vscode-docker
