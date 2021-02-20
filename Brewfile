@@ -2,10 +2,10 @@ instance_eval(File.read("Brewfile.dev"))
 instance_eval(File.exist?("../.Brewfile.custom") ? File.read("../.Brewfile.custom") : '')
 
 # Chat
-cask 'skype'
 cask 'discord'
 cask 'messenger'
 cask 'signal'
+cask 'skype'
 cask 'telegram-desktop'
 cask 'whatsapp'
 
@@ -22,7 +22,7 @@ cask 'vnc-viewer'
 cask 'zeplin'
 
 # Games
-cask 'openemu-experimental'
 cask 'battle-net'
 cask 'epic-games'
+cask 'openemu-experimental'
 cask 'steam'
