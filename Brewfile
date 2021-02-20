@@ -21,7 +21,6 @@ cask 'vlc'
 cask 'google-chrome'
 
 # Chat
-cask 'discord'
 cask 'messenger'
 cask 'signal'
 cask 'skype'
@@ -59,6 +58,11 @@ if ENV['HOMEBREW_INSTALL_DEV']
   cask 'firefox'
   cask 'google-chrome-canary'
   cask 'microsoft-edge'
+
+  # Chat
+  cask 'slack'
+  cask 'zoom'
+  cask 'discord'
 end
 
 instance_eval(File.exist?("../.Brewfile.custom") ? File.read("../.Brewfile.custom") : '')

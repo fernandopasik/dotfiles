@@ -31,7 +31,3 @@ cask 'qlstephen'
 cask 'quicklook-csv'
 cask 'quicklook-json'
 cask 'webpquicklook'
-
-# Chat
-cask 'slack'
-cask 'zoom'
