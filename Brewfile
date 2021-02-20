@@ -68,7 +68,6 @@ if ENV['HOMEBREW_INSTALL_DEV']
   brew 'hadolint'
   brew 'helm'
   brew 'httpie'
-  cask 'imageoptim'
   brew 'kubernetes-cli'
   brew 'minikube'
   brew 'nvm'
@@ -78,9 +77,12 @@ if ENV['HOMEBREW_INSTALL_DEV']
   cask 'docker'
 
   # Dev Apps
+  cask 'android-studio'
   cask 'font-jetbrains-mono'
   cask 'github'
+  cask 'imageoptim'
   cask 'hyper-canary'
+  cask 'sequel-pro'
   cask 'visual-studio-code'
   cask 'vnc-viewer'
 
