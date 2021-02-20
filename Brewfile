@@ -45,6 +45,12 @@ cask 'epic-games'
 cask 'openemu-experimental'
 cask 'steam'
 
+# QuickLook plugins
+cask 'qlimagesize'
+cask 'quicklook-csv'
+cask 'quicklook-json'
+cask 'webpquicklook'
+
 if ENV['HOMEBREW_INSTALL_DEV']
   # Languages
   brew 'go'
@@ -86,6 +92,12 @@ if ENV['HOMEBREW_INSTALL_DEV']
   cask 'github'
   cask 'hyper-canary'
   cask 'visual-studio-code'
+
+  # QuickLook plugins
+  cask 'qlcolorcode'
+  cask 'qlmarkdown'
+  cask 'qlstephen'
+
 end
 
 instance_eval(File.exist?("../.Brewfile.custom") ? File.read("../.Brewfile.custom") : '')
