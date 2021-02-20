@@ -30,11 +30,9 @@ cask 'whatsapp'
 # Apps
 cask 'coconutbattery'
 cask 'google-backup-and-sync'
-cask 'imageoptim'
 cask 'smcfancontrol'
 cask 'spotify'
 cask 'transmission'
-cask 'vnc-viewer'
 
 # QuickLook plugins
 cask 'qlimagesize'
@@ -70,6 +68,7 @@ if ENV['HOMEBREW_INSTALL_DEV']
   brew 'hadolint'
   brew 'helm'
   brew 'httpie'
+  cask 'imageoptim'
   brew 'kubernetes-cli'
   brew 'minikube'
   brew 'nvm'
@@ -83,6 +82,7 @@ if ENV['HOMEBREW_INSTALL_DEV']
   cask 'github'
   cask 'hyper-canary'
   cask 'visual-studio-code'
+  cask 'vnc-viewer'
 
   # Design Apps
   cask 'miro'
