@@ -1,5 +1,4 @@
 instance_eval(File.read("Brewfile.dev"))
-instance_eval(File.exist?("../.Brewfile.custom") ? File.read("../.Brewfile.custom") : '')
 
 # Shell
 brew 'zsh'
@@ -37,3 +36,4 @@ cask 'battle-net'
 cask 'epic-games'
 cask 'openemu-experimental'
 cask 'steam'
+instance_eval(File.exist?("../.Brewfile.custom") ? File.read("../.Brewfile.custom") : '')
