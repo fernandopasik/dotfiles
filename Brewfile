@@ -1,5 +1,3 @@
-instance_eval(File.read("Brewfile.dev"))
-
 # Shell
 brew 'zsh'
 brew 'zsh-syntax-highlighting'
