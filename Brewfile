@@ -24,4 +24,5 @@ cask 'zeplin'
 # Games
 cask 'openemu-experimental'
 cask 'battle-net'
+cask 'epic-games'
 cask 'steam'
