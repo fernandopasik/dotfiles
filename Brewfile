@@ -17,6 +17,9 @@ cask 'stats'
 cask 'the-unarchiver'
 cask 'vlc'
 
+# Browsers
+cask 'google-chrome'
+
 # Chat
 cask 'discord'
 cask 'messenger'
@@ -50,6 +53,12 @@ if ENV['HOMEBREW_INSTALL_DEV']
   brew 'python'
   brew 'ruby'
   brew 'rust'
+
+  # Browsers
+  cask 'brave-browser'
+  cask 'firefox'
+  cask 'google-chrome-canary'
+  cask 'microsoft-edge'
 end
 
 instance_eval(File.exist?("../.Brewfile.custom") ? File.read("../.Brewfile.custom") : '')

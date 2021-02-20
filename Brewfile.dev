@@ -17,12 +17,6 @@ brew 'nvm'
 brew 'yarn', args: ['ignore-dependencies']
 cask 'docker'
 
-# Browsers
-cask 'firefox'
-cask 'google-chrome-canary'
-cask 'google-chrome'
-cask 'microsoft-edge'
-
 # Dev Apps
 cask 'font-jetbrains-mono'
 cask 'github'
