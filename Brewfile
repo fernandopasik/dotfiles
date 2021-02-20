@@ -1,6 +1,10 @@
 instance_eval(File.read("Brewfile.dev"))
 instance_eval(File.exist?("../.Brewfile.custom") ? File.read("../.Brewfile.custom") : '')
 
+# Shell
+brew 'zsh'
+brew 'zsh-syntax-highlighting'
+
 # Essential Apps
 cask 'logitech-options'
 cask 'spectacle'
