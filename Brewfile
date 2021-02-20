@@ -106,4 +106,4 @@ if ENV['HOMEBREW_INSTALL_GAMES']
   cask 'steam'
 end
 
-instance_eval(File.exist?("../.Brewfile.custom") ? File.read("../.Brewfile.custom") : '')
+instance_eval(File.exist?(ENV['HOME'] + "/.Brewfile.custom") ? File.read(ENV['HOME'] + "/.Brewfile.custom") : '')
