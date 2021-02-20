@@ -16,13 +16,13 @@ fi
 
 touch ~/.Brewfile.custom
 
-log "Do you want to install only dev packages? (y/N)"
-MORE=$(prompt "N")
+log "Do you want to install dev packages? (Y/n)"
+MORE=$(prompt "Y")
 if [ "$MORE" = "Y" ] || [ "$MORE" = "y" ];
   then
-    log "Installing only dev packages"
-    brew bundle --no-lock --file Brewfile.dev
-  else
-    log "Installing all packages"
-    brew bundle --no-lock
+    log "Installing dev packages"
+    export HOMEBREW_INSTALL_DEV=true
 fi;
+
+log "Installing essential packages"
+brew bundle --no-lock
