@@ -72,6 +72,7 @@ if ENV['HOMEBREW_INSTALL_DEV']
   brew 'minikube'
   brew 'nvm'
   brew 'pre-commit'
+  brew 'qemu'
   brew 'shellcheck'
   brew 'yarn', args: ['ignore-dependencies']
   cask 'docker'
