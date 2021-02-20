@@ -36,4 +36,14 @@ cask 'battle-net'
 cask 'epic-games'
 cask 'openemu-experimental'
 cask 'steam'
+
+if ENV['HOMEBREW_INSTALL_DEV']
+  # Languages
+  brew 'go'
+  brew 'openjdk'
+  brew 'python'
+  brew 'ruby'
+  brew 'rust'
+end
+
 instance_eval(File.exist?("../.Brewfile.custom") ? File.read("../.Brewfile.custom") : '')
