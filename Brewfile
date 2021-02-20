@@ -31,13 +31,10 @@ cask 'whatsapp'
 cask 'coconutbattery'
 cask 'google-backup-and-sync'
 cask 'imageoptim'
-cask 'miro'
-cask 'sketch'
 cask 'smcfancontrol'
 cask 'spotify'
 cask 'transmission'
 cask 'vnc-viewer'
-cask 'zeplin'
 
 # QuickLook plugins
 cask 'qlimagesize'
@@ -86,6 +83,11 @@ if ENV['HOMEBREW_INSTALL_DEV']
   cask 'github'
   cask 'hyper-canary'
   cask 'visual-studio-code'
+
+  # Design Apps
+  cask 'miro'
+  cask 'sketch'
+  cask 'zeplin'
 
   # QuickLook plugins
   cask 'qlcolorcode'
