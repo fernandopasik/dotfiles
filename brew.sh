@@ -24,5 +24,13 @@ if [ "$MORE" = "Y" ] || [ "$MORE" = "y" ];
     export HOMEBREW_INSTALL_DEV=true
 fi;
 
+log "Do you want to install games packages? (Y/n)"
+MORE=$(prompt "Y")
+if [ "$MORE" = "Y" ] || [ "$MORE" = "y" ];
+  then
+    log "Installing games packages"
+    export HOMEBREW_INSTALL_GAMES=true
+fi;
+
 log "Installing essential packages"
 brew bundle --no-lock

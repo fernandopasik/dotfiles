@@ -39,12 +39,6 @@ cask 'transmission'
 cask 'vnc-viewer'
 cask 'zeplin'
 
-# Games
-cask 'battle-net'
-cask 'epic-games'
-cask 'openemu-experimental'
-cask 'steam'
-
 # QuickLook plugins
 cask 'qlimagesize'
 cask 'quicklook-csv'
@@ -97,7 +91,14 @@ if ENV['HOMEBREW_INSTALL_DEV']
   cask 'qlcolorcode'
   cask 'qlmarkdown'
   cask 'qlstephen'
+end
 
+if ENV['HOMEBREW_INSTALL_GAMES']
+  # Games
+  cask 'battle-net'
+  cask 'epic-games'
+  cask 'openemu-experimental'
+  cask 'steam'
 end
 
 instance_eval(File.exist?("../.Brewfile.custom") ? File.read("../.Brewfile.custom") : '')
