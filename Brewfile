@@ -63,6 +63,29 @@ if ENV['HOMEBREW_INSTALL_DEV']
   cask 'slack'
   cask 'zoom'
   cask 'discord'
+
+  # Dev Tools
+  brew 'circleci'
+  brew 'dive'
+  brew 'gh'
+  brew 'git-lfs'
+  brew 'git'
+  brew 'hadolint'
+  brew 'helm'
+  brew 'httpie'
+  brew 'kubernetes-cli'
+  brew 'minikube'
+  brew 'nvm'
+  brew 'pre-commit'
+  brew 'shellcheck'
+  brew 'yarn', args: ['ignore-dependencies']
+  cask 'docker'
+
+  # Dev Apps
+  cask 'font-jetbrains-mono'
+  cask 'github'
+  cask 'hyper-canary'
+  cask 'visual-studio-code'
 end
 
 instance_eval(File.exist?("../.Brewfile.custom") ? File.read("../.Brewfile.custom") : '')
