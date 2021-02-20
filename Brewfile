@@ -1,6 +1,13 @@
 instance_eval(File.read("Brewfile.dev"))
 instance_eval(File.exist?("../.Brewfile.custom") ? File.read("../.Brewfile.custom") : '')
 
+# Essential Apps
+cask 'logitech-options'
+cask 'spectacle'
+cask 'stats'
+cask 'the-unarchiver'
+cask 'vlc'
+
 # Chat
 cask 'discord'
 cask 'messenger'
