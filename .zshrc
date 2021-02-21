@@ -21,6 +21,8 @@ alias up!="brew update >/dev/null; brew outdated;brew upgrade;brew cleanup;yarn_
 alias npmlsg="npm ls -g --depth 0"
 alias npmls="npm ls --depth 0"
 
+alias brew_cleanup="HOMEBREW_INSTALL_DEV=true HOMEBREW_INSTALL_GAMES=true brew bundle cleanup --file ~/.dotfiles/Brewfile"
+
 reset_command_line_tools() {
   if [[ $(xcode-select --print-path) == *"CommandLineTools"* ]]; then
     sudo rm -rf $(xcode-select --print-path)
