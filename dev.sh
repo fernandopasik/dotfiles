@@ -6,6 +6,12 @@ export PATH=/usr/local/bin:$PATH
 title "Dev Env Setup"
 
 # ------------------
+log "Create repos folder"
+# ------------------
+
+mkdir ~/Sites
+
+# ------------------
 log "Node Setup"
 # ------------------
 nvm install 14
