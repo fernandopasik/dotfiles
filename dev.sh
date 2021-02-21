@@ -10,6 +10,7 @@ log "Create repos folder"
 # ------------------
 
 mkdir ~/Sites
+touch ~/Sites/.metadata_never_index
 
 # ------------------
 log "Node Setup"
