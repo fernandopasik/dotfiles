@@ -10,6 +10,7 @@
   "files.trimTrailingWhitespace": true,
   "gitlens.codeLens.authors.enabled": false,
   "gitlens.codeLens.enabled": false,
+  "go.toolsManagement.autoUpdate": true,
   "go.useLanguageServer": true,
   "[go]": {
     "editor.codeActionsOnSave": {
