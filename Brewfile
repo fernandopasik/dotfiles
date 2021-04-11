@@ -83,6 +83,7 @@ if ENV['HOMEBREW_INSTALL_DEV']
   cask 'github'
   cask 'imageoptim'
   cask 'hyper-canary'
+  cask 'raspberry-pi-imager'
   cask 'sequel-pro'
   cask 'visual-studio-code'
   cask 'vnc-viewer'
