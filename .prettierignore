@@ -1,0 +1,10 @@
+.DS_Store
+.editorconfig
+.gitattributes
+.gitconfig
+.*ignore
+.zshrc
+*.sh
+*.terminal
+LICENSE
+Brewfile
