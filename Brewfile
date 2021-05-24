@@ -41,7 +41,7 @@ cask 'quicklook-csv'
 cask 'quicklook-json'
 cask 'webpquicklook'
 
-if ENV['HOMEBREW_INSTALL_DEV']
+if ENV['HOMEBREW_INSTALL_DEV'] || ENV['HOMEBREW_INSTALL_ALL']
   # Languages
   brew 'go'
   brew 'openjdk'
@@ -100,7 +100,7 @@ if ENV['HOMEBREW_INSTALL_DEV']
   cask 'qlstephen'
 end
 
-if ENV['HOMEBREW_INSTALL_GAMES']
+if ENV['HOMEBREW_INSTALL_GAMES'] || ENV['HOMEBREW_INSTALL_ALL']
   # Games
   cask 'battle-net'
   cask 'epic-games'
