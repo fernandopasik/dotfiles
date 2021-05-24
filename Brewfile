@@ -21,13 +21,6 @@ cask 'vlc'
 # Browsers
 cask 'google-chrome'
 
-# Chat
-cask 'messenger'
-cask 'signal'
-cask 'skype'
-cask 'telegram-desktop'
-cask 'whatsapp'
-
 # Apps
 cask 'coconutbattery'
 cask 'google-backup-and-sync'
@@ -58,7 +51,6 @@ if ENV['HOMEBREW_INSTALL_DEV'] || ENV['HOMEBREW_INSTALL_ALL']
   # Chat
   cask 'slack'
   cask 'zoom'
-  cask 'discord'
 
   # Dev Tools
   brew 'circleci'
@@ -98,6 +90,16 @@ if ENV['HOMEBREW_INSTALL_DEV'] || ENV['HOMEBREW_INSTALL_ALL']
   cask 'qlcolorcode'
   cask 'qlmarkdown'
   cask 'qlstephen'
+end
+
+if ENV['HOMEBREW_INSTALL_SOCIAL'] || ENV['HOMEBREW_INSTALL_ALL']
+  # Chat
+  cask 'discord'
+  cask 'messenger'
+  cask 'signal'
+  cask 'skype'
+  cask 'telegram-desktop'
+  cask 'whatsapp'
 end
 
 if ENV['HOMEBREW_INSTALL_GAMES'] || ENV['HOMEBREW_INSTALL_ALL']
