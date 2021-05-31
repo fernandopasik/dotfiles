@@ -4,7 +4,7 @@ export ZSH=$HOME/.oh-my-zsh
 export ZSH_THEME="agnoster"
 
 # Which plugins would you like to load?
-plugins=(docker git httpie npm osx)
+plugins=(docker git git-prompt httpie npm osx)
 
 # Go config
 export GOPATH=$HOME/.go
