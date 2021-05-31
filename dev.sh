@@ -15,7 +15,7 @@ touch ~/Sites/.metadata_never_index
 # ------------------
 log "Node Setup"
 # ------------------
-nvm install 14
+nvm install --lts
 
 # ------------------
 log "Yarn Setup"
