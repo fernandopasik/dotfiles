@@ -21,9 +21,8 @@ alias up!="brew update >/dev/null; brew outdated;brew upgrade;brew cleanup;yarn_
 alias npmlsg="npm ls -g --depth 0"
 alias npmls="npm ls --depth 0"
 
-alias brew_cleanup_all="HOMEBREW_INSTALL_ALL=true brew_cleanup"
-
-alias brew_cleanup="brew bundle cleanup --file ~/.dotfiles/Brewfile"
+alias brew_bundle_all="HOMEBREW_INSTALL_ALL=true brew_bundle"
+alias brew_bundle="brew bundle --file ~/.dotfiles/Brewfile --no-lock"
 
 reset_command_line_tools() {
   if [[ $(xcode-select --print-path) == *"CommandLineTools"* ]]; then
