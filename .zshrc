@@ -39,6 +39,17 @@ kcdebug() {
   kubectl run -i --tty --rm debug --image=busybox --restart=Never -- sh
 }
 
+ls_repos() {
+  for d in *; do
+    if [[ -d "$d" && -e "$d/.git" ]]; then
+      echo "$d $(cd "$d" && git_super_status | sed -r 's/(%G|%\{|%\})//g')"
+    else
+      echo "$d"
+    fi
+  done
+}
+alias repos="cd ~/Sites; ls_repos"
+
 alias flush_dns="sudo killall -HUP mDNSResponder"
 
 alias dir_size="du -sh"
