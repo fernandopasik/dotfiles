@@ -67,7 +67,7 @@ if ENV['HOMEBREW_INSTALL_DEV'] || ENV['HOMEBREW_INSTALL_ALL']
   brew 'pre-commit'
   brew 'qemu'
   brew 'shellcheck'
-  brew 'yarn', args: ['ignore-dependencies']
+  brew 'yarn'
   cask 'docker'
 
   # Dev Apps
