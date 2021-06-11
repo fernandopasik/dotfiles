@@ -26,7 +26,6 @@ cask 'coconutbattery'
 cask 'google-backup-and-sync'
 cask 'smcfancontrol'
 cask 'spotify'
-cask 'transmission'
 
 # QuickLook plugins
 cask 'qlimagesize'
@@ -109,6 +108,9 @@ if ENV['HOMEBREW_INSTALL_GAMES'] || ENV['HOMEBREW_INSTALL_ALL']
   cask 'epic-games'
   cask 'openemu-experimental'
   cask 'steam'
+
+  #Apps
+  cask 'transmission'
 end
 
 instance_eval(File.exist?(ENV['HOME'] + "/.Brewfile.custom") ? File.read(ENV['HOME'] + "/.Brewfile.custom") : '')
