@@ -71,25 +71,29 @@ if ENV['HOMEBREW_INSTALL_DEV'] || ENV['HOMEBREW_INSTALL_ALL']
   cask 'docker'
 
   # Dev Apps
-  cask 'android-studio'
   cask 'font-jetbrains-mono'
   cask 'github'
   cask 'imageoptim'
   cask 'hyper-canary'
-  cask 'raspberry-pi-imager'
   cask 'sequel-pro'
   cask 'visual-studio-code'
+
+  # QuickLook plugins
+  cask 'qlcolorcode'
+  cask 'qlmarkdown'
+  cask 'qlstephen'
+end
+
+if ENV['HOMEBREW_INSTALL_DEV_EXTENDED'] || ENV['HOMEBREW_INSTALL_ALL']
+  # Dev Apps
+  cask 'android-studio'
+  cask 'raspberry-pi-imager'
   cask 'vnc-viewer'
 
   # Design Apps
   cask 'miro'
   cask 'sketch'
   cask 'zeplin'
-
-  # QuickLook plugins
-  cask 'qlcolorcode'
-  cask 'qlmarkdown'
-  cask 'qlstephen'
 end
 
 if ENV['HOMEBREW_INSTALL_SOCIAL'] || ENV['HOMEBREW_INSTALL_ALL']
