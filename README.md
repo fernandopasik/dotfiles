@@ -8,6 +8,8 @@ My personal dotfiles for bootstrapping my computer
 
 <!-- BADGES - END -->
 
+## Install
+
 ```shell
 git clone --depth 1 https://github.com/fernandopasik/dotfiles.git ~/.dotfiles && ~/.dotfiles/install.sh
 ```
