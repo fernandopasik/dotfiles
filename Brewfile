@@ -110,6 +110,7 @@ if ENV['HOMEBREW_INSTALL_GAMES'] || ENV['HOMEBREW_INSTALL_ALL']
   # Games
   cask 'battle-net'
   cask 'epic-games'
+  cask 'gog-galaxy'
   cask 'openemu-experimental'
   cask 'steam'
 
