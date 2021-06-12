@@ -1,11 +1,11 @@
 # dotfiles
 
+My personal dotfiles for bootstrapping my computer
+
 [![Build Status][badge-ci]][url-ci]
 
 [badge-ci]: https://circleci.com/gh/fernandopasik/dotfiles.svg?style=svg
 [url-ci]: https://circleci.com/gh/fernandopasik/dotfiles 'Build Status'
-
-> My personal dotfiles for bootstrapping my computer
 
 ```shell
 git clone --depth 1 https://github.com/fernandopasik/dotfiles.git ~/.dotfiles && ~/.dotfiles/install.sh
