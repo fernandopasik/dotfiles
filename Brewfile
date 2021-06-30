@@ -23,7 +23,7 @@ cask 'google-chrome'
 
 # Apps
 cask 'coconutbattery'
-cask 'google-backup-and-sync'
+cask 'google-drive'
 cask 'smcfancontrol'
 cask 'spotify'
 
