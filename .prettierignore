@@ -6,5 +6,5 @@
 .zshrc
 *.sh
 *.terminal
-LICENSE
+/LICENSE
 Brewfile
