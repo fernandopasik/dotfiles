@@ -78,16 +78,16 @@
 	delete-branch = "!f() { \
 										export CURRENT=$(git rev-parse --abbrev-ref HEAD); \
 										echo \"$CURRENT\"; \
-										git checkout master; \
+										git checkout $(git main-branch); \
 										git branch -D $CURRENT; \
 									};f"
 	update-branch = "!f() { \
 										export CURRENT=$(git rev-parse --abbrev-ref HEAD); \
 										echo \"$CURRENT\"; \
-										git checkout master; \
+										git checkout $(git main-branch); \
 										git pull; \
 										git checkout $CURRENT; \
-										git rebase master; \
+										git rebase $(git main-branch); \
 									};f"
 	force-push = "git push --force-with-lease"
 	main-branch = "!f() { git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@'; };f"
