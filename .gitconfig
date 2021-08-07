@@ -90,6 +90,7 @@
 										git rebase master; \
 									};f"
 	force-push = "git push --force-with-lease"
+	main-branch = "!f() { git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@'; };f"
 	past-commit = "!f() { \
 										GIT_AUTHOR_DATE=$(date -v \"-$1\" '+%a %h %d %H:%M:%S %Y %z') \
 										GIT_COMMITTER_DATE=$(date -v \"-$1\" '+%a %h %d %H:%M:%S %Y %z') \
