@@ -66,11 +66,11 @@ EXTENSIONS="
   editorconfig.editorconfig
   eg2.vscode-npm-script
   esbenp.prettier-vscode
+  exiasr.hadolint
   github.github-vscode-theme
   github.vscode-codeql
   github.vscode-pull-request-github
   golang.go
-  exiasr.hadolint
   hbenl.vscode-test-explorer
   kumar-harsh.graphql-for-vscode
   ms-azuretools.vscode-docker
