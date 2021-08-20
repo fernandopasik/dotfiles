@@ -75,7 +75,6 @@ EXTENSIONS="
   kumar-harsh.graphql-for-vscode
   ms-azuretools.vscode-docker
   ms-kubernetes-tools.vscode-kubernetes-tools
-  msjsdiag.debugger-for-chrome
   msjsdiag.vscode-react-native
   orta.vscode-jest
   redhat.vscode-yaml
