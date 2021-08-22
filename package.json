@@ -10,6 +10,8 @@
     "prepare": "husky install"
   },
   "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
     "husky": "^7.0.2",
     "prettier": "^2.3.2",
     "prettier-plugin-packagejson": "^2.2.11"
