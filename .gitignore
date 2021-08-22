@@ -9,3 +9,8 @@ Thumbs.db
 # Files that might appear on external disks
 .Spotlight-V100
 .Trashes
+
+# npm
+node_modules
+npm-debug.log
+yarn-error.log
