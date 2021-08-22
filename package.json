@@ -1,0 +1,10 @@
+{
+  "name": "dotfiles",
+  "private": true,
+  "description": "My personal dotfiles for bootstrapping my computer",
+  "repository": "fernandopasik/dotfiles",
+  "license": "MIT",
+  "author": "Fernando Pasik <fernando@pasik.com.ar> (https://fernandopasik.com)",
+  "scripts": {},
+  "devDependencies": {}
+}
