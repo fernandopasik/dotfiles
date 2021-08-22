@@ -5,7 +5,9 @@
   "repository": "fernandopasik/dotfiles",
   "license": "MIT",
   "author": "Fernando Pasik <fernando@pasik.com.ar> (https://fernandopasik.com)",
-  "scripts": {},
+  "scripts": {
+    "format": "prettier --write ."
+  },
   "devDependencies": {
     "prettier": "^2.3.2",
     "prettier-plugin-packagejson": "^2.2.11"
