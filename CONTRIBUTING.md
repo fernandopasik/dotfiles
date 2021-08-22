@@ -19,3 +19,4 @@ Ensure the bug or feature has not been reported before searching by [searching](
 ## Styleguides
 
 - Shell scripts styles are checked with [shellcheck](https://www.shellcheck.net/).
+- [Prettier](https://prettier.io) will catch most styling issues that may exist in your code. You can check the status of your code styling by simply running `npm exec prettier`.
