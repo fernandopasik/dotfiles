@@ -81,7 +81,6 @@ EXTENSIONS="
   runem.lit-plugin
 "
 
-for EXTENSION in ${EXTENSIONS}
-do
+for EXTENSION in ${EXTENSIONS}; do
   code --install-extension "${EXTENSION}" --force
 done
