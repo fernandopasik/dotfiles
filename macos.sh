@@ -228,9 +228,9 @@ addAppToDock() {
 }
 
 setLaunchPadGrid() {
-  defaults write com.apple.dock springboard-columns -int "$1";
-  defaults write com.apple.dock springboard-rows -int "$2";
-  defaults write com.apple.dock ResetLaunchPad -bool TRUE;
+  defaults write com.apple.dock springboard-columns -int "$1"
+  defaults write com.apple.dock springboard-rows -int "$2"
+  defaults write com.apple.dock ResetLaunchPad -bool TRUE
 }
 
 # Set LaunchPad grid size
