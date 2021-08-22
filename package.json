@@ -6,9 +6,11 @@
   "license": "MIT",
   "author": "Fernando Pasik <fernando@pasik.com.ar> (https://fernandopasik.com)",
   "scripts": {
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "prepare": "husky install"
   },
   "devDependencies": {
+    "husky": "^7.0.2",
     "prettier": "^2.3.2",
     "prettier-plugin-packagejson": "^2.2.11"
   }
