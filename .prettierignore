@@ -4,7 +4,6 @@ package-lock.json
 .editorconfig
 .gitattributes
 .gitconfig
-.*ignore
 .zshrc
 *.terminal
 /LICENSE
