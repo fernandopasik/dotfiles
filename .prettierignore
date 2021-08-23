@@ -1,8 +1,6 @@
 .DS_Store
 node_modules
 package-lock.json
-.gitattributes
-.gitconfig
 .zshrc
 *.terminal
 /LICENSE
