@@ -1,84 +1,84 @@
 [include]
-	path = .gitconfig.local
+path = .gitconfig.local
 
 [filter "lfs"]
-	required = true
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
+required = true
+clean = git-lfs clean -- %f
+smudge = git-lfs smudge -- %f
+process = git-lfs filter-process
 
 [credential]
-	helper = osxkeychain
+helper = osxkeychain
 
 [apply]
-	# Detect whitespace errors when applying a patch
-	whitespace = fix
+# Detect whitespace errors when applying a patch
+whitespace = fix
 
 [core]
-	editor = code --wait
-	# Treat spaces before tabs and all kinds of trailing whitespace as an error
-	# [default] trailing-space: looks for spaces at the end of a line
-	# [default] space-before-tab: looks for spaces before tabs at the beginning of a line
-	whitespace = space-before-tab,-indent-with-non-tab,trailing-space
-	# Make `git rebase` safer on macOS
-	# More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
-	trustctime = false
-	# Prevent showing files whose names contain non-ASCII symbols as unversioned.
-	# http://michael-kuehnel.de/git/2014/11/21/git-mac-osx-and-german-umlaute.html
-	precomposeunicode = false
-	# Speed up commands involving untracked files such as `git status`.
-	# https://git-scm.com/docs/git-update-index#_untracked_cache
-	untrackedCache = true
+editor = code --wait
+# Treat spaces before tabs and all kinds of trailing whitespace as an error
+# [default] trailing-space: looks for spaces at the end of a line
+# [default] space-before-tab: looks for spaces before tabs at the beginning of a line
+whitespace = space-before-tab,-indent-with-non-tab,trailing-space
+# Make `git rebase` safer on macOS
+# More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
+trustctime = false
+# Prevent showing files whose names contain non-ASCII symbols as unversioned.
+# http://michael-kuehnel.de/git/2014/11/21/git-mac-osx-and-german-umlaute.html
+precomposeunicode = false
+# Speed up commands involving untracked files such as `git status`.
+# https://git-scm.com/docs/git-update-index#_untracked_cache
+untrackedCache = true
 
 [color]
-	# Use colors in Git commands that are capable of colored output when
-	# outputting to the terminal. (This is the default setting in Git ≥ 1.8.4.)
-	ui = auto
+# Use colors in Git commands that are capable of colored output when
+# outputting to the terminal. (This is the default setting in Git ≥ 1.8.4.)
+ui = auto
 
 [color "branch"]
-	current = yellow reverse
-	local = yellow
-	remote = green
+current = yellow reverse
+local = yellow
+remote = green
 
 [color "diff"]
-	meta = blue bold
-	frag = white bold # line info
-	old = red # deletions
-	new = green # additions
+meta = blue bold
+frag = white bold # line info
+old = red         # deletions
+new = green       # additions
 
 [color "status"]
-	added = yellow
-	changed = green
-	untracked = cyan
+added = yellow
+changed = green
+untracked = cyan
 
 [diff]
-	tool = code
-	# Detect copies as well as renames
-	renames = copies
+tool = code
+# Detect copies as well as renames
+renames = copies
 
 [help]
-	# Automatically correct and execute mistyped commands
-	autocorrect = 1
+# Automatically correct and execute mistyped commands
+autocorrect = 1
 
 [merge]
-	tool = code
-	# Include summaries of merged commits in newly created merge commit messages
-	log = true
+tool = code
+# Include summaries of merged commits in newly created merge commit messages
+log = true
 
 [pull]
-	rebase = true
+rebase = true
 
 [push]
-	# https://git-scm.com/docs/git-config#git-config-pushdefault
-	default = simple
-	# Make `git push` push relevant annotated tags when pushing branches out.
-	followTags = true
+# https://git-scm.com/docs/git-config#git-config-pushdefault
+default = simple
+# Make `git push` push relevant annotated tags when pushing branches out.
+followTags = true
 
 [alias]
-	branch-current = "rev-parse --abbrev-ref HEAD"
-	branch-delete = "!git checkout $(git branch-main); git branch -D @{-1}"
-	branch-main = "!git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@'"
-	branch-update = "!git checkout $(git branch-main); git pull; git checkout-previous; git rebase $(git branch-main)"
-	checkout-previous = "checkout @{-1}"
-	force-push = "push --force-with-lease"
-	past-commit = "!f() { GIT_AUTHOR_DATE=$(date -v \"-$1\" '+%a %h %d %H:%M:%S %Y %z') GIT_COMMITTER_DATE=$(date -v \"-$1\" '+%a %h %d %H:%M:%S %Y %z') git commit $2; };f"
+branch-current = "rev-parse --abbrev-ref HEAD"
+branch-delete = "!git checkout $(git branch-main); git branch -D @{-1}"
+branch-main = "!git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@'"
+branch-update = "!git checkout $(git branch-main); git pull; git checkout-previous; git rebase $(git branch-main)"
+checkout-previous = "checkout @{-1}"
+force-push = "push --force-with-lease"
+past-commit = "!f() { GIT_AUTHOR_DATE=$(date -v \"-$1\" '+%a %h %d %H:%M:%S %Y %z') GIT_COMMITTER_DATE=$(date -v \"-$1\" '+%a %h %d %H:%M:%S %Y %z') git commit $2; };f"
