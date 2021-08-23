@@ -75,7 +75,7 @@
 	followTags = true
 
 [alias]
-	delete-branch = "!git checkout $(git branch-main); git branch -D @{-1}"
+	branch-delete = "!git checkout $(git branch-main); git branch -D @{-1}"
 	update-branch = "!f() { \
 										export CURRENT=$(git branch-current); \
 										echo \"$CURRENT\"; \
