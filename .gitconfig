@@ -76,13 +76,13 @@
 
 [alias]
 	delete-branch = "!f() { \
-										export CURRENT=$(git rev-parse --abbrev-ref HEAD); \
+										export CURRENT=$(git branch-current); \
 										echo \"$CURRENT\"; \
 										git checkout $(git branch-main); \
 										git branch -D $CURRENT; \
 									};f"
 	update-branch = "!f() { \
-										export CURRENT=$(git rev-parse --abbrev-ref HEAD); \
+										export CURRENT=$(git branch-current); \
 										echo \"$CURRENT\"; \
 										git checkout $(git branch-main); \
 										git pull; \
