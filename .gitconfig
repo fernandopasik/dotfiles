@@ -89,7 +89,7 @@
 										git checkout $CURRENT; \
 										git rebase $(git branch-main); \
 									};f"
-	force-push = "git push --force-with-lease"
+	force-push = "push --force-with-lease"
 	branch-current = "rev-parse --abbrev-ref HEAD"
 	branch-main = "!f() { git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@'; };f"
 	past-commit = "!f() { \
