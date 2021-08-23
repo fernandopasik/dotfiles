@@ -75,7 +75,6 @@
 	followTags = true
 
 [alias]
-	branch-delete = "!git checkout $(git branch-main); git branch -D @{-1}"
 	update-branch = "!f() { \
 										export CURRENT=$(git branch-current); \
 										echo \"$CURRENT\"; \
@@ -85,6 +84,7 @@
 										git rebase $(git branch-main); \
 									};f"
 	branch-current = "rev-parse --abbrev-ref HEAD"
+	branch-delete = "!git checkout $(git branch-main); git branch -D @{-1}"
 	branch-main = "!git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@'"
 	checkout-previous = "checkout @{-1}"
 	force-push = "push --force-with-lease"
