@@ -81,8 +81,4 @@
 	branch-update = "!git checkout $(git branch-main); git pull; git checkout-previous; git rebase $(git branch-main)"
 	checkout-previous = "checkout @{-1}"
 	force-push = "push --force-with-lease"
-	past-commit = "!f() { \
-										GIT_AUTHOR_DATE=$(date -v \"-$1\" '+%a %h %d %H:%M:%S %Y %z') \
-										GIT_COMMITTER_DATE=$(date -v \"-$1\" '+%a %h %d %H:%M:%S %Y %z') \
-										git commit $2; \
-									};f"
+	past-commit = "!f() { GIT_AUTHOR_DATE=$(date -v \"-$1\" '+%a %h %d %H:%M:%S %Y %z') GIT_COMMITTER_DATE=$(date -v \"-$1\" '+%a %h %d %H:%M:%S %Y %z') git commit $2; };f"
