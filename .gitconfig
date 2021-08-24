@@ -80,6 +80,7 @@ co = "checkout"
 cob = "checkout -b"
 del = "branch -D"
 s = "status"
+undo = "reset HEAD~1 --mixed"
 
 branch-current = "rev-parse --abbrev-ref HEAD"
 branch-delete = "!git checkout $(git branch-main); git branch -D @{-1}"
