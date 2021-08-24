@@ -75,6 +75,12 @@ default = simple
 followTags = true
 
 [alias]
+br = "branch"
+co = "checkout"
+cob = "checkout -b"
+del = "branch -D"
+s = "status"
+
 branch-current = "rev-parse --abbrev-ref HEAD"
 branch-delete = "!git checkout $(git branch-main); git branch -D @{-1}"
 branch-main = "!git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@'"
