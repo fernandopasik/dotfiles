@@ -16,7 +16,7 @@
     "husky": "^7.0.2",
     "lint-staged": "^11.1.2",
     "prettier": "^2.3.2",
-    "prettier-plugin-packagejson": "^2.2.11",
+    "prettier-plugin-pkg": "^0.10.0",
     "prettier-plugin-sh": "^0.7.1",
     "shellcheck": "^1.0.0"
   }
