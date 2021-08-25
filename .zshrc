@@ -42,7 +42,7 @@ kcdebug() {
 ls_repos() {
   for d in *; do
     if [[ -d "$d" && -e "$d/.git" ]]; then
-      echo "$d $(cd "$d" && git_super_status | sed -r 's/(%G|%\{|%\})//g')"
+      echo "$d $(cd "$d" && git fetch -q && git_super_status | sed -r 's/(%G|%\{|%\})//g')"
     else
       echo "$d"
     fi
