@@ -64,7 +64,6 @@ if ENV['HOMEBREW_INSTALL_DEV'] || ENV['HOMEBREW_INSTALL_ALL']
   brew 'minikube'
   brew 'node'
   brew 'nvm'
-  brew 'pre-commit'
   brew 'qemu'
   brew 'shellcheck'
   brew 'yarn'
