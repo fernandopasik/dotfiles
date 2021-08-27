@@ -19,6 +19,7 @@
     "editor.defaultFormatter": "golang.go"
   },
   "html.autoClosingTags": true,
+  "git.autofetch": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "prettier.requireConfig": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
