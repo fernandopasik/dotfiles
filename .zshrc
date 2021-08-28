@@ -43,7 +43,10 @@ repos() {
   cd ~/Sites;
   for d in *; do
     if [[ -d "$d" && -e "$d/.git" ]]; then
-      echo "$d $(cd "$d" && git fetch -q && git_super_status | sed -r 's/(%G|%\{|%\})//g')"
+      cd "$d"
+      git fetch -q
+      echo "$d $(git_super_status | sed -r 's/(%G|%\{|%\})//g')"
+      cd ~/Sites;
     else
       echo "$d"
     fi
