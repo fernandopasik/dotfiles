@@ -1,4 +1,4 @@
 {
   "*": ["prettier --check"],
-  "*.sh": ["shellcheck -P . -x *.sh"]
+  "*.sh": ["shellcheck -x"]
 }
