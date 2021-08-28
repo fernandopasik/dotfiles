@@ -73,7 +73,7 @@ if ENV['HOMEBREW_INSTALL_DEV'] || ENV['HOMEBREW_INSTALL_ALL']
   cask 'font-jetbrains-mono'
   cask 'github'
   cask 'imageoptim'
-  cask 'hyper-canary'
+  cask 'hyper'
   cask 'sequel-pro'
   cask 'visual-studio-code'
 
