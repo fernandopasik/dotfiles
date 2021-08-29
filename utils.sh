@@ -43,7 +43,7 @@ repos() {
   for d in *; do
     if [[ -d "$d" && -e "$d/.git" ]]; then
       cd "$d"
-      $@
+      "$@"
       echo "$d $(git_super_status | sed -r 's/(%G|%\{|%\})//g')"
       cd "$REPOS"
     else
