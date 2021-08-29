@@ -1,8 +1,10 @@
 #!/bin/sh
 
 title() {
+  BLUE='\033[0;34m'
+  NC='\033[0m' # No Color
   echo
-  echo "\033[34;1m$1\033[0m"
+  echo "${BLUE}$1${NC}"
   echo
 }
 
