@@ -39,13 +39,13 @@ prompt() {
 
 repos() {
   REPOS=~/Sites
-  cd "$REPOS"
+  cd "$REPOS" || exit
   for d in *; do
     if [[ -d "$d" && -e "$d/.git" ]]; then
-      cd "$d"
+      cd "$d" || exit
       "$@"
       echo "$d $(git_super_status | sed -r 's/(%G|%\{|%\})//g')"
-      cd "$REPOS"
+      cd "$REPOS" || exit
     else
       echo "$d"
     fi
