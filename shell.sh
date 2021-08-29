@@ -3,7 +3,7 @@
 
 CURRENT_DIR=$PWD
 
-title "Shell Setup"
+heading "Shell Setup"
 
 # ------------------
 log "Oh My Zsh"

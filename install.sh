@@ -2,7 +2,7 @@
 
 . utils.sh
 
-title "DOTFILES Installation"
+heading "DOTFILES Installation"
 
 # Install pre-commit hooks
 pre-commit install

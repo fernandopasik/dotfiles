@@ -1,7 +1,7 @@
 #!/bin/sh
 . utils.sh
 
-title "Git Setup"
+heading "Git Setup"
 
 log "Link gitconfig file in user home dir"
 ln -sfn "$PWD"/.gitconfig ~/.gitconfig

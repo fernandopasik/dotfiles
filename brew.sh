@@ -1,7 +1,7 @@
 #!/bin/sh
 . utils.sh
 
-title "Homebrew"
+heading "Homebrew"
 
 log "Check & Install OS X Command Line Tools"
 xcode-select --install
