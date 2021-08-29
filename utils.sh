@@ -54,7 +54,7 @@ repos() {
 
 reset_command_line_tools() {
   CMD_PATH=$(xcode-select --print-path)
-  if [[ "$CMD_PATH" == *"CommandLineTools"* ]]; then
+  if test "${CMD_PATH#*CommandLineTools}" != "$CMD_PATH"; then
     sudo rm -rf "$CMD_PATH"
     echo "Command Line Tools deleted"
     xcode-select --install
