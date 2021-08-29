@@ -22,9 +22,9 @@ nvm alias default system
 log "Yarn Setup"
 # ------------------
 
-AUTHOR_NAME=$(currentName)
-AUTHOR_EMAIL=$(currentEmail)
-AUTHOR_URL="https://$(currentUser).com"
+AUTHOR_NAME=$(current_name)
+AUTHOR_EMAIL=$(current_email)
+AUTHOR_URL="https://$(current_user).com"
 
 # Installing yarn global packages
 yarn global add \

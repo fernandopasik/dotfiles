@@ -17,18 +17,18 @@ prompt() {
   echo "${input:-$1}"
 }
 
-currentName() {
+current_name() {
   id -F
 }
 
-currentFirstName() {
+current_first_name() {
   id -F | grep -o "^\S*"
 }
 
-currentUser() {
+current_user() {
   whoami
 }
 
-currentEmail() {
+current_email() {
   /usr/libexec/PlistBuddy -c "print :Accounts:0:AccountID" ~/Library/Preferences/MobileMeAccounts.plist
 }

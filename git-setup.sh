@@ -6,8 +6,8 @@ heading "Git Setup"
 log "Link gitconfig file in user home dir"
 ln -sfn "$PWD"/.gitconfig ~/.gitconfig
 
-GIT_USERNAME=$(currentName)
-GIT_EMAIL=$(currentEmail)
+GIT_USERNAME=$(current_name)
+GIT_EMAIL=$(current_email)
 
 log "What's your git username? ($GIT_USERNAME)"
 username=$(prompt "$GIT_USERNAME")
