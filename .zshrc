@@ -24,35 +24,6 @@ alias npmls="npm ls --depth 0"
 alias brew_bundle_all="HOMEBREW_INSTALL_ALL=true brew_bundle"
 alias brew_bundle="brew bundle --file ~/.dotfiles/Brewfile --no-lock"
 
-reset_command_line_tools() {
-  if [[ $(xcode-select --print-path) == *"CommandLineTools"* ]]; then
-    sudo rm -rf $(xcode-select --print-path)
-    echo "Command Line Tools deleted"
-    xcode-select --install
-    echo "Command Line Tools re-installed"
-  else
-    echo "Command Line Tools not present"
-  fi
-}
-
-kcdebug() {
-  kubectl run -i --tty --rm debug --image=busybox --restart=Never -- sh
-}
-
-repos() {
-  cd ~/Sites;
-  for d in *; do
-    if [[ -d "$d" && -e "$d/.git" ]]; then
-      cd "$d"
-      $@
-      echo "$d $(git_super_status | sed -r 's/(%G|%\{|%\})//g')"
-      cd ~/Sites;
-    else
-      echo "$d"
-    fi
-  done
-}
-
 alias flush_dns="sudo killall -HUP mDNSResponder"
 
 alias dir_size="du -sh"
