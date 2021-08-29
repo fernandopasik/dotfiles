@@ -38,13 +38,14 @@ prompt() {
 }
 
 repos() {
-  cd ~/Sites
+  REPOS=~/Sites
+  cd "$REPOS"
   for d in *; do
     if [[ -d "$d" && -e "$d/.git" ]]; then
       cd "$d"
       $@
       echo "$d $(git_super_status | sed -r 's/(%G|%\{|%\})//g')"
-      cd ~/Sites
+      cd "$REPOS"
     else
       echo "$d"
     fi
