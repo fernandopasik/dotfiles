@@ -13,7 +13,7 @@ export GOPATH=$HOME/.go
 export DEFAULT_USER=$(whoami)
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:$HOME/.config/yarn/global/node_modules/.bin:$GOPATH/bin"
 
-. $ZSH/oh-my-zsh.sh
+. "$ZSH"/oh-my-zsh.sh
 
 alias brew_bundle_all="HOMEBREW_INSTALL_ALL=true brew_bundle"
 alias brew_bundle="brew bundle --file ~/.dotfiles/Brewfile --no-lock"
