@@ -8,7 +8,6 @@ heading "Dev Env Setup"
 # ------------------
 log "Create repos folder"
 # ------------------
-
 mkdir ~/Sites
 touch ~/Sites/.metadata_never_index
 
@@ -30,7 +29,6 @@ npm install -g \
 # ------------------
 log "Yarn Setup"
 # ------------------
-
 AUTHOR_NAME=$(current_name)
 AUTHOR_EMAIL=$(current_email)
 AUTHOR_URL="https://$(current_user).com"
