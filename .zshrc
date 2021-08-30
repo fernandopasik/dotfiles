@@ -18,8 +18,6 @@ source $ZSH/oh-my-zsh.sh
 alias brew_bundle_all="HOMEBREW_INSTALL_ALL=true brew_bundle"
 alias brew_bundle="brew bundle --file ~/.dotfiles/Brewfile --no-lock"
 
-alias flush_dns="sudo killall -HUP mDNSResponder"
-
 # Exclude failed commands from history
 # https://superuser.com/questions/902241/how-to-make-zsh-not-store-failed-command
 zshaddhistory() { whence ${${(z)1}[1]} >| /dev/null || return 1 }

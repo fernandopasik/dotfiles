@@ -25,6 +25,10 @@ dir_size() {
   du -sh "$@"
 }
 
+flush_dns() {
+  sudo killall -HUP mDNSResponder
+}
+
 heading() {
   BLUE='\033[0;34m'
   NC='\033[0m' # No Color
