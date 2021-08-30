@@ -10,7 +10,8 @@ export plugins=(docker docker-compose git git-prompt golang httpie kubectl minik
 export GOPATH=$HOME/.go
 
 # User configuration
-export DEFAULT_USER=$(whoami)
+DEFAULT_USER=$(whoami)
+export DEFAULT_USER
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:$HOME/.config/yarn/global/node_modules/.bin:$GOPATH/bin"
 
 . "$ZSH"/oh-my-zsh.sh
