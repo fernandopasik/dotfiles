@@ -5,6 +5,14 @@ ask() {
   echo "${input:-$1}"
 }
 
+brew_bundle() {
+  brew bundle --file "$HOME"/.dotfiles/Brewfile --no-lock
+}
+
+brew_bundle_all() {
+  HOMEBREW_INSTALL_ALL=true brew_bundle
+}
+
 current_email() {
   /usr/libexec/PlistBuddy -c "print :Accounts:0:AccountID" ~/Library/Preferences/MobileMeAccounts.plist
 }

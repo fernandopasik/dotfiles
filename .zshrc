@@ -16,9 +16,6 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:$HOME/
 
 . "$ZSH"/oh-my-zsh.sh
 
-alias brew_bundle_all="HOMEBREW_INSTALL_ALL=true brew_bundle"
-alias brew_bundle="brew bundle --file ~/.dotfiles/Brewfile --no-lock"
-
 # Exclude failed commands from history
 # https://superuser.com/questions/902241/how-to-make-zsh-not-store-failed-command
 zshaddhistory() {
