@@ -17,28 +17,28 @@ fi
 touch ~/.Brewfile.custom
 
 log "Do you want to install dev packages? (Y/n)"
-CONFIRM=$(prompt "Y")
+CONFIRM=$(ask "Y")
 if [ "$CONFIRM" = "Y" ] || [ "$CONFIRM" = "y" ]; then
   log "Installing dev packages"
   export HOMEBREW_INSTALL_DEV=true
 fi
 
 log "Do you want to install more dev packages? (Y/n)"
-CONFIRM=$(prompt "Y")
+CONFIRM=$(ask "Y")
 if [ "$CONFIRM" = "Y" ] || [ "$CONFIRM" = "y" ]; then
   log "Installing dev packages"
   export HOMEBREW_INSTALL_DEV_EXTENDED=true
 fi
 
 log "Do you want to install social packages? (Y/n)"
-CONFIRM=$(prompt "Y")
+CONFIRM=$(ask "Y")
 if [ "$CONFIRM" = "Y" ] || [ "$CONFIRM" = "y" ]; then
   log "Installing social packages"
   export HOMEBREW_INSTALL_SOCIAL=true
 fi
 
 log "Do you want to install games packages? (Y/n)"
-CONFIRM=$(prompt "Y")
+CONFIRM=$(ask "Y")
 if [ "$CONFIRM" = "Y" ] || [ "$CONFIRM" = "y" ]; then
   log "Installing games packages"
   export HOMEBREW_INSTALL_GAMES=true
