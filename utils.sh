@@ -1,5 +1,10 @@
 #!/bin/sh
 
+ask() {
+  read -r input
+  echo "${input:-$1}"
+}
+
 current_email() {
   /usr/libexec/PlistBuddy -c "print :Accounts:0:AccountID" ~/Library/Preferences/MobileMeAccounts.plist
 }
@@ -34,11 +39,6 @@ kcdebug() {
 
 log() {
   echo "\033[37;1m$1\033[0m"
-}
-
-ask() {
-  read -r input
-  echo "${input:-$1}"
 }
 
 repos() {
