@@ -67,3 +67,11 @@ reset_command_line_tools() {
     echo "Command Line Tools not present"
   fi
 }
+
+up() {
+  brew update > /dev/null
+  brew outdated
+  brew upgrade
+  brew cleanup
+  npm up -g --no-audit --no-fund
+}
