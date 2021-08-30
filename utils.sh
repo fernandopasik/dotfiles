@@ -16,6 +16,10 @@ current_user() {
   whoami
 }
 
+dir_size() {
+  du -sh "$@"
+}
+
 heading() {
   BLUE='\033[0;34m'
   NC='\033[0m' # No Color
