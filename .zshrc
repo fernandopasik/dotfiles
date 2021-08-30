@@ -13,7 +13,7 @@ export GOPATH=$HOME/.go
 export DEFAULT_USER=$(whoami)
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:$HOME/.config/yarn/global/node_modules/.bin:$GOPATH/bin"
 
-source $ZSH/oh-my-zsh.sh
+. $ZSH/oh-my-zsh.sh
 
 alias brew_bundle_all="HOMEBREW_INSTALL_ALL=true brew_bundle"
 alias brew_bundle="brew bundle --file ~/.dotfiles/Brewfile --no-lock"
@@ -35,12 +35,12 @@ autoload -U promptinit
 promptinit
 prompt pure
 
-source ~/.profile
+. ~/.profile
 
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+. /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export RUBY_HOME=/usr/local/opt/ruby/bin
 export GEM_PATH=/usr/local/opt/ruby/lib/ruby/gems/3.0.0
 export GEM_HOME=$GEM_PATH
 export PATH=$RUBY_HOME:$GEM_HOME/bin:$PATH
 
-source ~/.dotfiles/utils.sh
+. ~/.dotfiles/utils.sh
