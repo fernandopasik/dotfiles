@@ -20,14 +20,19 @@ alias brew_bundle="brew bundle --file ~/.dotfiles/Brewfile --no-lock"
 
 # Exclude failed commands from history
 # https://superuser.com/questions/902241/how-to-make-zsh-not-store-failed-command
-zshaddhistory() { whence ${${(z)1}[1]} >| /dev/null || return 1 }
+zshaddhistory() {
+  whence ${${(z)1}[1]} >| /dev/null || return 1
+}
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+# This loads nvm
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
+# This loads nvm bash_completion
+[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"
 
 # Pure prompt init
-autoload -U promptinit; promptinit
+autoload -U promptinit
+promptinit
 prompt pure
 
 source ~/.profile
