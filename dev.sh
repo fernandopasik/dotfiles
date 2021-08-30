@@ -18,6 +18,15 @@ log "Node Setup"
 nvm install --lts
 nvm alias default system
 
+# -------------------------------
+log "Installing global packages"
+# -------------------------------
+npm install -g \
+  npm \
+  npm-check-updates \
+  pure-prompt \
+  yo
+
 # ------------------
 log "Yarn Setup"
 # ------------------
@@ -25,12 +34,6 @@ log "Yarn Setup"
 AUTHOR_NAME=$(current_name)
 AUTHOR_EMAIL=$(current_email)
 AUTHOR_URL="https://$(current_user).com"
-
-# Installing yarn global packages
-yarn global add \
-  npm-check-updates \
-  pure-prompt \
-  yo
 
 # Setting up default yarn init options
 yarn config set init-author-url "$AUTHOR_URL"
