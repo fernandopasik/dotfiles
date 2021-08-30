@@ -15,9 +15,6 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:$HOME/
 
 source $ZSH/oh-my-zsh.sh
 
-alias npmlsg="npm ls -g --depth 0"
-alias npmls="npm ls --depth 0"
-
 alias brew_bundle_all="HOMEBREW_INSTALL_ALL=true brew_bundle"
 alias brew_bundle="brew bundle --file ~/.dotfiles/Brewfile --no-lock"
 
