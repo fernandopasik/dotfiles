@@ -5,15 +5,15 @@ export PATH=/usr/local/bin:$PATH
 
 heading "Dev Env Setup"
 
-# ------------------
+# -------------------------------
 log "Create repos folder"
-# ------------------
+# -------------------------------
 mkdir ~/Sites
 touch ~/Sites/.metadata_never_index
 
-# ------------------
+# -------------------------------
 log "Node Setup"
-# ------------------
+# -------------------------------
 nvm install --lts
 nvm alias default system
 
@@ -26,9 +26,9 @@ npm install -g \
   pure-prompt \
   yo
 
-# ------------------
+# -------------------------------
 log "Yarn Setup"
-# ------------------
+# -------------------------------
 AUTHOR_NAME=$(current_name)
 AUTHOR_EMAIL=$(current_email)
 AUTHOR_URL="https://$(current_user).com"
