@@ -11,7 +11,7 @@ My personal dotfiles for bootstrapping my computer
 ## Install
 
 ```shell
-git clone --depth 1 https://github.com/fernandopasik/dotfiles.git ~/.dotfiles && ~/.dotfiles/install.sh
+git clone --depth 1 https://github.com/fernandopasik/dotfiles.git "$HOME"/.dotfiles && "$HOME"/.dotfiles/install.sh
 ```
 
 ## Resources
