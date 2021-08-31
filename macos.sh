@@ -124,7 +124,7 @@ defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 # Empty Trash securely by default
 defaults write com.apple.finder EmptyTrashSecurely -bool true
 
-# Show the ~/Library folder
+# Show the user home Library folder
 chflags nohidden ~/Library
 
 # Calculate all sizes in folders
@@ -370,7 +370,7 @@ defaults write com.google.Chrome.canary PMPrintingExpandedStateForPrint2 -bool t
 defaults write org.m0k.transmission UseIncompleteDownloadFolder -bool true
 defaults write org.m0k.transmission IncompleteDownloadFolder -string "${HOME}/Downloads"
 
-# Use `~/Downloads` to store completed downloads
+# Use user home `Downloads` folder to store completed downloads
 defaults write org.m0k.transmission DownloadLocationConstant -bool true
 
 # Don’t prompt for confirmation before downloading
