@@ -8,8 +8,8 @@ heading "Dev Env Setup"
 # -------------------------------
 log "Create repos folder"
 # -------------------------------
-mkdir ~/Sites
-touch ~/Sites/.metadata_never_index
+mkdir "$HOME"/Sites
+touch "$HOME"/Sites/.metadata_never_index
 
 # -------------------------------
 log "Node Setup"

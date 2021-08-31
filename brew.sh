@@ -14,7 +14,7 @@ else
   brew update
 fi
 
-touch ~/.Brewfile.custom
+touch "$HOME"/.Brewfile.custom
 
 log "Do you want to install dev packages? (Y/n)"
 CONFIRM=$(ask "Y")

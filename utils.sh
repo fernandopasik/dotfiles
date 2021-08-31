@@ -14,7 +14,7 @@ brew_bundle_all() {
 }
 
 current_email() {
-  /usr/libexec/PlistBuddy -c "print :Accounts:0:AccountID" ~/Library/Preferences/MobileMeAccounts.plist
+  /usr/libexec/PlistBuddy -c "print :Accounts:0:AccountID" "$HOME"/Library/Preferences/MobileMeAccounts.plist
 }
 
 current_first_name() {
@@ -54,7 +54,7 @@ log() {
 }
 
 repos() {
-  REPOS=~/Sites
+  REPOS="$HOME"/Sites
   cd "$REPOS" || exit
   for d in *; do
     if [ -d "$d" ] && [ -e "$d/.git" ]; then

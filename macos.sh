@@ -125,7 +125,7 @@ defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 defaults write com.apple.finder EmptyTrashSecurely -bool true
 
 # Show the user home Library folder
-chflags nohidden ~/Library
+chflags nohidden "$HOME"/Library
 
 # Calculate all sizes in folders
 /usr/libexec/PlistBuddy "$HOME/Library/Preferences/com.apple.finder.plist" -c 'Delete "StandardViewSettings:ExtendedListViewSettings:calculateAllSizes" bool'
@@ -405,7 +405,7 @@ defaults write org.m0k.transmission QueueDownloadNumber -int 1
 ###############################################################################
 
 # Add support for quicklook plugins in macOS >= 10.15
-xattr -d -r com.apple.quarantine ~/Library/QuickLook
+xattr -d -r com.apple.quarantine "$HOME"/Library/QuickLook
 
 defaults write com.divisiblebyzero.Spectacle StatusItemEnabled -bool false
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Spectacle.app", hidden:true, name:"Spectacle"}'

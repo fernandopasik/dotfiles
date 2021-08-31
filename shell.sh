@@ -9,7 +9,7 @@ heading "Shell Setup"
 log "Oh My Zsh"
 # ------------------
 
-OH_MY_ZSH_DIR=~/.oh-my-zsh/
+OH_MY_ZSH_DIR="$HOME"/.oh-my-zsh/
 
 if [ ! -d $OH_MY_ZSH_DIR.git ]; then
   log "Installing..."
@@ -22,10 +22,10 @@ else
 fi
 
 log "Create empty profile file"
-touch ~/.profile
+touch "$HOME"/.profile
 
 log "Link my zsh config file"
-ln -sfn "$PWD"/.zshrc ~/.zshrc
+ln -sfn "$PWD"/.zshrc "$HOME"/.zshrc
 
 log "Link my hyper config file"
-ln -sfn "$PWD"/.hyper.js ~/.hyper.js
+ln -sfn "$PWD"/.hyper.js "$HOME"/.hyper.js
