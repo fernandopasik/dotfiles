@@ -41,4 +41,5 @@ export GEM_PATH=/usr/local/opt/ruby/lib/ruby/gems/3.0.0
 export GEM_HOME=$GEM_PATH
 export PATH=$RUBY_HOME:$GEM_HOME/bin:$PATH
 
+# shellcheck source=utils.sh
 . "$HOME"/.dotfiles/utils.sh
