@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation
-export ZSH=$HOME/.oh-my-zsh
+export ZSH="$HOME"/.oh-my-zsh
 
 export ZSH_THEME="agnoster"
 
@@ -7,7 +7,7 @@ export ZSH_THEME="agnoster"
 export plugins=(docker docker-compose git git-prompt golang httpie kubectl minikube npm osx yarn)
 
 # Go config
-export GOPATH=$HOME/.go
+export GOPATH="$HOME"/.go
 
 # User configuration
 DEFAULT_USER=$(whoami)
