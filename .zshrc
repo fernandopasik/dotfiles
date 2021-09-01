@@ -32,6 +32,9 @@ export plugins=(
 # shellcheck source=/dev/null
 . "$ZSH"/oh-my-zsh.sh
 
+# shellcheck source=/dev/null
+. /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 # Go config
 export GOPATH="$HOME"/.go
 
@@ -61,9 +64,6 @@ export PATH=$RUBY_HOME:$GEM_HOME/bin:$PATH
 
 # shellcheck source=utils.sh
 . "$HOME"/.dotfiles/utils.sh
-
-# shellcheck source=/dev/null
-. /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # shellcheck source=/dev/null
 . "$HOME"/.profile
