@@ -29,6 +29,9 @@ export plugins=(
   yarn
 )
 
+# shellcheck source=/dev/null
+. "$ZSH"/oh-my-zsh.sh
+
 # Go config
 export GOPATH="$HOME"/.go
 
@@ -36,9 +39,6 @@ export GOPATH="$HOME"/.go
 DEFAULT_USER=$(whoami)
 export DEFAULT_USER
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:$HOME/.config/yarn/global/node_modules/.bin:$GOPATH/bin"
-
-# shellcheck source=/dev/null
-. "$ZSH"/oh-my-zsh.sh
 
 export NVM_DIR="$HOME/.nvm"
 # This loads nvm
