@@ -45,11 +45,6 @@ autoload -U promptinit
 promptinit
 prompt pure
 
-# shellcheck source=/dev/null
-. "$HOME"/.profile
-
-# shellcheck source=/dev/null
-. /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export RUBY_HOME=/usr/local/opt/ruby/bin
 export GEM_PATH=/usr/local/opt/ruby/lib/ruby/gems/3.0.0
 export GEM_HOME=$GEM_PATH
@@ -57,3 +52,9 @@ export PATH=$RUBY_HOME:$GEM_HOME/bin:$PATH
 
 # shellcheck source=utils.sh
 . "$HOME"/.dotfiles/utils.sh
+
+# shellcheck source=/dev/null
+. /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# shellcheck source=/dev/null
+. "$HOME"/.profile
