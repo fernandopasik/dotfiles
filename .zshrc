@@ -9,6 +9,9 @@ export ZSH_THEME="agnoster"
 export plugins=(
   docker
   docker-compose
+  emoji
+  gem
+  gh
   git
   git-prompt
   golang
