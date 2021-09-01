@@ -35,7 +35,10 @@ export plugins=(
 # Go config
 export GOPATH="$HOME"/.go
 
-# User configuration
+# ********************************
+# ****** User configuration ******
+# ********************************
+
 DEFAULT_USER=$(whoami)
 export DEFAULT_USER
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:$HOME/.config/yarn/global/node_modules/.bin:$GOPATH/bin"
