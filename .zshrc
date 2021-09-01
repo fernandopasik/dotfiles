@@ -35,15 +35,16 @@ export plugins=(
 # shellcheck source=/dev/null
 . /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# Go config
-export GOPATH="$HOME"/.go
-
 # ********************************
 # ****** User configuration ******
 # ********************************
 
 DEFAULT_USER=$(whoami)
 export DEFAULT_USER
+
+# Go config
+export GOPATH="$HOME"/.go
+
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:$HOME/.config/yarn/global/node_modules/.bin:$GOPATH/bin"
 
 export NVM_DIR="$HOME/.nvm"
