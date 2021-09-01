@@ -19,12 +19,6 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:$HOME/
 # shellcheck source=/dev/null
 . "$ZSH"/oh-my-zsh.sh
 
-# Exclude failed commands from history
-# https://superuser.com/questions/902241/how-to-make-zsh-not-store-failed-command
-zshaddhistory() {
-  whence ${${(z)1}[1]} >| /dev/null || return 1
-}
-
 export NVM_DIR="$HOME/.nvm"
 # This loads nvm
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
