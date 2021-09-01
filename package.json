@@ -8,7 +8,7 @@
   "scripts": {
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "lint": "shellcheck -x *.sh",
+    "lint": "shellcheck -x *.sh .zshrc",
     "prepare": "husky install"
   },
   "devDependencies": {
