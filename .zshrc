@@ -14,6 +14,7 @@ DEFAULT_USER=$(whoami)
 export DEFAULT_USER
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:$HOME/.config/yarn/global/node_modules/.bin:$GOPATH/bin"
 
+# shellcheck source=/dev/null
 . "$ZSH"/oh-my-zsh.sh
 
 # Exclude failed commands from history
@@ -33,6 +34,7 @@ autoload -U promptinit
 promptinit
 prompt pure
 
+# shellcheck source=/dev/null
 . "$HOME"/.profile
 
 . /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
