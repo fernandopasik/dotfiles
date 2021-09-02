@@ -58,6 +58,7 @@ export GEM_PATH=/usr/local/opt/ruby/lib/ruby/gems/3.0.0
 export GEM_HOME=$GEM_PATH
 export PATH=$GEM_PATH/bin:$PATH
 
+# NVM setup
 export NVM_DIR="$HOME/.nvm"
 # This loads nvm
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
