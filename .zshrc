@@ -44,7 +44,7 @@ plugins=(
 DEFAULT_USER=$(whoami)
 export DEFAULT_USER
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:$HOME/.config/yarn/global/node_modules/.bin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
 
 # Ruby setup
 export RUBY_HOME=/usr/local/opt/ruby/bin
