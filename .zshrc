@@ -49,6 +49,15 @@ export GOPATH="$HOME"/.go
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:$HOME/.config/yarn/global/node_modules/.bin:$GOPATH/bin"
 
+# Ruby setup
+export RUBY_HOME=/usr/local/opt/ruby/bin
+export PATH=$RUBY_HOME:$PATH
+
+# Ruby gem setup
+export GEM_PATH=/usr/local/opt/ruby/lib/ruby/gems/3.0.0
+export GEM_HOME=$GEM_PATH
+export PATH=$GEM_PATH/bin:$PATH
+
 export NVM_DIR="$HOME/.nvm"
 # This loads nvm
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
@@ -59,11 +68,6 @@ export NVM_DIR="$HOME/.nvm"
 autoload -U promptinit
 promptinit
 prompt pure
-
-export RUBY_HOME=/usr/local/opt/ruby/bin
-export GEM_PATH=/usr/local/opt/ruby/lib/ruby/gems/3.0.0
-export GEM_HOME=$GEM_PATH
-export PATH=$RUBY_HOME:$GEM_HOME/bin:$PATH
 
 # shellcheck source=utils.sh
 . "$HOME"/.dotfiles/utils.sh
