@@ -44,10 +44,7 @@ plugins=(
 DEFAULT_USER=$(whoami)
 export DEFAULT_USER
 
-# Go config
-export GOPATH="$HOME"/.go
-
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:$HOME/.config/yarn/global/node_modules/.bin:$GOPATH/bin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:$HOME/.config/yarn/global/node_modules/.bin"
 
 # Ruby setup
 export RUBY_HOME=/usr/local/opt/ruby/bin
@@ -57,6 +54,10 @@ export PATH=$RUBY_HOME:$PATH
 export GEM_PATH=/usr/local/opt/ruby/lib/ruby/gems/3.0.0
 export GEM_HOME=$GEM_PATH
 export PATH=$GEM_PATH/bin:$PATH
+
+# Go setup
+export GOPATH="$HOME"/.go
+export PATH=$GOPATH/bin:$PATH
 
 # NVM setup
 export NVM_DIR="$HOME/.nvm"
