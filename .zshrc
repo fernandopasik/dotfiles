@@ -41,9 +41,11 @@ plugins=(
 # ****** User configuration ******
 # ********************************
 
+# Default zsh user
 DEFAULT_USER=$(whoami)
 export DEFAULT_USER
 
+# Bash paths
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
 
 # Ruby setup
