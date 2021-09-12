@@ -4,7 +4,7 @@ My personal dotfiles for bootstrapping my computer
 
 <!-- BADGES - START -->
 
-[![Build Status](https://circleci.com/gh/fernandopasik/dotfiles.svg?style=svg)](https://circleci.com/gh/fernandopasik/dotfiles 'Build Status')
+[![Build Status](https://github.com/fernandopasik/dotfiles/actions/workflows/main.yml/badge.svg)](https://github.com/fernandopasik/dotfiles/actions/workflows/main.yml 'Build Status')
 
 <!-- BADGES - END -->
 
