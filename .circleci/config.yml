@@ -1,9 +1,0 @@
-version: 2.1
-
-orbs:
-  shellcheck: circleci/shellcheck@1.3.14
-
-workflows:
-  default:
-    jobs:
-      - shellcheck/check
