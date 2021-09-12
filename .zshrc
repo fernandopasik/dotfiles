@@ -64,8 +64,10 @@ export PATH=$GOPATH/bin:$PATH
 # NVM setup
 export NVM_DIR="$HOME/.nvm"
 # This loads nvm
+# shellcheck source=/dev/null
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
 # This loads nvm bash_completion
+# shellcheck source=/dev/null
 [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"
 
 # Pure prompt init
