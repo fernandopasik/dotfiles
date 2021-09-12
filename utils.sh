@@ -85,5 +85,5 @@ up() {
   brew outdated
   brew upgrade
   brew cleanup
-  npm up -g --no-audit --no-fund
+  npm up -g --no-audit --no-fund --loglevel=error
 }
