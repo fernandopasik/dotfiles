@@ -16,33 +16,20 @@ fi
 
 touch "$HOME"/.Brewfile.custom
 
-log "Do you want to install dev packages? (Y/n)"
-CONFIRM=$(ask "Y")
-if [ "$CONFIRM" = "Y" ] || [ "$CONFIRM" = "y" ]; then
-  log "Installing dev packages"
-  export HOMEBREW_INSTALL_DEV=true
-fi
+ask_brew_install() {
+  log "Do you want to install $1 packages? (Y/n)"
+  CONFIRM=$(ask "Y")
+  if [ "$CONFIRM" = "Y" ] || [ "$CONFIRM" = "y" ]; then
+    log "Installing $1 packages"
+    var="HOMEBREW_INSTALL_$2"
+    export "$var"=true
+  fi
+}
 
-log "Do you want to install more dev packages? (Y/n)"
-CONFIRM=$(ask "Y")
-if [ "$CONFIRM" = "Y" ] || [ "$CONFIRM" = "y" ]; then
-  log "Installing extended dev packages"
-  export HOMEBREW_INSTALL_DEV_EXTENDED=true
-fi
-
-log "Do you want to install social packages? (Y/n)"
-CONFIRM=$(ask "Y")
-if [ "$CONFIRM" = "Y" ] || [ "$CONFIRM" = "y" ]; then
-  log "Installing social packages"
-  export HOMEBREW_INSTALL_SOCIAL=true
-fi
-
-log "Do you want to install games packages? (Y/n)"
-CONFIRM=$(ask "Y")
-if [ "$CONFIRM" = "Y" ] || [ "$CONFIRM" = "y" ]; then
-  log "Installing games packages"
-  export HOMEBREW_INSTALL_GAMES=true
-fi
+ask_brew_install "dev" DEV
+ask_brew_install "extended dev" DEV_EXTENDED
+ask_brew_install "social" SOCIAL
+ask_brew_install "games" GAMES
 
 log "Installing essential packages"
 brew bundle --no-lock
