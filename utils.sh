@@ -53,6 +53,12 @@ log() {
   echo "\033[37;1m$1\033[0m"
 }
 
+past() {
+  D=$(date -v -"$1" '+%a %h %d %H:%M:%S %Y %z')
+  shift
+  GIT_AUTHOR_DATE=$D GIT_COMMITTER_DATE=$D "$@"
+}
+
 repos() {
   REPOS="$HOME"/Sites
   cd "$REPOS" || exit
