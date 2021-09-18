@@ -26,7 +26,7 @@ fi
 log "Do you want to install more dev packages? (Y/n)"
 CONFIRM=$(ask "Y")
 if [ "$CONFIRM" = "Y" ] || [ "$CONFIRM" = "y" ]; then
-  log "Installing dev packages"
+  log "Installing extended dev packages"
   export HOMEBREW_INSTALL_DEV_EXTENDED=true
 fi
 
