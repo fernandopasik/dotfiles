@@ -6,11 +6,11 @@ ask() {
 }
 
 brew_bundle() {
-  brew bundle --file "$HOME"/.dotfiles/Brewfile --no-lock
+  brew bundle --file "$HOME"/.dotfiles/Brewfile --no-lock "$@"
 }
 
 brew_bundle_all() {
-  HOMEBREW_INSTALL_ALL=true brew_bundle
+  HOMEBREW_INSTALL_ALL=true brew_bundle "$@"
 }
 
 current_email() {
