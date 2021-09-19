@@ -16,11 +16,13 @@ fi
 
 touch "$HOME"/.Brewfile.custom
 
+PACKAGES="Installing"
+
 ask_brew_install() {
   log "Do you want to install $1 packages? (Y/n)"
   CONFIRM=$(ask "Y")
   if [ "$CONFIRM" = "Y" ] || [ "$CONFIRM" = "y" ]; then
-    log "Installing $1 packages"
+    PACKAGES="$PACKAGES $1,"
     var="HOMEBREW_INSTALL_$2"
     export "$var"=true
   fi
@@ -31,5 +33,5 @@ ask_brew_install "extended dev" DEV_EXTENDED
 ask_brew_install "social" SOCIAL
 ask_brew_install "games" GAMES
 
-log "Installing essential packages"
+log "$PACKAGES essential packages"
 brew bundle --no-lock
