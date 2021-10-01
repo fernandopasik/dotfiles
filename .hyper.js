@@ -1,5 +1,6 @@
 module.exports = {
   config: {
+    scrollback: 3000,
     verminal: {
       fontSize: 16,
       fontFamily: 'JetBrains Mono',
@@ -8,5 +9,4 @@ module.exports = {
     },
   },
   plugins: ['hyperlinks', 'hyper-quit', 'verminal'],
-  scrollback: 3000,
 };
