@@ -8,4 +8,5 @@ module.exports = {
     },
   },
   plugins: ['hyperlinks', 'hyper-quit', 'verminal'],
+  scrollback: 3000,
 };
