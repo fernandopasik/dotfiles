@@ -9,6 +9,10 @@ export ZSH="$HOME"/.oh-my-zsh
 # shellcheck disable=SC2034
 ZSH_THEME="agnoster"
 
+# Disable prompt to check for upgrades and update without prompting
+# shellcheck disable=SC2034
+DISABLE_UPDATE_PROMPT=true
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
