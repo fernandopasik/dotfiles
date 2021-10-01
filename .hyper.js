@@ -8,5 +8,4 @@ module.exports = {
     },
   },
   plugins: ['hyperlinks', 'hyper-quit', 'verminal'],
-  localPlugins: [],
 };
