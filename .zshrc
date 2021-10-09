@@ -17,6 +17,7 @@ zstyle ':omz:update' frequency 7
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins
 # shellcheck disable=SC2034
 plugins=(
   docker
