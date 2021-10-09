@@ -52,6 +52,7 @@ if ENV['HOMEBREW_INSTALL_DEV'] || ENV['HOMEBREW_INSTALL_ALL']
   cask 'zoom'
 
   # Dev Tools
+  brew 'ansible'
   brew 'dive'
   brew 'gh'
   brew 'git-lfs'
