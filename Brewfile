@@ -49,7 +49,6 @@ if ENV['HOMEBREW_INSTALL_DEV'] || ENV['HOMEBREW_INSTALL_ALL']
 
   # Chat
   cask 'slack'
-  cask 'zoom'
 
   # Dev Tools
   brew 'ansible'
