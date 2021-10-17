@@ -30,9 +30,9 @@ plugins=(
   golang
   httpie
   kubectl
+  macos
   minikube
   npm
-  osx
   yarn
 )
 
