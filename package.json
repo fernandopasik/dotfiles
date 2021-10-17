@@ -9,7 +9,8 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "shellcheck -x *.sh .zshrc",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "verify": "yarn format:check && yarn lint"
   },
   "devDependencies": {
     "@commitlint/cli": "^14.1.0",
