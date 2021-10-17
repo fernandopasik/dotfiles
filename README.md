@@ -5,6 +5,7 @@ My personal dotfiles for bootstrapping my computer
 <!-- BADGES - START -->
 
 [![Build Status](https://github.com/fernandopasik/dotfiles/actions/workflows/main.yml/badge.svg)](https://github.com/fernandopasik/dotfiles/actions/workflows/main.yml 'Build Status')
+[![Known Vulnerabilities](https://snyk.io/test/github/fernandopasik/dotfiles/badge.svg?targetFile=package.json)](https://snyk.io/test/github/fernandopasik/dotfiles?targetFile=package.json 'Known Vulnerabilities')
 
 <!-- BADGES - END -->
 
