@@ -12,22 +12,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-          check-latest: true
-      - run: npm ci
+      - uses: ./.github/actions/setup
   check-format:
     name: Check Format
     runs-on: ubuntu-latest
     needs: [install]
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-          check-latest: true
-      - run: npm ci
+      - uses: ./.github/actions/setup
       - run: npm run format:check
   lint:
     name: Lint
@@ -35,9 +27,5 @@ jobs:
     needs: [install]
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-          check-latest: true
-      - run: npm ci
+      - uses: ./.github/actions/setup
       - run: npm run lint
