@@ -10,21 +10,29 @@ jobs:
     name: Install Dependencies
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: ./.github/actions/setup
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup
+        uses: ./.github/actions/setup
   check-format:
     name: Check Format
     runs-on: ubuntu-latest
     needs: [install]
     steps:
-      - uses: actions/checkout@v2
-      - uses: ./.github/actions/setup
-      - run: npm run format:check
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup
+        uses: ./.github/actions/setup
+      - name: Check Format
+        run: npm run format:check
   lint:
     name: Lint
     runs-on: ubuntu-latest
     needs: [install]
     steps:
-      - uses: actions/checkout@v2
-      - uses: ./.github/actions/setup
-      - run: npm run lint
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup
+        uses: ./.github/actions/setup
+      - name: Lint
+        run: npm run lint
