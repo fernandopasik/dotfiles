@@ -1,0 +1,13 @@
+name: Setup
+description: Setups latest Node LTS and installs dependencies
+
+runs:
+  using: composite
+  steps:
+    - uses: actions/setup-node@v2
+      with:
+        cache: npm
+        check-latest: true
+        node-version: 16
+    - run: npm ci
+      shell: bash
