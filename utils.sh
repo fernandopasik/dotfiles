@@ -13,6 +13,18 @@ brew_bundle_all() {
   HOMEBREW_INSTALL_ALL=true brew_bundle "$@"
 }
 
+command_line_tools_reset() {
+  CMD_PATH=$(xcode-select --print-path)
+  if test "${CMD_PATH#*CommandLineTools}" != "$CMD_PATH"; then
+    sudo rm -rf "$CMD_PATH"
+    echo "Command Line Tools deleted"
+    xcode-select --install
+    echo "Command Line Tools re-installed"
+  else
+    echo "Command Line Tools not present"
+  fi
+}
+
 current_email() {
   /usr/libexec/PlistBuddy -c "print :Accounts:0:AccountID" "$HOME"/Library/Preferences/MobileMeAccounts.plist
 }
@@ -72,18 +84,6 @@ repos() {
       echo "$d"
     fi
   done
-}
-
-reset_command_line_tools() {
-  CMD_PATH=$(xcode-select --print-path)
-  if test "${CMD_PATH#*CommandLineTools}" != "$CMD_PATH"; then
-    sudo rm -rf "$CMD_PATH"
-    echo "Command Line Tools deleted"
-    xcode-select --install
-    echo "Command Line Tools re-installed"
-  else
-    echo "Command Line Tools not present"
-  fi
 }
 
 up() {
