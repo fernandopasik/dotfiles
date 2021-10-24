@@ -10,7 +10,7 @@
     "format:check": "prettier --check .",
     "lint": "shellcheck -x *.sh .zshrc",
     "prepare": "husky install",
-    "verify": "yarn format:check && yarn lint"
+    "verify": "npm run format:check && npm run lint"
   },
   "devDependencies": {
     "@commitlint/cli": "^15.0.0",
