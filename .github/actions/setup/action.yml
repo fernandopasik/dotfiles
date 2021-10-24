@@ -10,6 +10,6 @@ runs:
         cache: npm
         check-latest: true
         node-version: 16
-    - name: Install
+    - name: Install Dependencies
       run: npm ci
       shell: bash
