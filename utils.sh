@@ -13,6 +13,10 @@ brew_bundle_all() {
   HOMEBREW_INSTALL_ALL=true brew_bundle "$@"
 }
 
+brew_bundle_dev() {
+  HOMEBREW_INSTALL_DEV=true brew_bundle "$@"
+}
+
 command_line_tools_reset() {
   CMD_PATH=$(xcode-select --print-path)
   if test "${CMD_PATH#*CommandLineTools}" != "$CMD_PATH"; then
