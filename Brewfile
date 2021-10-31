@@ -52,6 +52,7 @@ if ENV['HOMEBREW_INSTALL_DEV'] || ENV['HOMEBREW_INSTALL_ALL']
 
   # Dev Tools
   brew 'ansible'
+  brew 'ansible-lint'
   brew 'dive'
   brew 'gh'
   brew 'git-lfs'
