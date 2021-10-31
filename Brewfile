@@ -62,6 +62,7 @@ if ENV['HOMEBREW_INSTALL_DEV'] || ENV['HOMEBREW_INSTALL_ALL']
   brew 'httpie'
   brew 'kubernetes-cli'
   brew 'minikube'
+  brew 'molecule'
   brew 'node'
   brew 'nvm'
   brew 'qemu'
