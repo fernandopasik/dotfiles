@@ -80,7 +80,7 @@ autoload -U promptinit
 promptinit
 prompt pure
 
-DOTFILES_DIR=$(dirname "$(readlink -f -n "$HOME/.zshrc")")
+DOTFILES_DIR=$(dirname "$(readlink -n "$HOME/.zshrc")")
 
 # shellcheck source=utils.sh
 . "$DOTFILES_DIR"/utils.sh
