@@ -13,7 +13,7 @@ OH_MY_ZSH_DIR="$HOME"/.oh-my-zsh/
 
 if [ ! -d "$OH_MY_ZSH_DIR".git ]; then
   log "Installing..."
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 else
   log "Updating..."
   cd "$OH_MY_ZSH_DIR" || exit
