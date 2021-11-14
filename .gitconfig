@@ -15,7 +15,6 @@ helper = osxkeychain
 whitespace = fix
 
 [core]
-editor = code --wait
 # Treat spaces before tabs and all kinds of trailing whitespace as an error
 # [default] trailing-space: looks for spaces at the end of a line
 # [default] space-before-tab: looks for spaces before tabs at the beginning of a line
@@ -52,7 +51,6 @@ changed = green
 untracked = cyan
 
 [diff]
-tool = code
 # Detect copies as well as renames
 renames = copies
 
@@ -64,7 +62,6 @@ autocorrect = 1
 defaultBranch = main
 
 [merge]
-tool = code
 # Include summaries of merged commits in newly created merge commit messages
 log = true
 
