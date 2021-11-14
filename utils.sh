@@ -54,10 +54,10 @@ flush_dns() {
 }
 
 heading() {
-  BLUE='\033[0;34m'
+  BLUE='\033[44;97m'
   NC='\033[0m' # No Color
   echo
-  echo "${BLUE}$1${NC}"
+  echo "${BLUE} $1 ${NC}"
   echo
 }
 
