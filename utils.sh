@@ -66,6 +66,7 @@ kcdebug() {
 }
 
 log() {
+  echo
   echo "\033[37;1m$1\033[0m"
 }
 
