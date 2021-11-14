@@ -54,8 +54,7 @@ export DEFAULT_USER
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
 
 # Ruby setup
-export RUBY_HOME=/usr/local/opt/ruby/bin
-export PATH=$RUBY_HOME:$PATH
+export PATH=/usr/local/opt/ruby/bin:$PATH
 
 # Ruby gem setup
 export PATH=$(gem env gemdir)/bin:$PATH
