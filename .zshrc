@@ -58,9 +58,7 @@ export RUBY_HOME=/usr/local/opt/ruby/bin
 export PATH=$RUBY_HOME:$PATH
 
 # Ruby gem setup
-export GEM_PATH=/usr/local/opt/ruby/lib/ruby/gems/3.0.0
-export GEM_HOME=$GEM_PATH
-export PATH=$GEM_PATH/bin:$PATH
+export PATH=$(gem env gemdir)/bin:$PATH
 
 # Go setup
 export GOPATH="$HOME"/.go
