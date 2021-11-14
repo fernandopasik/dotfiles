@@ -40,7 +40,7 @@ plugins=(
 . "$ZSH"/oh-my-zsh.sh
 
 # shellcheck source=/dev/null
-. /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+. /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # ********************************
 # ****** User configuration ******
@@ -80,8 +80,10 @@ autoload -U promptinit
 promptinit
 prompt pure
 
+DOTFILES_DIR=$(dirname "$(readlink -f -n "$HOME/.zshrc")")
+
 # shellcheck source=utils.sh
-. "$HOME"/.dotfiles/utils.sh
+. "$DOTFILES_DIR"/utils.sh
 
 # shellcheck source=/dev/null
 . "$HOME"/.profile
