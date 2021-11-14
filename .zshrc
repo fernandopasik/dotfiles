@@ -75,6 +75,13 @@ export NVM_DIR="$HOME/.nvm"
 # shellcheck source=/dev/null
 [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"
 
+# VS Code for windows path
+if [ -d "$HOME/.vscode-server" ]; then
+  VSCODE_BIN_PATH=$(find "$HOME/.vscode-server" -name "code")
+  VSCODE_BIN_DIR=$(dirname "$(realpath --relative-to="$HOME" "$VSCODE_BIN_PATH")")
+  export PATH=$HOME/$VSCODE_BIN_DIR:$PATH
+fi
+
 # Pure prompt init
 autoload -U promptinit
 promptinit
