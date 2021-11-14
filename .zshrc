@@ -65,12 +65,19 @@ export PATH=$GOPATH/bin:$PATH
 
 # NVM setup
 export NVM_DIR="$HOME/.nvm"
+
+if [ "$(uname -s)" == "Darwin" ]; then
+  NVM_INSTALL_DIR="/usr/local/opt/nvm"
+else
+  NVM_INSTALL_DIR=$NVM_DIR
+fi
+
 # This loads nvm
 # shellcheck source=/dev/null
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
+[ -s "$NVM_INSTALL_DIR/nvm.sh" ] && . "$NVM_INSTALL_DIR/nvm.sh"
 # This loads nvm bash_completion
 # shellcheck source=/dev/null
-[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"
+[ -s "$NVM_INSTALL_DIR/etc/bash_completion.d/nvm" ] && . "$NVM_INSTALL_DIR/etc/bash_completion.d/nvm"
 
 # VS Code for windows path
 if [ -d "$HOME/.vscode-server" ]; then
