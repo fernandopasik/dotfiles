@@ -1,5 +1,5 @@
 #!/bin/sh
-. utils.sh
+. ./utils.sh
 
 COMPUTERNAME="$(current_first_name)'s MacBook Pro"
 LOCALHOSTNAME="$(current_first_name)-s-MacBook-Pro"

@@ -1,5 +1,5 @@
 #!/bin/sh
-. utils.sh
+. ./utils.sh
 
 CURRENT_DIR=$PWD
 
