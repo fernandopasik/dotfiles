@@ -8,7 +8,7 @@ xcode-select --install
 
 if [ ! -f "$(command -v brew)" ]; then
   log "Installing Package manager"
-  yes '' | /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 else
   log "Updating Package manager"
   brew update
