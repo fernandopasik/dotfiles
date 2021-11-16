@@ -67,7 +67,7 @@ export PATH=$GOPATH/bin:$PATH
 # NVM setup
 export NVM_DIR="$HOME/.nvm"
 
-if [ "$(uname -s)" == "Darwin" ]; then
+if [ "$(uname -s)" = "Darwin" ]; then
   NVM_INSTALL_DIR="/usr/local/opt/nvm"
 else
   NVM_INSTALL_DIR=$NVM_DIR
