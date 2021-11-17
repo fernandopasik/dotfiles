@@ -58,11 +58,11 @@ export PATH=/usr/local/opt/ruby/bin:$PATH
 
 # Ruby gem setup
 GEM_DIR=$(gem env gemdir)
-export PATH=$GEM_DIR/bin:$PATH
+export PATH="$GEM_DIR/bin:$PATH"
 
 # Go setup
 export GOPATH="$HOME"/.go
-export PATH=$GOPATH/bin:$PATH
+export PATH="$GOPATH/bin:$PATH"
 
 # NVM setup
 export NVM_DIR="$HOME/.nvm"
@@ -84,7 +84,7 @@ fi
 if [ -d "$HOME/.vscode-server" ]; then
   VSCODE_BIN_PATH=$(find "$HOME/.vscode-server" -name "code")
   VSCODE_BIN_DIR=$(dirname "$(realpath --relative-to="$HOME" "$VSCODE_BIN_PATH")")
-  export PATH=$HOME/$VSCODE_BIN_DIR:$PATH
+  export PATH="$HOME/$VSCODE_BIN_DIR:$PATH"
 fi
 
 # Pure prompt init
