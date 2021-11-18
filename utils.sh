@@ -71,7 +71,12 @@ log() {
 }
 
 past() {
-  D=$(date -v -"$1" '+%a %h %d %H:%M:%S %Y %z')
+  if [ "$(uname -s)" = "Darwin" ]; then
+    D=$(date -v -"$1" '+%a %h %d %H:%M:%S %Y %z')
+  else
+    D=$(date -d -"$1" '+%a %h %d %H:%M:%S %Y %z')
+  fi
+
   shift
   GIT_AUTHOR_DATE=$D GIT_COMMITTER_DATE=$D "$@"
 }
