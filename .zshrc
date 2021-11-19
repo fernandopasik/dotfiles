@@ -39,8 +39,13 @@ plugins=(
 # shellcheck source=/dev/null
 . "$ZSH"/oh-my-zsh.sh
 
+USR_PATH=/usr/
+if [ "$(uname -s)" = "Darwin" ]; then
+  USR_PATH=/usr/local/
+fi
+
 # shellcheck source=/dev/null
-. /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+. $USR_PATH/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # ********************************
 # ****** User configuration ******
