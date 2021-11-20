@@ -66,6 +66,7 @@ defaultBranch = main
 log = true
 
 [pager]
+branch = false
 log = false
 
 [pull]
