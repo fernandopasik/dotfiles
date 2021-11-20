@@ -82,7 +82,7 @@ past() {
 }
 
 repos() {
-  REPOS="$HOME"/Sites
+  REPOS=$(dirname "$(dirname "$(readlink -n "$HOME/.zshrc")")")
   cd "$REPOS" || exit
   for d in *; do
     if [ -d "$d" ] && [ -e "$d/.git" ]; then
