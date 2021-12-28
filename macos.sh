@@ -220,7 +220,7 @@ APPS="
   System/Applications/Messages
   Applications/WhatsApp
   Applications/Messenger
-  Applications/Signal*Beta
+  Applications/Signal
   System/Applications/Notes
   Applications/Hyper
   Applications/Github*Desktop
