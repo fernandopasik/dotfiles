@@ -215,7 +215,6 @@ APPS="
   System/Applications/Launchpad
   Applications/Google*Chrome
   System/Applications/Home
-  Applications/Todoist
   System/Applications/Facetime
   System/Applications/Messages
   Applications/WhatsApp
