@@ -216,7 +216,6 @@ APPS="
   Applications/Google*Chrome
   System/Applications/Home
   System/Applications/Facetime
-  System/Applications/Messages
   Applications/WhatsApp
   Applications/Messenger
   Applications/Signal
