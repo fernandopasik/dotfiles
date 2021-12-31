@@ -62,8 +62,10 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
 export PATH=/usr/local/opt/ruby/bin:$PATH
 
 # Ruby gem setup
-GEM_DIR=$(gem env gemdir)
-export PATH="$GEM_DIR/bin:$PATH"
+if [ -x "$(command -v gem)" ]; then
+  GEM_DIR=$(gem env gemdir)
+  export PATH="$GEM_DIR/bin:$PATH"
+fi
 
 # Go setup
 export GOPATH="$HOME"/.go
