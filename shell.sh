@@ -27,5 +27,7 @@ touch "$HOME"/.profile
 log "Link my zsh config file"
 ln -sfn "$PWD"/.zshrc "$HOME"/.zshrc
 
-log "Link my hyper config file"
-ln -sfn "$PWD"/.hyper.js "$HOME"/.hyper.js
+if [ -x "$(command -v hyper)" ]; then
+  log "Link my hyper config file"
+  ln -sfn "$PWD"/.hyper.js "$HOME"/.hyper.js
+fi
