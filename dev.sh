@@ -29,6 +29,9 @@ npm install -g \
 # -------------------------------
 log "Yarn Setup"
 # -------------------------------
+# Install yarn with included node.js corepack
+corepack enable
+
 AUTHOR_NAME=$(current_name)
 AUTHOR_EMAIL=$(current_email)
 AUTHOR_URL="https://$(current_user).com"

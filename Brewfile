@@ -67,7 +67,6 @@ if ENV['HOMEBREW_INSTALL_DEV'] || ENV['HOMEBREW_INSTALL_ALL']
   brew 'nvm'
   brew 'qemu'
   brew 'shellcheck'
-  brew 'yarn'
   cask 'docker'
 
   # Dev Apps
