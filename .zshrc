@@ -67,6 +67,9 @@ if [ -x "$(command -v gem)" ]; then
   export PATH="$GEM_DIR/bin:$PATH"
 fi
 
+# Ruby RVM setup
+export PATH=$PATH:/opt/rvm/bin:/opt/rvm/sbin
+
 # Go setup
 export GOPATH="$HOME"/.go
 export PATH="$GOPATH/bin:$PATH"
