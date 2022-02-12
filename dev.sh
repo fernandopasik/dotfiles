@@ -35,13 +35,16 @@ AUTHOR_NAME=$(current_name)
 AUTHOR_EMAIL=$(current_email)
 AUTHOR_URL="https://$(current_user).com"
 
-# Setting up default yarn init options
-yarn config set init-author-url "$AUTHOR_URL"
-yarn config set init-author-email "$AUTHOR_EMAIL"
-yarn config set init-author-name "$AUTHOR_NAME"
-yarn config set init-license UNLICENSED
-yarn config set init-version 0.0.0
-yarn config set init-private true
+# -------------------------------
+log "Configure npm init"
+# -------------------------------
+# Setting up default npm init options
+npm config set init-author-email "$AUTHOR_EMAIL"
+npm config set init-author-name "$AUTHOR_NAME"
+npm config set init-author-url "$AUTHOR_URL"
+npm config set init-license UNLICENSED
+npm config set init-private true
+npm config set init-version 0.0.0
 
-# Login to yarn
-yarn login
+# Login to npm
+npm login
