@@ -33,7 +33,6 @@ plugins=(
   macos
   minikube
   npm
-  yarn
 )
 
 # shellcheck source=/dev/null
