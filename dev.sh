@@ -18,6 +18,11 @@ nvm install --lts
 nvm alias default system
 
 # -------------------------------
+log "Install package managers with included node.js corepack"
+# -------------------------------
+corepack enable
+
+# -------------------------------
 log "Installing global packages"
 # -------------------------------
 npm install -g \
@@ -25,12 +30,6 @@ npm install -g \
   npm-check-updates \
   pure-prompt \
   yo
-
-# -------------------------------
-log "Yarn Setup"
-# -------------------------------
-# Install package managers with included node.js corepack
-corepack enable
 
 AUTHOR_NAME=$(current_name)
 AUTHOR_EMAIL=$(current_email)
