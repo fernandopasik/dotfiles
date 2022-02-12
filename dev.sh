@@ -29,7 +29,7 @@ npm install -g \
 # -------------------------------
 log "Yarn Setup"
 # -------------------------------
-# Install yarn with included node.js corepack
+# Install package managers with included node.js corepack
 corepack enable
 
 AUTHOR_NAME=$(current_name)
