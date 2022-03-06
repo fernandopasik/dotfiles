@@ -18,5 +18,5 @@ Ensure the bug or feature has not been reported before searching by [searching](
 ## Styleguides
 
 - Shell scripts styles are checked with [shellcheck](https://www.shellcheck.net/).
-- [Prettier](https://prettier.io) will catch most styling issues that may exist in your code. You can check the status of your code styling by simply running `npm exec prettier`.
+- [Prettier](https://prettier.io) will catch most styling issues that may exist in your code.
 - Git commit messages are checked with [commitlint](https://github.com/marionebl/commitlint) and follow the [conventional commits rules](https://github.com/marionebl/commitlint/tree/master/@commitlint/config-conventional#rules).
