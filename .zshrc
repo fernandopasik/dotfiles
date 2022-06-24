@@ -76,11 +76,7 @@ export PATH="$GOPATH/bin:$PATH"
 # NVM setup
 export NVM_DIR="$HOME/.nvm"
 
-if [ "$(uname -s)" = "Darwin" ]; then
-  NVM_INSTALL_DIR="/usr/local/opt/nvm"
-else
-  NVM_INSTALL_DIR=$NVM_DIR
-fi
+NVM_INSTALL_DIR=$(brew --prefix)/opt/nvm
 
 # This loads nvm
 # shellcheck source=/dev/null
