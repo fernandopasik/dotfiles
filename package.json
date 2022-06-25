@@ -9,6 +9,7 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "shellcheck -x *.sh .zshrc",
+    "postinstall": "ansible-galaxy install -r requirements.yml --force",
     "prepare": "husky install",
     "verify": "npm run format:check && npm run lint"
   },
