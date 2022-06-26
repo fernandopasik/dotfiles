@@ -1,1 +1,4 @@
 .husky/_
+/requirements
+/roles/elliotweiser*
+/roles/geerlingguy*
