@@ -1,0 +1,6 @@
+---
+- name: Mac
+  hosts: mac
+
+  roles:
+    - role: elliotweiser.osx-command-line-tools
