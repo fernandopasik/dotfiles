@@ -4,3 +4,4 @@
 
   roles:
     - role: elliotweiser.osx-command-line-tools
+    - role: clone-repo
