@@ -8,3 +8,4 @@
     - role: geerlingguy.homebrew
       vars:
         homebrew_use_brewfile: false
+    - role: brew

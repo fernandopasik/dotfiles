@@ -1,0 +1,12 @@
+---
+- name: Copy Brewfile to profile
+  ansible.builtin.copy:
+    src: ./Brewfile
+    dest: ~/Brewfile
+    force: true
+- name: Install Packages
+  ansible.builtin.command:
+    cmd: /usr/local/bin/brew bundle
+    chdir: '~'
+  environment:
+    HOMEBREW_INSTALL_ALL: 'true'
