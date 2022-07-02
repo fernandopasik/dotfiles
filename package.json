@@ -6,6 +6,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "ansible": "ansible-playbook -K mac.yml",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "shellcheck -x *.sh .zshrc",
