@@ -1,0 +1,34 @@
+---
+- name: Create empty profile file
+  ansible.builtin.copy:
+    dest: ~/.profile
+    content: ''
+    force: false
+- name: Link my zsh config file
+  ansible.builtin.file:
+    src: ~/repos/dotfiles/.zshrc
+    dest: ~/.zshrc
+    force: true
+    state: link
+- name: Link hyper config file
+  ansible.builtin.file:
+    src: ~/repos/dotfiles/.hyper.js
+    dest: ~/.hyper.js
+    force: true
+    state: link
+- name: Check if Oh My Zsh exists
+  ansible.builtin.stat:
+    path: ~/.oh-my-zsh/
+  register: oh_my_zsh
+- name: Install Oh My Zsh
+  ansible.builtin.shell:
+    cmd: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  args:
+    creates: ~/.oh-my-zsh
+  when: not oh_my_zsh.stat.exists
+- name: Update Oh My Zsh
+  ansible.builtin.git:
+    repo: ~/.oh-my-zsh/.git
+    dest: ~/.oh-my-zsh/
+    update: true
+  when: oh_my_zsh.stat.exists

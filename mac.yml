@@ -10,3 +10,4 @@
         homebrew_use_brewfile: false
     - role: brew
     - role: git
+    - role: shell
