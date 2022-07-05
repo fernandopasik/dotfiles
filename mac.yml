@@ -11,3 +11,4 @@
     - role: brew
     - role: git
     - role: shell
+    - role: dev
