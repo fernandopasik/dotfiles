@@ -29,11 +29,14 @@ plugins=(
   git-prompt
   golang
   httpie
-  kubectl
   macos
   minikube
   npm
 )
+
+if [ -x "$(command -v kubectl)" ]; then
+  plugins+=(kubectl)
+fi
 
 # shellcheck source=/dev/null
 . "$ZSH"/oh-my-zsh.sh
