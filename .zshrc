@@ -79,7 +79,11 @@ export PATH="$GOPATH/bin:$PATH"
 # NVM setup
 export NVM_DIR="$HOME/.nvm"
 
-NVM_INSTALL_DIR=$(brew --prefix)/opt/nvm
+if [ -x "$(command -v brew)" ]; then
+  NVM_INSTALL_DIR=$(brew --prefix)/opt/nvm
+else
+  NVM_INSTALL_DIR=/opt/nvm
+fi
 
 # This loads nvm
 # shellcheck source=/dev/null
