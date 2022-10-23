@@ -11,7 +11,7 @@ brew 'zsh'
 brew 'zsh-syntax-highlighting'
 
 # Essential Apps
-cask 'logitech-options'
+cask 'logi-options-plus'
 cask 'logitech-unifying'
 cask 'spectacle'
 cask 'stats'
