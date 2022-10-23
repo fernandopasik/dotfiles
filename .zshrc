@@ -60,6 +60,9 @@ export DEFAULT_USER
 # Bash paths
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
 
+# Python path setup
+export PATH="$HOME"/.local/bin:$PATH
+
 # Ruby setup
 export PATH=/usr/local/opt/ruby/bin:$PATH
 
