@@ -66,8 +66,10 @@ kcdebug() {
 }
 
 log() {
+  BOLD='\033[37;1m'
+  NC='\033[0m' # No Color
   echo
-  echo "\033[37;1m$1\033[0m"
+  echo "${BOLD}$1${NC}"
 }
 
 past() {
