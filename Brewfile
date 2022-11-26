@@ -71,7 +71,6 @@ if ENV['HOMEBREW_INSTALL_DEV'] || ENV['HOMEBREW_INSTALL_ALL']
 
   # Dev Apps
   cask 'font-jetbrains-mono'
-  cask 'github'
   cask 'imageoptim'
   cask 'hyper'
   cask 'sequel-pro'
