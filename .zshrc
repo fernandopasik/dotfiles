@@ -102,10 +102,12 @@ if [ -d "$HOME/.vscode-server" ]; then
   export PATH="$HOME/$VSCODE_BIN_DIR:$PATH"
 fi
 
-# Pure prompt init
+# Setup Pure Prompt
 autoload -U promptinit
-promptinit
-prompt pure
+if [ "$(command -v promptinit)" ]; then
+  promptinit
+  prompt pure
+fi
 
 DOTFILES_DIR=$(dirname "$(readlink -n "$HOME/.zshrc")")
 
