@@ -51,21 +51,23 @@ if ENV['HOMEBREW_INSTALL_DEV'] || ENV['HOMEBREW_INSTALL_ALL']
   # Dev Tools
   brew 'ansible'
   brew 'ansible-lint'
-  brew 'dive'
   brew 'gh'
   brew 'git-lfs'
   brew 'git'
-  brew 'hadolint'
-  brew 'helm'
   brew 'httpie'
-  brew 'kubernetes-cli'
-  brew 'minikube'
   brew 'molecule'
   brew 'node'
   brew 'nvm'
   brew 'qemu'
   brew 'shellcheck'
+
+  # Dev Infra
+  brew 'dive'
   cask 'docker'
+  brew 'hadolint'
+  brew 'helm'
+  brew 'kubernetes-cli'
+  brew 'minikube'
 
   # Dev Apps
   cask 'font-jetbrains-mono'
