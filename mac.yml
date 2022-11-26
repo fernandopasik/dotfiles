@@ -3,5 +3,4 @@
   hosts: mac
 
   roles:
-    - role: brew
     - role: dev
