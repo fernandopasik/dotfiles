@@ -9,5 +9,4 @@
       vars:
         homebrew_use_brewfile: false
     - role: brew
-    - role: shell
     - role: dev
