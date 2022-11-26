@@ -42,9 +42,7 @@ if ENV['HOMEBREW_INSTALL_DEV'] || ENV['HOMEBREW_INSTALL_ALL']
   brew 'rust'
 
   # Browsers
-  cask 'brave-browser'
   cask 'firefox'
-  cask 'google-chrome-canary'
   cask 'microsoft-edge'
 
   # Chat
