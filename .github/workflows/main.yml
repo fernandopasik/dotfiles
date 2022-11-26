@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Setup
+      - name: Setup Node
         uses: fernandopasik/actions/setup-node@main
   check-format:
     name: Check Format
@@ -21,7 +21,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Setup
+      - name: Setup Node
         uses: fernandopasik/actions/setup-node@main
       - name: Check Format
         run: npm run format:check
@@ -32,7 +32,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Setup
+      - name: Setup Node
         uses: fernandopasik/actions/setup-node@main
       - name: Lint
         run: npm run lint
