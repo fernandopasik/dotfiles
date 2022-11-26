@@ -1,9 +1,0 @@
----
-- name: Create repos folder
-  ansible.builtin.file:
-    path: ~/repos
-    state: directory
-- name: Git checkout
-  ansible.builtin.git:
-    repo: 'https://github.com/fernandopasik/dotfiles.git'
-    dest: ~/repos/dotfiles

@@ -4,7 +4,6 @@
 
   roles:
     - role: elliotweiser.osx-command-line-tools
-    - role: clone-repo
     - role: geerlingguy.homebrew
       vars:
         homebrew_use_brewfile: false
