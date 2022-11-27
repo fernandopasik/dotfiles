@@ -34,6 +34,11 @@ cask 'quicklook-json'
 cask 'webpquicklook'
 
 if ENV['HOMEBREW_INSTALL_DEV'] || ENV['HOMEBREW_INSTALL_ALL']
+  # Git
+  brew 'gh'
+  brew 'git'
+  brew 'git-lfs'
+
   # Node.js
   brew 'node'
   brew 'nvm'
@@ -56,11 +61,6 @@ if ENV['HOMEBREW_INSTALL_DEV'] || ENV['HOMEBREW_INSTALL_ALL']
 
   # Chat
   cask 'slack'
-
-  # Dev Tools
-  brew 'gh'
-  brew 'git-lfs'
-  brew 'git'
 
   # Dev Infra
   brew 'dive'
