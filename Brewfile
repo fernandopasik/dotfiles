@@ -45,6 +45,11 @@ if ENV['HOMEBREW_INSTALL_DEV'] || ENV['HOMEBREW_INSTALL_ALL']
   brew 'ruby'
   brew 'rust'
 
+  # Ansible
+  brew 'ansible'
+  brew 'ansible-lint'
+  brew 'molecule'
+
   # Browsers
   cask 'firefox'
   cask 'microsoft-edge'
@@ -53,13 +58,10 @@ if ENV['HOMEBREW_INSTALL_DEV'] || ENV['HOMEBREW_INSTALL_ALL']
   cask 'slack'
 
   # Dev Tools
-  brew 'ansible'
-  brew 'ansible-lint'
   brew 'gh'
   brew 'git-lfs'
   brew 'git'
   brew 'httpie'
-  brew 'molecule'
   brew 'qemu'
   brew 'shellcheck'
 
