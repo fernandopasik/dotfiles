@@ -34,6 +34,10 @@ cask 'quicklook-json'
 cask 'webpquicklook'
 
 if ENV['HOMEBREW_INSTALL_DEV'] || ENV['HOMEBREW_INSTALL_ALL']
+  # Node.js
+  brew 'node'
+  brew 'nvm'
+
   # Languages
   brew 'go'
   brew 'openjdk'
@@ -56,8 +60,6 @@ if ENV['HOMEBREW_INSTALL_DEV'] || ENV['HOMEBREW_INSTALL_ALL']
   brew 'git'
   brew 'httpie'
   brew 'molecule'
-  brew 'node'
-  brew 'nvm'
   brew 'qemu'
   brew 'shellcheck'
 
