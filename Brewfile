@@ -61,7 +61,6 @@ if ENV['HOMEBREW_INSTALL_DEV'] || ENV['HOMEBREW_INSTALL_ALL']
   brew 'gh'
   brew 'git-lfs'
   brew 'git'
-  brew 'httpie'
 
   # Dev Infra
   brew 'dive'
@@ -75,6 +74,7 @@ if ENV['HOMEBREW_INSTALL_DEV'] || ENV['HOMEBREW_INSTALL_ALL']
   # Dev Apps
   cask 'font-jetbrains-mono'
   cask 'hyper'
+  brew 'httpie'
   cask 'visual-studio-code'
 
   # QuickLook plugins
