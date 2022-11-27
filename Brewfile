@@ -89,11 +89,6 @@ if ENV['HOMEBREW_INSTALL_DEV_EXTENDED'] || ENV['HOMEBREW_INSTALL_ALL']
   cask 'android-studio'
   cask 'raspberry-pi-imager'
   cask 'vnc-viewer'
-
-  # Design Apps
-  cask 'miro'
-  cask 'sketch'
-  cask 'zeplin'
 end
 
 if ENV['HOMEBREW_INSTALL_SOCIAL'] || ENV['HOMEBREW_INSTALL_ALL']
