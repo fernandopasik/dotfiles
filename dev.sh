@@ -43,7 +43,6 @@ npm config set init-author-email "$AUTHOR_EMAIL"
 npm config set init-author-name "$AUTHOR_NAME"
 npm config set init-author-url "$AUTHOR_URL"
 npm config set init-license UNLICENSED
-npm config set init-private true
 npm config set init-version 0.0.0
 
 # Login to npm
