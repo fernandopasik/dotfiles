@@ -62,7 +62,6 @@ if ENV['HOMEBREW_INSTALL_DEV'] || ENV['HOMEBREW_INSTALL_ALL']
   brew 'git-lfs'
   brew 'git'
   brew 'httpie'
-  brew 'qemu'
   brew 'shellcheck'
 
   # Dev Infra
@@ -72,6 +71,7 @@ if ENV['HOMEBREW_INSTALL_DEV'] || ENV['HOMEBREW_INSTALL_ALL']
   brew 'helm'
   brew 'kubernetes-cli'
   brew 'minikube'
+  brew 'qemu'
 
   # Dev Apps
   cask 'font-jetbrains-mono'
