@@ -62,7 +62,6 @@ if ENV['HOMEBREW_INSTALL_DEV'] || ENV['HOMEBREW_INSTALL_ALL']
   brew 'git-lfs'
   brew 'git'
   brew 'httpie'
-  brew 'shellcheck'
 
   # Dev Infra
   brew 'dive'
