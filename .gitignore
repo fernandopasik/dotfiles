@@ -15,6 +15,3 @@ node_modules
 npm-debug.log
 
 # build and temp folders
-/requirements
-/roles/elliotweiser*
-/roles/geerlingguy*
