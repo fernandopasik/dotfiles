@@ -81,19 +81,12 @@ export PATH="$GOPATH/bin:$PATH"
 
 # NVM setup
 export NVM_DIR="$HOME/.nvm"
-
-if [ -x "$(command -v brew)" ]; then
-  NVM_INSTALL_DIR=$(brew --prefix)/opt/nvm
-else
-  NVM_INSTALL_DIR=/opt/nvm
-fi
-
 # This loads nvm
 # shellcheck source=/dev/null
-[ -s "$NVM_INSTALL_DIR/nvm.sh" ] && . "$NVM_INSTALL_DIR/nvm.sh"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 # This loads nvm bash_completion
 # shellcheck source=/dev/null
-[ -s "$NVM_INSTALL_DIR/etc/bash_completion.d/nvm" ] && . "$NVM_INSTALL_DIR/etc/bash_completion.d/nvm"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 # VS Code for windows path
 if [ -d "$HOME/.vscode-server" ]; then
