@@ -107,9 +107,12 @@ repos() {
 }
 
 up() {
-  brew update > /dev/null
-  brew outdated
-  brew upgrade
-  brew cleanup
+  if is_macos; then
+    brew update > /dev/null
+    brew outdated
+    brew upgrade
+    brew cleanup
+  fi
+
   npm up -g --no-audit --no-fund --loglevel=error
 }
