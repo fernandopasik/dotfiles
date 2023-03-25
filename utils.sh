@@ -61,6 +61,14 @@ heading() {
   echo
 }
 
+is_macos() {
+  if [ "$(uname -s)" = "Darwin" ]; then
+    return 0
+  else
+    return 1
+  fi
+}
+
 kcdebug() {
   kubectl run -i --tty --rm debug --image=busybox --restart=Never -- sh
 }
@@ -73,7 +81,7 @@ log() {
 }
 
 past() {
-  if [ "$(uname -s)" = "Darwin" ]; then
+  if is_macos; then
     D=$(date -v -"$1" '+%a %h %d %H:%M:%S %Y %z')
   else
     D=$(date -d -"$1" '+%a %h %d %H:%M:%S %Y %z')
