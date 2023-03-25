@@ -80,7 +80,6 @@ if ENV['HOMEBREW_INSTALL_DEV'] || ENV['HOMEBREW_INSTALL_ALL']
   # QuickLook plugins
   cask 'qlcolorcode'
   cask 'qlmarkdown'
-  cask 'qlstephen'
 end
 
 if ENV['HOMEBREW_INSTALL_DEV_EXTENDED'] || ENV['HOMEBREW_INSTALL_ALL']
