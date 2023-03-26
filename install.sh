@@ -4,7 +4,6 @@
 
 heading "DOTFILES Installation"
 
-. ./brew.sh
 . ./macos.sh
 
 # Restart computer
