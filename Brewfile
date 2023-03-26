@@ -69,12 +69,12 @@ if ENV['HOMEBREW_INSTALL_DEV'] || ENV['HOMEBREW_INSTALL_ALL']
   brew 'helm'
   brew 'kubernetes-cli'
   brew 'minikube'
-  brew 'qemu'
 
   # Dev Apps
   cask 'font-jetbrains-mono'
   cask 'hyper'
   brew 'httpie'
+  brew 'qemu'
   cask 'visual-studio-code'
 
   # QuickLook plugins
