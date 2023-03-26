@@ -53,14 +53,6 @@ flush_dns() {
   sudo killall -HUP mDNSResponder
 }
 
-heading() {
-  BLUE='\033[44;97m'
-  NC='\033[0m' # No Color
-  echo
-  echo "${BLUE} $1 ${NC}"
-  echo
-}
-
 is_macos() {
   if [ "$(uname -s)" = "Darwin" ]; then
     return 0

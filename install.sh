@@ -2,8 +2,6 @@
 
 . ./utils.sh
 
-heading "DOTFILES Installation"
-
 . ./macos.sh
 
 # Restart computer
