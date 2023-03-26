@@ -55,12 +55,8 @@ if ENV['HOMEBREW_INSTALL_DEV'] || ENV['HOMEBREW_INSTALL_ALL']
   brew 'ansible-lint'
   brew 'molecule'
 
-  # Browsers
-  cask 'firefox'
-  cask 'microsoft-edge'
-
-  # Chat
-  cask 'slack'
+  # Shell
+  cask 'hyper'
 
   # Dev Infra
   brew 'dive'
@@ -70,9 +66,15 @@ if ENV['HOMEBREW_INSTALL_DEV'] || ENV['HOMEBREW_INSTALL_ALL']
   brew 'kubernetes-cli'
   brew 'minikube'
 
+  # Browsers
+  cask 'firefox'
+  cask 'microsoft-edge'
+
+  # Chat
+  cask 'slack'
+
   # Dev Apps
   cask 'font-jetbrains-mono'
-  cask 'hyper'
   brew 'httpie'
   brew 'qemu'
   cask 'visual-studio-code'
