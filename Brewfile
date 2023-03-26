@@ -81,14 +81,12 @@ if ENV['HOMEBREW_INSTALL_DEV'] || ENV['HOMEBREW_INSTALL_ALL']
   cask 'slack'
 end
 
-if ENV['HOMEBREW_INSTALL_DEV_EXTENDED'] || ENV['HOMEBREW_INSTALL_ALL']
+if ENV['HOMEBREW_INSTALL_ALL']
   # Dev Apps
   cask 'android-studio'
   cask 'raspberry-pi-imager'
   cask 'vnc-viewer'
-end
 
-if ENV['HOMEBREW_INSTALL_SOCIAL'] || ENV['HOMEBREW_INSTALL_ALL']
   # Chat
   cask 'discord'
   cask 'messenger'
@@ -96,9 +94,7 @@ if ENV['HOMEBREW_INSTALL_SOCIAL'] || ENV['HOMEBREW_INSTALL_ALL']
   cask 'skype'
   cask 'telegram-desktop'
   cask 'whatsapp'
-end
 
-if ENV['HOMEBREW_INSTALL_GAMES'] || ENV['HOMEBREW_INSTALL_ALL']
   # Games
   cask 'battle-net'
   cask 'epic-games'
