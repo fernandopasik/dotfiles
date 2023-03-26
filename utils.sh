@@ -1,10 +1,5 @@
 #!/bin/sh
 
-ask() {
-  read -r input
-  echo "${input:-$1}"
-}
-
 brew_bundle() {
   brew bundle --file "$HOME"/.dotfiles/Brewfile --no-lock "$@"
 }
@@ -29,22 +24,6 @@ command_line_tools_reset() {
   fi
 }
 
-current_email() {
-  /usr/libexec/PlistBuddy -c "print :Accounts:0:AccountID" "$HOME"/Library/Preferences/MobileMeAccounts.plist
-}
-
-current_first_name() {
-  id -F | grep -o "^\S*"
-}
-
-current_name() {
-  id -F
-}
-
-current_user() {
-  whoami
-}
-
 dir_size() {
   du -sh "$@"
 }
@@ -63,13 +42,6 @@ is_macos() {
 
 kcdebug() {
   kubectl run -i --tty --rm debug --image=busybox --restart=Never -- sh
-}
-
-log() {
-  BOLD='\033[37;1m'
-  NC='\033[0m' # No Color
-  echo
-  echo "${BOLD}$1${NC}"
 }
 
 past() {
