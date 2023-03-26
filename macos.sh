@@ -1,9 +1,6 @@
 #!/bin/sh
 . ./utils.sh
 
-COMPUTERNAME="$(current_first_name)'s MacBook Pro"
-LOCALHOSTNAME="$(current_first_name)-s-MacBook-Pro"
-
 # Thanks @mathiasbynens !
 # https://mths.be/macos
 
@@ -14,12 +11,6 @@ osascript -e 'tell application "System Preferences" to quit'
 ###############################################################################
 # General UI/UX                                                               #
 ###############################################################################
-
-# Set computer name (as done via System Preferences → Sharing)
-sudo scutil --set ComputerName "${COMPUTERNAME}"
-sudo scutil --set HostName "${COMPUTERNAME}"
-sudo scutil --set LocalHostName "${LOCALHOSTNAME}"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "${LOCALHOSTNAME}"
 
 # Show remaining battery percentage and time
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"
