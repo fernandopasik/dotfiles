@@ -390,3 +390,6 @@ defaults write com.divisiblebyzero.Spectacle StatusItemEnabled -bool false
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Spectacle.app", hidden:true, name:"Spectacle"}'
 
 echo OS X setup finished
+
+# Restart computer
+osascript -e 'tell app "loginwindow" to «event aevtrrst»'
