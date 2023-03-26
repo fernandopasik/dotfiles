@@ -1,5 +1,4 @@
 #!/bin/sh
-. ./utils.sh
 
 # Thanks @mathiasbynens !
 # https://mths.be/macos
