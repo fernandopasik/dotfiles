@@ -12,7 +12,6 @@ brew 'zsh-syntax-highlighting'
 
 # Essential Apps
 cask 'logi-options-plus'
-cask 'logitech-unifying'
 cask 'spectacle'
 cask 'stats'
 cask 'the-unarchiver'
@@ -28,7 +27,9 @@ cask 'smcfancontrol'
 cask 'spotify'
 
 # QuickLook plugins
+cask 'qlcolorcode'
 cask 'qlimagesize'
+cask 'qlmarkdown'
 cask 'quicklook-csv'
 cask 'quicklook-json'
 cask 'webpquicklook'
@@ -71,10 +72,6 @@ if ENV['HOMEBREW_INSTALL_DEV'] || ENV['HOMEBREW_INSTALL_ALL']
   brew 'httpie'
   brew 'qemu'
   cask 'visual-studio-code'
-
-  # QuickLook plugins
-  cask 'qlcolorcode'
-  cask 'qlmarkdown'
 
   # Browsers
   cask 'firefox'
