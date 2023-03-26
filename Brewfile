@@ -66,13 +66,6 @@ if ENV['HOMEBREW_INSTALL_DEV'] || ENV['HOMEBREW_INSTALL_ALL']
   brew 'kubernetes-cli'
   brew 'minikube'
 
-  # Browsers
-  cask 'firefox'
-  cask 'microsoft-edge'
-
-  # Chat
-  cask 'slack'
-
   # Dev Apps
   cask 'font-jetbrains-mono'
   brew 'httpie'
@@ -82,6 +75,13 @@ if ENV['HOMEBREW_INSTALL_DEV'] || ENV['HOMEBREW_INSTALL_ALL']
   # QuickLook plugins
   cask 'qlcolorcode'
   cask 'qlmarkdown'
+
+  # Browsers
+  cask 'firefox'
+  cask 'microsoft-edge'
+
+  # Chat
+  cask 'slack'
 end
 
 if ENV['HOMEBREW_INSTALL_DEV_EXTENDED'] || ENV['HOMEBREW_INSTALL_ALL']
