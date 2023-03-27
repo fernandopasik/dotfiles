@@ -191,24 +191,6 @@ find "${HOME}/Library/Application Support/Dock" -name "*-*.db" -maxdepth 1 -dele
 defaults write com.apple.dock wvous-tl-corner -int 10
 defaults write com.apple.dock wvous-tl-modifier -int 0
 
-APPS="
-  System/Applications/Launchpad
-  Applications/Google*Chrome
-  System/Applications/Home
-  System/Applications/Facetime
-  Applications/WhatsApp
-  Applications/Messenger
-  Applications/Signal
-  System/Applications/Notes
-  Applications/Hyper
-  Applications/Github*Desktop
-  Applications/Visual*Studio*Code
-"
-
-addAppToDock() {
-  defaults write com.apple.dock persistent-apps -array-add "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/$1.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>"
-}
-
 setLaunchPadGrid() {
   defaults write com.apple.dock springboard-columns -int "$1"
   defaults write com.apple.dock springboard-rows -int "$2"
@@ -217,18 +199,6 @@ setLaunchPadGrid() {
 
 # Set LaunchPad grid size
 setLaunchPadGrid 8 6
-
-# Delete all dock apps
-defaults delete com.apple.dock persistent-apps
-
-# Add apps to Dock
-for APP in ${APPS}; do
-  APP_NAME=$(echo "${APP}" | sed "s/*/ /g")
-  addAppToDock "$APP_NAME"
-done
-
-# Refresh Dock
-killall Dock
 
 ###############################################################################
 # Time Machine                                                                #
