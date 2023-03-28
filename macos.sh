@@ -127,32 +127,6 @@ defaults write com.apple.ActivityMonitor SortColumn -string "CPUUsage"
 defaults write com.apple.ActivityMonitor SortDirection -int 0
 
 ###############################################################################
-# Software Update                                                             #
-###############################################################################
-
-### Check for updates
-sudo defaults write /Library/Preferences/com.apple.SoftwareUpdate AutomaticCheckEnabled -bool true
-
-# Check for software updates daily, not just once per week
-sudo defaults write /Library/Preferences/com.apple.SoftwareUpdate ScheduleFrequency -int 1
-
-### Download new updates when available
-sudo defaults write /Library/Preferences/com.apple.SoftwareUpdate AutomaticDownload -bool true
-
-### Install macOS updates
-sudo defaults write /Library/Preferences/com.apple.SoftwareUpdate AutomaticallyInstallMacOSUpdates -bool true
-
-### Install app updates from the App Store
-sudo defaults write /Library/Preferences/com.apple.commerce AutoUpdate -bool true
-
-# Allow the App Store to reboot machine on macOS updates
-sudo defaults write /Library/Preferences/com.apple.commerce AutoUpdateRestartRequired -bool true
-
-### Install system data files and security updates
-sudo defaults write /Library/Preferences/com.apple.SoftwareUpdate ConfigDataInstall -bool true
-sudo defaults write /Library/Preferences/com.apple.SoftwareUpdate CriticalUpdateInstall -bool true
-
-###############################################################################
 # Photos                                                                      #
 ###############################################################################
 
