@@ -148,15 +148,6 @@ find "${HOME}/Library/Application Support/Dock" -name "*-*.db" -maxdepth 1 -dele
 defaults write com.apple.dock wvous-tl-corner -int 10
 defaults write com.apple.dock wvous-tl-modifier -int 0
 
-setLaunchPadGrid() {
-  defaults write com.apple.dock springboard-columns -int "$1"
-  defaults write com.apple.dock springboard-rows -int "$2"
-  defaults write com.apple.dock ResetLaunchPad -bool TRUE
-}
-
-# Set LaunchPad grid size
-setLaunchPadGrid 8 6
-
 ###############################################################################
 # Time Machine                                                                #
 ###############################################################################
