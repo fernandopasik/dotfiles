@@ -78,6 +78,9 @@ up() {
     brew cleanup
     npm up -g --no-audit --no-fund --loglevel=error
   else
+    sudo apt update
+    apt list --upgradable
+    sudo apt upgrade -y
     sudo npm up -g --no-audit --no-fund --loglevel=error
   fi
 }
