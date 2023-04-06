@@ -54,6 +54,15 @@ if ENV['HOMEBREW_INSTALL_DEV'] || ENV['HOMEBREW_INSTALL_ALL']
   # Shell
   cask 'hyper'
 
+  # OS Utils
+  brew 'curl'
+  brew 'gnupg'
+  brew 'htop'
+  brew 'iperf3'
+  brew 'neofetch'
+  brew 'rsync'
+  brew 'wget'
+
   # Dev Infra
   brew 'dive'
   cask 'docker'
