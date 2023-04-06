@@ -65,6 +65,7 @@ repos() {
       cd "$d" || exit
       "$@"
       echo "$d $(git_super_status | sed -r 's/(%G|%\{|%\})//g')"
+      echo
       cd "$REPOS" || exit
     elif [ -d "$d" ]; then
       echo "$d"
