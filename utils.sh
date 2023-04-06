@@ -1,7 +1,9 @@
 #!/bin/sh
 
+BASEDIR=$(dirname "$0")
+
 brew_bundle() {
-  brew bundle --file "$HOME"/.dotfiles/Brewfile --no-lock "$@"
+  brew bundle --file "$BASEDIR"/Brewfile --no-lock "$@"
 }
 
 brew_bundle_all() {
