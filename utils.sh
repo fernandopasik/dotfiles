@@ -63,8 +63,8 @@ repos() {
   for d in * .[!.]*; do
     if [ -d "$d" ] && [ -e "$d/.git" ]; then
       cd "$d" || exit
-      "$@"
       echo "$d $(git_super_status | sed -r 's/(%G|%\{|%\})//g')"
+      "$@"
       echo
       cd "$REPOS" || exit
     elif [ -d "$d" ]; then
