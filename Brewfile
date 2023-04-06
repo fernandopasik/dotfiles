@@ -51,11 +51,6 @@ if ENV['HOMEBREW_INSTALL_DEV'] || ENV['HOMEBREW_INSTALL_ALL']
   brew 'ruby'
   brew 'rust'
 
-  # Ansible
-  brew 'ansible'
-  brew 'ansible-lint'
-  brew 'molecule'
-
   # Shell
   cask 'hyper'
 
