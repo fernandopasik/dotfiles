@@ -17,9 +17,9 @@
     "@commitlint/config-conventional": "^17.7.0",
     "husky": "^8.0.3",
     "lint-staged": "^14.0.1",
-    "prettier": "^2.8.8",
-    "prettier-plugin-pkg": "^0.17.1",
-    "prettier-plugin-sh": "^0.12.8",
+    "prettier": "^3.0.3",
+    "prettier-plugin-pkg": "^0.18.0",
+    "prettier-plugin-sh": "^0.13.1",
     "shellcheck": "^2.2.0"
   }
 }
