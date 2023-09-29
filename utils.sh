@@ -63,7 +63,10 @@ repos() {
   for d in * .[!.]*; do
     if [ -d "$d" ] && [ -e "$d/.git" ]; then
       cd "$d" || exit
-      echo "$d $(git_super_status | sed -r 's/(%G|%\{|%\})//g')"
+
+      REPO_LABEL=$(git_super_status | sed -r 's/(%G|%\{|%\})//g')
+      echo "$d $REPO_LABEL"
+
       if ! [ $# -eq 0 ]; then
         "$@"
         echo
