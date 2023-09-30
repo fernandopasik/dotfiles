@@ -64,13 +64,23 @@ repos() {
     if [ -d "$d" ] && [ -e "$d/.git" ]; then
       cd "$d" || exit
 
+      OUTPUT_LINES=$(($("$@" | wc -l) + 1))
       REPO_LABEL=$(git_super_status | sed -r 's/(%G|%\{|%\})//g')
-      echo "$d $REPO_LABEL"
+
+      printf "%s %s" "$d" "$REPO_LABEL"
+
+      if [ $OUTPUT_LINES -gt 1 ]; then
+        printf "\n"
+      else
+        printf " "
+      fi
 
       if ! [ $# -eq 0 ]; then
         "$@"
         echo
-        echo
+        if [ $OUTPUT_LINES -gt 1 ]; then
+          echo
+        fi
       fi
       cd "$REPOS" || exit
     elif [ -d "$d" ]; then
