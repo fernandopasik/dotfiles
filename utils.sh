@@ -81,6 +81,8 @@ repos() {
         if [ $OUTPUT_LINES -gt 1 ]; then
           echo
         fi
+      else
+        echo
       fi
       cd "$REPOS" || exit
     elif [ -d "$d" ]; then
