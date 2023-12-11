@@ -102,7 +102,7 @@ up() {
     sudo apt update
     apt list --upgradable
     sudo apt upgrade -y
-    sudo apt autoremove
+    sudo apt autoremove -y
     sudo apt clean
     sudo npm up -g --no-audit --no-fund --loglevel=error
   fi
