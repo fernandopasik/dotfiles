@@ -9,7 +9,7 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "shellcheck -x *.sh .zshrc",
-    "prepare": "husky install",
+    "prepare": "husky",
     "verify": "npm run format:check && npm run lint"
   },
   "devDependencies": {
