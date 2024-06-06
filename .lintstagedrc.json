@@ -1,5 +1,5 @@
 {
-  "*": ["prettier --check"],
+  "*": ["prettier --check", "eslint"],
   "*.sh": ["shellcheck -x"],
   ".zshrc": ["shellcheck -x"]
 }
