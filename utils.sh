@@ -65,7 +65,7 @@ repos() {
       cd "$d" || exit
 
       OUTPUT=$("$@")
-      OUTPUT_LINES=$(($(echo "$OUTPUT" | wc -l) + 1))
+      OUTPUT_LINES=$(($(echo "$OUTPUT" | wc -l)))
       REPO_LABEL=$(git_super_status | sed -r 's/(%G|%\{|%\})//g')
 
       printf "%s %s" "$d" "$REPO_LABEL"
@@ -78,7 +78,6 @@ repos() {
 
       if ! [ $# -eq 0 ]; then
         echo "$OUTPUT"
-        echo
         if [ $OUTPUT_LINES -gt 1 ]; then
           echo
         fi
