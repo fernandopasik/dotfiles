@@ -88,6 +88,11 @@ export NVM_DIR="$HOME/.nvm"
 # shellcheck source=/dev/null
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
+# Flutter
+export PATH="$HOME/.flutter-sdk/bin:$PATH"
+export ANDROID_HOME=~/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools
+
 # VS Code for windows path
 if [ -d "$HOME/.vscode-server" ]; then
   VSCODE_BIN_PATH=$(find "$HOME/.vscode-server" -name "code")
