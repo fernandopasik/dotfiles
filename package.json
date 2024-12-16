@@ -14,7 +14,7 @@
     "verify": "npm run format:check && npm run lint"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.6.0",
+    "@commitlint/cli": "^19.6.1",
     "@commitlint/config-conventional": "^19.6.0",
     "eslint": "^9.17.0",
     "eslint-config-prettier": "^9.1.0",
