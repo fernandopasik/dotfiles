@@ -61,7 +61,7 @@ export DEFAULT_USER
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
 
 # Python path setup
-export PATH="$HOME"/.local/bin:$PATH
+export PATH="$HOME"/.local/bin:/usr/local/opt/python/libexec/bin:$PATH
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
