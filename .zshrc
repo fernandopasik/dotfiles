@@ -80,7 +80,7 @@ export PATH=$PATH:/opt/rvm/bin:/opt/rvm/sbin
 
 # Go setup
 export GOPATH="$HOME"/.go
-export PATH="$GOPATH/bin:$PATH"
+export PATH="$GOPATH/bin:$HOME/.local/opt/go/bin:$PATH"
 
 # NVM setup
 export NVM_DIR="$HOME/.nvm"
