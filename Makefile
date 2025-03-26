@@ -11,5 +11,8 @@ install:
 format:
 	pre-commit run --all-files yamlfmt
 
+lint:
+	yamllint .
+
 hooks:
 	pre-commit run --all-files

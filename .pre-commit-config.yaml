@@ -19,3 +19,11 @@ repos:
     hooks:
       - id: yamlfmt
         name: yamlfmt
+  - repo: local
+    hooks:
+      - id: yamllint
+        name: yamllint
+        args: [--strict]
+        entry: yamllint
+        language: system
+        types: [yaml]
