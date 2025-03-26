@@ -107,3 +107,7 @@ up() {
     sudo npm up -g --no-audit --no-fund --loglevel=error
   fi
 }
+
+nix-config() {
+  sudo -E code --wait /etc/nixos/configuration.nix && sudo nixos-rebuild switch
+}
