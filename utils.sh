@@ -108,6 +108,6 @@ up() {
   fi
 }
 
-nix-config() {
+nix_config() {
   sudo -E code --wait /etc/nixos/configuration.nix && sudo nixos-rebuild switch
 }
