@@ -13,6 +13,9 @@ Thumbs.db
 # local vscode config
 .vscode
 
+# python
+.venv
+
 # npm
 node_modules
 npm-debug.log*
