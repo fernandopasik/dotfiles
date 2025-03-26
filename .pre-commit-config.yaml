@@ -27,3 +27,8 @@ repos:
         entry: yamllint
         language: system
         types: [yaml]
+      - id: mdformat
+        name: mdformat
+        entry: mdformat
+        language: system
+        types: [markdown]
