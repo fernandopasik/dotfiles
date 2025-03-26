@@ -14,6 +14,7 @@ format:
 
 lint:
 	yamllint .
+	shellcheck -x *.sh .zshrc
 
 hooks:
 	pre-commit run --all-files
