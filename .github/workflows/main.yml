@@ -9,13 +9,13 @@ on:
 
 jobs:
   install:
-    name: Install Dependencies
+    name: Install Python
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup Node
-        uses: fernandopasik/actions/setup-node@main
+      - name: Setup Python
+        uses: fernandopasik/actions/setup-python@main
   check-format:
     name: Check Format
     runs-on: ubuntu-latest
@@ -23,10 +23,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup Node
-        uses: fernandopasik/actions/setup-node@main
+      - name: Setup Python
+        uses: fernandopasik/actions/setup-python@main
       - name: Check Format
-        run: npm run format:check
+        run: make format
   lint:
     name: Lint
     runs-on: ubuntu-latest
@@ -34,7 +34,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup Node
-        uses: fernandopasik/actions/setup-node@main
+      - name: Setup Python
+        uses: fernandopasik/actions/setup-python@main
       - name: Lint
-        run: npm run lint
+        run: make lint

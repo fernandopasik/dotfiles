@@ -1,15 +1,12 @@
 ---
 version: 2
+
 updates:
   - package-ecosystem: github-actions
     directory: /
     schedule:
       interval: daily
-  - package-ecosystem: npm
+  - package-ecosystem: pip
     directory: /
     schedule:
       interval: daily
-    groups:
-      commitlint:
-        patterns:
-          - '@commitlint*'
