@@ -1,4 +1,4 @@
-verify: hooks
+verify: format hooks
 
 venv:
 	@python -m venv .venv
@@ -7,6 +7,9 @@ venv:
 install:
 	pip install -r requirements-dev.txt
 	pre-commit install
+
+format:
+	pre-commit run --all-files yamlfmt
 
 hooks:
 	pre-commit run --all-files
