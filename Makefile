@@ -1,4 +1,4 @@
-verify: format hooks
+verify: format lint hooks
 
 venv:
 	@python -m venv .venv
