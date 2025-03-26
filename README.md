@@ -4,8 +4,8 @@ My personal dotfiles for bootstrapping my computer
 
 <!-- BADGES - START -->
 
-[![Build Status](https://github.com/fernandopasik/dotfiles/actions/workflows/main.yml/badge.svg)](https://github.com/fernandopasik/dotfiles/actions/workflows/main.yml 'Build Status')
-[![Known Vulnerabilities](https://snyk.io/test/github/fernandopasik/dotfiles/badge.svg?targetFile=package.json)](https://snyk.io/test/github/fernandopasik/dotfiles?targetFile=package.json 'Known Vulnerabilities')
+[![Build Status](https://github.com/fernandopasik/dotfiles/actions/workflows/main.yml/badge.svg)](https://github.com/fernandopasik/dotfiles/actions/workflows/main.yml "Build Status")
+[![Known Vulnerabilities](https://snyk.io/test/github/fernandopasik/dotfiles/badge.svg?targetFile=package.json)](https://snyk.io/test/github/fernandopasik/dotfiles?targetFile=package.json "Known Vulnerabilities")
 
 <!-- BADGES - END -->
 
@@ -19,8 +19,10 @@ git clone --depth 1 https://github.com/fernandopasik/dotfiles.git "$HOME"/.dotfi
 
 Inspiration and some code came from these sources:
 
-- [@nicksp](https://github.com/nicksp) (Nick S. Plekhanov) [https://github.com/nicksp/dotfiles](https://github.com/nicksp/dotfiles)
-- [@mathiasbynens](https://github.com/mathiasbynens) (Mathias Bynens) [https://github.com/mathiasbynens/dotfiles](https://github.com/mathiasbynens/dotfiles)
+- [@nicksp](https://github.com/nicksp) (Nick S. Plekhanov)
+  [https://github.com/nicksp/dotfiles](https://github.com/nicksp/dotfiles)
+- [@mathiasbynens](https://github.com/mathiasbynens) (Mathias Bynens)
+  [https://github.com/mathiasbynens/dotfiles](https://github.com/mathiasbynens/dotfiles)
 - [@jespada](https://github.com/jespada) (Jorge Espada) Shell Script tips
 
 ## License

@@ -2,7 +2,9 @@
 
 ## Reporting Bugs or suggesting features
 
-Ensure the bug or feature has not been reported before searching by [searching](https://github.com/fernandopasik/dotfiles/issues) first. If no similar issue is found please submit a [new](https://github.com/fernandopasik/dotfiles/issues/new/choose) one.
+Ensure the bug or feature has not been reported before searching by
+[searching](https://github.com/fernandopasik/dotfiles/issues) first. If no similar issue is found
+please submit a [new](https://github.com/fernandopasik/dotfiles/issues/new/choose) one.
 
 ## Submitting changes
 
@@ -19,4 +21,6 @@ Ensure the bug or feature has not been reported before searching by [searching](
 
 - Shell scripts styles are checked with [shellcheck](https://www.shellcheck.net/).
 - [Prettier](https://prettier.io) will catch most styling issues that may exist in your code.
-- Git commit messages are checked with [commitlint](https://github.com/marionebl/commitlint) and follow the [conventional commits rules](https://github.com/marionebl/commitlint/tree/master/@commitlint/config-conventional#rules).
+- Git commit messages are checked with [commitlint](https://github.com/marionebl/commitlint) and
+  follow the
+  [conventional commits rules](https://github.com/marionebl/commitlint/tree/master/@commitlint/config-conventional#rules).
