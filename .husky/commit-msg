@@ -1,1 +1,0 @@
-npm exec -c 'commitlint --edit $1'
