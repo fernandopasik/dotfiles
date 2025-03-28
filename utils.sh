@@ -106,6 +106,8 @@ up() {
     brew upgrade
     brew cleanup
     npm up -g --no-audit --no-fund --loglevel=error
+  elif is_nixos; then
+    sudo nixos-rebuild switch --upgrade
   else
     sudo apt update
     apt list --upgradable
