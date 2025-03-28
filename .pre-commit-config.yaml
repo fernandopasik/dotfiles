@@ -19,10 +19,6 @@ repos:
     hooks:
       - id: yamlfmt
         name: yamlfmt
-  - repo: https://github.com/shellcheck-py/shellcheck-py
-    rev: v0.10.0.1
-    hooks:
-      - id: shellcheck
   - repo: local
     hooks:
       - id: yamllint
@@ -36,3 +32,10 @@ repos:
         entry: mdformat
         language: system
         types: [markdown]
+      - id: shellcheck
+        name: shellcheck
+        args: [-x]
+        entry: shellcheck
+        language: system
+        types: [shell]
+        files: (\.sh$|\.zshrc$)
