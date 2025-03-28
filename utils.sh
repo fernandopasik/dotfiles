@@ -42,6 +42,14 @@ is_macos() {
   fi
 }
 
+is_nixos() {
+  if  [ -e "/etc/nixos" ]; then
+    return 0
+  else
+    return 1
+  fi
+}
+
 kcdebug() {
   kubectl run -i --tty --rm debug --image=busybox --restart=Never -- sh
 }
