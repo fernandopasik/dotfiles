@@ -77,6 +77,8 @@ followTags = true
 [alias]
 a = "add"
 aa = "add ."
+ahead = "!git rev-list --count HEAD ^origin/$(git cb)"
+behind = "!git rev-list --count origin/$(git cb) ^HEAD"
 br = "branch"
 c = "commit"
 ca = "commit -a"
