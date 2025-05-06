@@ -74,7 +74,6 @@ repos() {
 
       OUTPUT=$("$@")
       OUTPUT_LINES=$(($(echo "$OUTPUT" | wc -l)))
-      REPO_LABEL=$(git_super_status | sed -r 's/(%G|%\{|%\})//g')
 
       printf "%s %s" "$d" "$REPO_LABEL"
 
