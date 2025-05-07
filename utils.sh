@@ -65,6 +65,22 @@ past() {
   GIT_AUTHOR_DATE=$D GIT_COMMITTER_DATE=$D "$@"
 }
 
+clone_all_repos() {
+  USER=$(gh api user --jq .login)
+  REPOS_FOLDER=~/repos
+  REPOS=$(env PAGER=cat gh repo list --limit 1000 --json name,isArchived --jq '.[] | select(.isArchived == false) | .name')
+
+  echo "📦 Cloning all $USER repos"
+
+  printf '%s\n' "$REPOS" | while IFS= read -r REPO; do
+    if ! [ -d "$REPOS_FOLDER/$REPO" ]; then
+      gh repo clone "$USER/$REPO" "$REPOS_FOLDER/$REPO"
+      echo "🟢 Cloned $USER/$REPO"
+    fi
+  done
+  echo "📦 All repos cloned"
+}
+
 repos() {
   REPOS=~/repos/
   cd "$REPOS" || exit
