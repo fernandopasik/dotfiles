@@ -81,6 +81,7 @@ if ENV['HOMEBREW_INSTALL_DEV'] || ENV['HOMEBREW_INSTALL_ALL']
 
   # Chat
   cask 'slack'
+  cask 'whatsapp'
 end
 
 if ENV['HOMEBREW_INSTALL_ALL']
@@ -95,7 +96,6 @@ if ENV['HOMEBREW_INSTALL_ALL']
   cask 'signal'
   cask 'skype'
   cask 'telegram-desktop'
-  cask 'whatsapp'
 
   # Games
   cask 'battle-net'
