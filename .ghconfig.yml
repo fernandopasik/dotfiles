@@ -6,6 +6,6 @@ prompt: enabled
 prefer_editor_prompt: disabled
 pager: cat
 aliases:
-    co: pr checkout
+  co: pr checkout
 http_unix_socket:
 browser:
