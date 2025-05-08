@@ -21,9 +21,7 @@ cask 'vlc'
 cask 'google-chrome'
 
 # Apps
-cask 'coconutbattery'
 cask 'google-drive'
-cask 'smcfancontrol'
 cask 'spotify'
 
 # QuickLook plugins
