@@ -94,7 +94,6 @@ if ENV['HOMEBREW_INSTALL_ALL']
   cask 'discord'
   cask 'messenger'
   cask 'signal'
-  cask 'skype'
   cask 'telegram-desktop'
 
   # Games
