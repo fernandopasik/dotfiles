@@ -74,9 +74,11 @@ if ENV['HOMEBREW_INSTALL_DEV'] || ENV['HOMEBREW_INSTALL_ALL']
   brew 'minikube'
 
   # Dev Apps
+  cask 'android-studio'
   cask 'font-jetbrains-mono'
   brew 'httpie'
   brew 'qemu'
+  cask 'raspberry-pi-imager'
   cask 'visual-studio-code'
 
   # Browsers
@@ -89,11 +91,6 @@ if ENV['HOMEBREW_INSTALL_DEV'] || ENV['HOMEBREW_INSTALL_ALL']
 end
 
 if ENV['HOMEBREW_INSTALL_ALL']
-  # Dev Apps
-  cask 'android-studio'
-  cask 'raspberry-pi-imager'
-  cask 'vnc-viewer'
-
   # Chat
   cask 'discord'
   cask 'messenger'
