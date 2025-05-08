@@ -1,3 +1,4 @@
+---
 version: 1
 git_protocol: https
 editor: code --wait
