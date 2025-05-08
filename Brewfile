@@ -32,6 +32,10 @@ cask 'quicklook-csv'
 cask 'quicklook-json'
 cask 'webpquicklook'
 
+# Chat
+cask 'slack'
+cask 'whatsapp'
+
 if ENV['HOMEBREW_INSTALL_DEV'] || ENV['HOMEBREW_INSTALL_ALL']
   # Git
   brew 'gh'
@@ -79,9 +83,6 @@ if ENV['HOMEBREW_INSTALL_DEV'] || ENV['HOMEBREW_INSTALL_ALL']
   cask 'firefox'
   cask 'microsoft-edge'
 
-  # Chat
-  cask 'slack'
-  cask 'whatsapp'
 end
 
 if ENV['HOMEBREW_INSTALL_ALL']
