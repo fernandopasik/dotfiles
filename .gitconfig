@@ -1,6 +1,13 @@
 [include]
 path = .gitconfig.local
 
+[credential "https://github.com"]
+	helper =
+	helper = !/run/current-system/sw/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper =
+	helper = !/run/current-system/sw/bin/gh auth git-credential
+
 [filter "lfs"]
 required = true
 clean = git-lfs clean -- %f
