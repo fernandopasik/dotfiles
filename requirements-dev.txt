@@ -2,6 +2,6 @@ mdformat==0.7.22
 mdformat-frontmatter==2.0.8
 mdformat-gfm==0.4.1
 pre-commit==4.2.0
-pre-commit-hooks==5.0.0
+pre-commit-hooks==6.0.0
 shellcheck-py==0.10.0.1
 yamllint==1.37.1
