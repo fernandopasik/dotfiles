@@ -1,4 +1,4 @@
-mdformat==0.7.22
+mdformat==1.0.0
 mdformat-frontmatter==2.0.8
 mdformat-gfm==1.0.0
 pre-commit==4.4.0
