@@ -1,6 +1,8 @@
 #!/bin/sh
 
 alias ds="du -sh"
+is_macos() { [ "$(uname -s)" = "Darwin" ]; }
+is_nixos() { [ -e "/etc/nixos" ]; }
 
 command_line_tools_reset() {
   CMD_PATH=$(xcode-select --print-path)
@@ -16,22 +18,6 @@ command_line_tools_reset() {
 
 flush_dns() {
   sudo killall -HUP mDNSResponder
-}
-
-is_macos() {
-  if [ "$(uname -s)" = "Darwin" ]; then
-    return 0
-  else
-    return 1
-  fi
-}
-
-is_nixos() {
-  if  [ -e "/etc/nixos" ]; then
-    return 0
-  else
-    return 1
-  fi
 }
 
 kcdebug() {
