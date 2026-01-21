@@ -10,15 +10,16 @@ on:
 jobs:
   install:
     name: Install Python
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
     steps:
       - name: Checkout
         uses: actions/checkout@v6
       - name: Setup Python
         uses: fernandopasik/actions/setup-python@main
+
   check-format:
     name: Check Format
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
     needs: install
     steps:
       - name: Checkout
@@ -27,9 +28,10 @@ jobs:
         uses: fernandopasik/actions/setup-python@main
       - name: Check Format
         run: make format
+
   lint:
     name: Lint
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
     needs: install
     steps:
       - name: Checkout
