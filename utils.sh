@@ -104,7 +104,9 @@ EOF
 
       "$@"
 
-      printf "\n"
+      if [ $# -ne 0 ]; then
+        printf "\n"
+      fi
 
       cd "$REPOS" || exit
     elif [ -d "$d" ]; then
