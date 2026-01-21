@@ -189,5 +189,5 @@ git_status() {
     STATUS="$STATUS 📥 $STASHED"
   fi
 
-  echo "$STATUS"
+  printf "%s" "$STATUS"
 }
