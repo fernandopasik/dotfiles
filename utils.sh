@@ -133,10 +133,6 @@ up() {
   fi
 }
 
-nix_config() {
-  sudo -E code --wait /etc/nixos/configuration.nix && sudo nixos-rebuild switch
-}
-
 git_status() {
 
   CURRENT_BRANCH=$(git cb)
