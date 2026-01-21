@@ -68,36 +68,51 @@ clone_all_repos() {
 }
 
 repos() {
+  one_line=0
+  if [ "$1" = "-s" ]; then
+    one_line=1
+    shift
+  fi
+
   REPOS=~/repos/
   cd "$REPOS" || exit
-  for d in * .[!.]*; do
+
+  dirs=$(find . -mindepth 1 -maxdepth 1 -type d -exec basename {} \;)
+
+  max=0
+  while IFS= read -r d; do
+    len=$(printf "%s" "$d" | wc -c)
+    len=$((len - 1))
+    [ "$len" -gt "$max" ] && max=$len
+  done <<EOF
+$dirs
+EOF
+
+  while IFS= read -r d; do
     if [ -d "$d" ] && [ -e "$d/.git" ]; then
+      len=$(printf "%s" "$d" | wc -c)
+      len=$((len - 1))
+      pad=$((max - len + 2))
+
+      if [ $one_line -eq 0 ]; then
+        printf "%s\n" "$d"
+      else
+        printf "%s%*s" "$d" "$pad" ""
+      fi
+
       cd "$d" || exit
 
-      OUTPUT=$("$@")
-      OUTPUT_LINES=$(($(echo "$OUTPUT" | wc -l)))
+      "$@"
 
-      printf "%s %s" "$d" "$REPO_LABEL"
+      printf "\n"
 
-      if [ $OUTPUT_LINES -gt 1 ]; then
-        printf "\n"
-      else
-        printf " "
-      fi
-
-      if ! [ $# -eq 0 ]; then
-        echo "$OUTPUT"
-        if [ $OUTPUT_LINES -gt 1 ]; then
-          echo
-        fi
-      else
-        echo
-      fi
       cd "$REPOS" || exit
     elif [ -d "$d" ]; then
       echo "$d"
     fi
-  done
+   done <<EOF
+$dirs
+EOF
 }
 
 up() {
