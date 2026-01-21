@@ -1,5 +1,7 @@
 #!/bin/sh
 
+alias ds="du -sh"
+
 command_line_tools_reset() {
   CMD_PATH=$(xcode-select --print-path)
   if test "${CMD_PATH#*CommandLineTools}" != "$CMD_PATH"; then
@@ -10,10 +12,6 @@ command_line_tools_reset() {
   else
     echo "Command Line Tools not present"
   fi
-}
-
-dir_size() {
-  du -sh "$@"
 }
 
 flush_dns() {
