@@ -73,32 +73,27 @@ $dirs
 EOF
 
   while IFS= read -r d; do
-    if [ -d "$d" ] && [ -e "$d/.git" ]; then
-      len=$(printf "%s" "$d" | wc -c)
-      len=$((len - 1))
-      pad=$((max - len + 2))
+    len=$(printf "%s" "$d" | wc -c)
+    len=$((len - 1))
+    pad=$((max - len + 2))
 
-      if [ $one_line -eq 0 ]; then
-        printf "%s\n" "$d"
-      else
-        printf "%s%*s" "$d" "$pad" ""
-      fi
-
-      cd "$d" || exit
-
-      "$@"
-
-      if [ $# -ne 0 ]; then
-        printf "\n"
-      fi
-
-      cd "$REPOS" || exit
-    elif [ -d "$d" ]; then
-      echo "$d"
+    if [ $one_line -eq 0 ]; then
+      printf "%s\n" "$d"
+    else
+      printf "%s%*s" "$d" "$pad" ""
     fi
+
+    if [ -d "$d" ] && [ -e "$d/.git" ]; then
+      cd "$d" || exit
+      "$@"
+      cd "$REPOS" || exit
+    fi
+
+    [ $# -ne 0 ] && printf "\n"
    done <<EOF
 $dirs
 EOF
+
 }
 
 up() {
