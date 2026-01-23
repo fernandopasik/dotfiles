@@ -7,5 +7,6 @@ prefer_editor_prompt: disabled
 pager: cat
 aliases:
   co: pr checkout
+  prs: search prs --state open --owner @me
 http_unix_socket:
 browser:
