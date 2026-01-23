@@ -8,5 +8,19 @@ pager: cat
 aliases:
   co: pr checkout
   prs: search prs --state open --owner @me
+  security: |-
+    api repos/{owner}/{repo}/dependabot/alerts
+    -q '
+      .[] |
+      select(.state=="open") |
+      "\(.dependency.package.ecosystem)\t" +
+      "\(.dependency.package.name)\t" +
+      "\u001b[" +
+      "\({"critical":"31", "high":"31", "moderate":"33", "low":"32" }[.security_advisory.severity|ascii_downcase])" +
+      "m" +
+      "\(.security_advisory.severity)\u001b[0m\t" +
+      "\u001b[34m\(.html_url)\u001b[0m\t" +
+      "\(.security_advisory.summary)"
+    '
 http_unix_socket:
 browser:
