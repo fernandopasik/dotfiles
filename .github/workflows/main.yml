@@ -3,8 +3,7 @@ name: main
 # yamllint disable-line rule:truthy
 on:
   push:
-    branches:
-      - main
+    branches: [main]
   pull_request: {}
 
 permissions: read-all
