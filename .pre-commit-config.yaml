@@ -18,7 +18,6 @@ repos:
     rev: v0.21.0
     hooks:
       - id: yamlfmt
-        name: yamlfmt
   - repo: local
     hooks:
       - id: yamllint
