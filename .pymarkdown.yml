@@ -1,0 +1,15 @@
+---
+plugins:
+  first-header-h1:
+    enabled: true
+  first-heading-h1:
+    enabled: true
+  line-length:
+    enabled: false
+  ul-start-left:
+    enabled: true
+extensions:
+  front-matter:
+    enabled: true
+  markdown-task-list-items:
+    enabled: true

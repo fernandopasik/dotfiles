@@ -14,6 +14,7 @@ format:
 
 lint:
 	yamllint .
+	pymarkdownlnt scan .
 	shellcheck -x *.sh .zshrc
 
 hooks:

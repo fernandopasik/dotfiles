@@ -31,6 +31,12 @@ repos:
         entry: mdformat
         language: system
         types: [markdown]
+      - id: pymarkdown
+        name: pymarkdown
+        args: [scan]
+        entry: pymarkdown
+        language: system
+        types: [markdown]
       - id: shellcheck
         name: shellcheck
         args: [-x]
