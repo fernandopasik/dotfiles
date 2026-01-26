@@ -10,3 +10,5 @@ rules:
     check-keys: true
     quote-type: single
     required: only-when-needed
+  truthy:
+    check-keys: false
