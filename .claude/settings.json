@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "cleanupPeriodDays": 7,
+  "enableAllProjectMcpServers": false,
+  "env": {
+    "CLAUDE_CODE_DISABLE_FEEDBACK_SURVEY": "1",
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
+    "CLAUDE_CODE_ENABLE_TELEMETRY": "0",
+    "CLAUDE_CODE_IDE_SKIP_AUTO_INSTALL": "1",
+    "DISABLE_ERROR_REPORTING": "1",
+    "DISABLE_TELEMETRY": "1"
+  },
+  "includeCoAuthoredBy": false,
+  "permissions": {
+    "allow": [
+      "Bash(find:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)"
+    ],
+    "ask": [
+      "Bash(rm:*)",
+      "WebFetch",
+      "WebSearch"
+    ],
+    "deny": [
+      "Bash(curl:*)",
+      "Bash(ssh:*)",
+      "Bash(su:*)",
+      "Bash(sudo:*)",
+      "Bash(wget:*)",
+      "Read(**/.env)"
+    ],
+    "disableBypassPermissionsMode": "disable"
+  },
+  "sandbox": {
+    "allowUnsandboxedCommands": false,
+    "autoAllowBashIfSandboxed": false,
+    "enabled": true,
+    "filesystem": {
+      "allowWrite": [
+        "~/repos"
+      ],
+      "denyRead": [
+        "~/.aws",
+        "~/.bash_history",
+        "~/.config",
+        "~/.gnupg",
+        "~/.npmrc",
+        "~/.ssh",
+        "~/.yarnrc.yml",
+        "~/.yarnrc",
+        "~/.zsh_history"
+      ]
+    },
+    "network": {
+      "allowedDomains": [
+        "api.github.com",
+        "github.com",
+        "npmjs.com",
+        "pypi.org",
+        "raw.githubusercontent.com",
+        "registry.npmjs.org",
+        "nodejs.org"
+      ]
+    }
+  }
+}
