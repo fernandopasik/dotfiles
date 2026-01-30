@@ -15,7 +15,9 @@
     "allow": [
       "Bash(find:*)",
       "Bash(git diff:*)",
-      "Bash(git log:*)"
+      "Bash(git log:*)",
+      "Edit(~/repos/**)",
+      "Write(~/repos/**)"
     ],
     "ask": [
       "Bash(rm:*)",
