@@ -8,6 +8,7 @@ pager: cat
 aliases:
   co: pr checkout
   prs: search prs --state open --owner @me
+  repo private: repo list --source --visibility private --no-archived
   repo public: repo list --source --visibility public --no-archived
   security: |-
     api repos/{owner}/{repo}/dependabot/alerts
