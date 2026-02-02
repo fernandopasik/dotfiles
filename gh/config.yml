@@ -10,6 +10,22 @@ aliases:
   prs: search prs --state open --owner @me
   repo private: repo list --source --visibility private --no-archived
   repo public: repo list --source --visibility public --no-archived
+  repo status: |
+    !gh repo list --limit 100 --no-archived --json nameWithOwner,defaultBranchRef \
+      --template '{{range .}}{{.nameWithOwner}} {{.defaultBranchRef.name}}{{"\n"}}{{end}}' | \
+    while read -r repo branch; do
+      padded=$(printf '%-60s' "$repo")
+      gh run list --repo "$repo" --branch "$branch" --limit 1 --json conclusion \
+        --template '{{range .}}'"$padded"'{{""}}
+          {{- if eq .conclusion "success" -}}
+            {{color "green" .conclusion}}
+          {{- else if eq .conclusion "failure" -}}
+            {{color "red" .conclusion}}
+          {{- else -}}
+            {{color "yellow" .conclusion}}
+          {{- end}}{{"\n"}}
+        {{- end}}'
+    done
   security: |-
     api repos/{owner}/{repo}/dependabot/alerts
     -q '
