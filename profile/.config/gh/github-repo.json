@@ -1,0 +1,30 @@
+{
+  "allow_auto_merge": true,
+  "allow_merge_commit": false,
+  "allow_rebase_merge": false,
+  "allow_squash_merge": true,
+  "allow_update_branch": true,
+  "default_branch": "main",
+  "delete_branch_on_merge": true,
+  "has_discussions": false,
+  "has_downloads": true,
+  "has_issues": true,
+  "has_projects": false,
+  "has_pull_requests": true,
+  "has_wiki": false,
+  "pull_request_creation_policy": "all",
+  "security_and_analysis": {
+    "dependabot_security_updates": {
+      "status": "enabled"
+    },
+    "secret_scanning": {
+      "status": "enabled"
+    },
+    "secret_scanning_push_protection": {
+      "status": "enabled"
+    }
+  },
+  "squash_merge_commit_message": "COMMIT_MESSAGES",
+  "squash_merge_commit_title": "COMMIT_OR_PR_TITLE",
+  "use_squash_pr_title_as_default": true
+}
