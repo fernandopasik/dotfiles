@@ -1,2 +1,3 @@
 --dir=profile
+--no-folding
 --target=~
