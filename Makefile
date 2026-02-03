@@ -19,3 +19,6 @@ lint:
 
 hooks:
 	pre-commit run --all-files
+
+build:
+	stow .
