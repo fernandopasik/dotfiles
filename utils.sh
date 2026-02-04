@@ -1,8 +1,6 @@
 #!/bin/sh
 
 alias ds="du -sh"
-is_macos() { [ "$(uname -s)" = "Darwin" ]; }
-is_nixos() { [ -e "/etc/nixos" ]; }
 
 flush_dns() {
   sudo killall -HUP mDNSResponder
@@ -74,13 +72,13 @@ EOF
 }
 
 up() {
-  if is_macos; then
+  if [ "$(uname -s)" = "Darwin" ]; then
     brew update > /dev/null
     brew outdated
     brew upgrade
     brew cleanup
     npm up -g --no-audit --no-fund --loglevel=error
-  elif is_nixos; then
+  elif [ -e "/etc/nixos" ]; then
     sudo nixos-rebuild switch --upgrade
   else
     sudo apt update
