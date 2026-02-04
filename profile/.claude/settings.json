@@ -30,7 +30,26 @@
       "Bash(su:*)",
       "Bash(sudo:*)",
       "Bash(wget:*)",
-      "Read(**/.env)"
+      "Read(**/.env)",
+      // npm
+      "Bash(npm install*)",
+      "Bash(npm i *)",
+      "Bash(npm ci*)",
+      "Bash(npm add*)",
+      // pnpm
+      "Bash(pnpm install*)",
+      "Bash(pnpm add*)",
+      "Bash(pnpm i *)",
+      // yarn
+      "Bash(yarn install*)",
+      "Bash(yarn add*)",
+      // pip
+      "Bash(pip install*)",
+      "Bash(pip3 install*)",
+      // gem
+      "Bash(bundle install*)",
+      "Bash(bundle add*)",
+      "Bash(gem install*)"
     ],
     "disableBypassPermissionsMode": "disable"
   },
