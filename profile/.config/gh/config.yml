@@ -8,6 +8,16 @@ pager: cat
 aliases:
   co: pr checkout
   prs: search prs --state open --owner @me
+  repo clone_all: |
+    !gh repo list --limit 100 --source --no-archived --json name,owner --jq '.[] | .owner.login + " " + .name' | \
+    while read -r owner repo; do
+      dir="$HOME/repos/$repo"
+      if [ ! -d "$dir" ]; then
+         echo "🟡 Cloning $owner/$repo"
+        gh repo clone "$owner/$repo" "$dir"
+      fi
+    done
+    echo "📦 All repos cloned"
   repo private: repo list --source --visibility private --no-archived
   repo public: repo list --source --visibility public --no-archived
   repo status: |

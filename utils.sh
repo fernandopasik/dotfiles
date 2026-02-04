@@ -10,22 +10,6 @@ kcdebug() {
   kubectl run -i --tty --rm debug --image=busybox --restart=Never -- sh
 }
 
-clone_all_repos() {
-  USER=$(gh api user --jq .login)
-  REPOS_FOLDER=~/repos
-  REPOS=$(env PAGER=cat gh repo list --limit 1000 --json name,isArchived --jq '.[] | select(.isArchived == false) | .name')
-
-  echo "📦 Cloning all $USER repos"
-
-  printf '%s\n' "$REPOS" | while IFS= read -r REPO; do
-    if ! [ -d "$REPOS_FOLDER/$REPO" ]; then
-      gh repo clone "$USER/$REPO" "$REPOS_FOLDER/$REPO"
-      echo "🟢 Cloned $USER/$REPO"
-    fi
-  done
-  echo "📦 All repos cloned"
-}
-
 repos() {
   one_line=0
   if [ "$1" = "-s" ]; then
