@@ -64,13 +64,19 @@
       "denyRead": [
         "~/.aws",
         "~/.bash_history",
+        "~/.bash_profile",
+        "~/.bashrc",
         "~/.config",
         "~/.gnupg",
+        "~/.local",
         "~/.npmrc",
+        "~/.pnpm-store",
+        "~/.profile",
         "~/.ssh",
         "~/.yarnrc.yml",
         "~/.yarnrc",
-        "~/.zsh_history"
+        "~/.zsh_history",
+        "~/.zshrc"
       ]
     },
     "network": {
