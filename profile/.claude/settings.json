@@ -15,11 +15,24 @@
       "Bash(find:*)",
       "Bash(git diff:*)",
       "Bash(git log:*)",
+      "Bash(npm run:*)",
+      "Bash(pnpm run:*)",
+      "Bash(yarn run:*)",
       "Edit(~/repos/**)",
       "Write(~/repos/**)"
     ],
     "ask": [
+      "Bash(bundle:*)",
+      "Bash(gem:*)",
+      "Bash(npm:*)",
+      "Bash(npx:*)",
+      "Bash(pip:*)",
+      "Bash(pip3:*)",
+      "Bash(pnpm:*)",
+      "Bash(poetry:*)",
       "Bash(rm:*)",
+      "Bash(uv:*)",
+      "Bash(yarn:*)",
       "WebFetch",
       "WebSearch"
     ],
@@ -34,25 +47,6 @@
       "Read(**/.env)",
       "Read(**/.secrets)",
       "Read(**/secrets.*)"
-      // npm
-      "Bash(npm install*)",
-      "Bash(npm i *)",
-      "Bash(npm ci*)",
-      "Bash(npm add*)",
-      // pnpm
-      "Bash(pnpm install*)",
-      "Bash(pnpm add*)",
-      "Bash(pnpm i *)",
-      // yarn
-      "Bash(yarn install*)",
-      "Bash(yarn add*)",
-      // pip
-      "Bash(pip install*)",
-      "Bash(pip3 install*)",
-      // gem
-      "Bash(bundle install*)",
-      "Bash(bundle add*)",
-      "Bash(gem install*)"
     ],
     "disableBypassPermissionsMode": "disable"
   },
