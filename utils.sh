@@ -4,18 +4,6 @@ alias ds="du -sh"
 is_macos() { [ "$(uname -s)" = "Darwin" ]; }
 is_nixos() { [ -e "/etc/nixos" ]; }
 
-command_line_tools_reset() {
-  CMD_PATH=$(xcode-select --print-path)
-  if test "${CMD_PATH#*CommandLineTools}" != "$CMD_PATH"; then
-    sudo rm -rf "$CMD_PATH"
-    echo "Command Line Tools deleted"
-    xcode-select --install
-    echo "Command Line Tools re-installed"
-  else
-    echo "Command Line Tools not present"
-  fi
-}
-
 flush_dns() {
   sudo killall -HUP mDNSResponder
 }
