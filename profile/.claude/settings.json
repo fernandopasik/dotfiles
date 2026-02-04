@@ -26,6 +26,7 @@
     ],
     "deny": [
       "Bash(curl:*)",
+      "Bash(git push:*)",
       "Bash(ssh:*)",
       "Bash(su:*)",
       "Bash(sudo:*)",
