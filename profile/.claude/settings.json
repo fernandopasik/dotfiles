@@ -30,7 +30,10 @@
       "Bash(su:*)",
       "Bash(sudo:*)",
       "Bash(wget:*)",
+      "Read(**/.env.*)",
       "Read(**/.env)",
+      "Read(**/.secrets)",
+      "Read(**/secrets.*)"
       // npm
       "Bash(npm install*)",
       "Bash(npm i *)",
