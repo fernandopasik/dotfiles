@@ -24,17 +24,6 @@ kcdebug() {
   kubectl run -i --tty --rm debug --image=busybox --restart=Never -- sh
 }
 
-past() {
-  if is_macos; then
-    D=$(date -v -"$1" '+%a %h %d %H:%M:%S %Y %z')
-  else
-    D=$(date -d -"$1" '+%a %h %d %H:%M:%S %Y %z')
-  fi
-
-  shift
-  GIT_AUTHOR_DATE=$D GIT_COMMITTER_DATE=$D "$@"
-}
-
 clone_all_repos() {
   USER=$(gh api user --jq .login)
   REPOS_FOLDER=~/repos
