@@ -60,6 +60,7 @@
     "allowUnsandboxedCommands": false,
     "autoAllowBashIfSandboxed": false,
     "enabled": true,
+    "failIfUnavailable": true,
     "filesystem": {
       "allowWrite": [
         "~/repos"
