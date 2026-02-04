@@ -76,17 +76,6 @@
         "~/.zsh_history",
         "~/.zshrc"
       ]
-    },
-    "network": {
-      "allowedDomains": [
-        "api.github.com",
-        "github.com",
-        "npmjs.com",
-        "pypi.org",
-        "raw.githubusercontent.com",
-        "registry.npmjs.org",
-        "nodejs.org"
-      ]
     }
   }
 }
