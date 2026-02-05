@@ -13,7 +13,7 @@ aliases:
     while read -r owner repo; do
       dir="$HOME/repos/$repo"
       if [ ! -d "$dir" ]; then
-         echo "🟡 Cloning $owner/$repo"
+        echo "🟡 Cloning $owner/$repo"
         gh repo clone "$owner/$repo" "$dir"
       fi
     done
