@@ -38,6 +38,8 @@
       "WebSearch"
     ],
     "deny": [
+      "Bash(chmod:*)",
+      "Bash(chown:*)",
       "Bash(curl:*)",
       "Bash(git push:*)",
       "Bash(ssh:*)",
