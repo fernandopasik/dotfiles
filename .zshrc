@@ -48,29 +48,3 @@ fi
 
 # shellcheck source=/dev/null
 . $USR_PATH/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# ********************************
-# ****** User configuration ******
-# ********************************
-
-# Default zsh user
-DEFAULT_USER=$(whoami)
-export DEFAULT_USER
-
-# Bash paths
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
-
-# VS Code for windows path
-if [ -d "$HOME/.vscode-server" ]; then
-  VSCODE_BIN_PATH=$(find "$HOME/.vscode-server" -name "code")
-  VSCODE_BIN_DIR=$(dirname "$(realpath --relative-to="$HOME" "$VSCODE_BIN_PATH")")
-  export PATH="$HOME/$VSCODE_BIN_DIR:$PATH"
-fi
-
-DOTFILES_DIR=$(dirname "$(readlink -n "$HOME/.zshrc")")
-
-# shellcheck source=utils.sh
-. "$DOTFILES_DIR"/utils.sh
-
-# shellcheck source=/dev/null
-. "$HOME"/.profile
