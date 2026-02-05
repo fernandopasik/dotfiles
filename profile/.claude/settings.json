@@ -52,6 +52,7 @@
       "Read(**/secrets.*)"
     ],
     "defaultMode": "default",
+    "disableAutoMode": "disable",
     "disableBypassPermissionsMode": "disable"
   },
   "sandbox": {
