@@ -1,15 +1,4 @@
 #!/bin/sh
-
-alias ds="du -sh"
-
-flush_dns() {
-  sudo killall -HUP mDNSResponder
-}
-
-kcdebug() {
-  kubectl run -i --tty --rm debug --image=busybox --restart=Never -- sh
-}
-
 repos() {
   one_line=0
   if [ "$1" = "-s" ]; then
