@@ -60,42 +60,6 @@ export DEFAULT_USER
 # Bash paths
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
 
-# Python path setup
-export PATH="$HOME"/.local/bin:/usr/local/opt/python/libexec/bin:$PATH
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-
-# Ruby setup
-export PATH=/usr/local/opt/ruby/bin:$PATH
-
-# Ruby gem setup
-if [ -x "$(command -v gem)" ]; then
-  GEM_DIR=$(gem env gemdir)
-  export PATH="$GEM_DIR/bin:$PATH"
-fi
-
-# Ruby RVM setup
-export PATH=$PATH:/opt/rvm/bin:/opt/rvm/sbin
-
-# Go setup
-export GOPATH="$HOME"/.go
-export PATH="$GOPATH/bin:$HOME/.local/opt/go/bin:$PATH"
-
-# NVM setup
-export NVM_DIR="$HOME/.nvm"
-# This loads nvm
-# shellcheck source=/dev/null
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-# This loads nvm bash_completion
-# shellcheck source=/dev/null
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-
-# Flutter
-export PATH="$HOME/.flutter-sdk/bin:$PATH"
-export ANDROID_HOME=~/Android/Sdk
-export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools
-
 # VS Code for windows path
 if [ -d "$HOME/.vscode-server" ]; then
   VSCODE_BIN_PATH=$(find "$HOME/.vscode-server" -name "code")
