@@ -44,25 +44,6 @@ EOF
 
 }
 
-up() {
-  if [ "$(uname -s)" = "Darwin" ]; then
-    brew update > /dev/null
-    brew outdated
-    brew upgrade
-    brew cleanup
-    npm up -g --no-audit --no-fund --loglevel=error
-  elif [ -e "/etc/nixos" ]; then
-    sudo nixos-rebuild switch --upgrade
-  else
-    sudo apt update
-    apt list --upgradable
-    sudo apt upgrade -y
-    sudo apt autoremove -y
-    sudo apt clean
-    sudo npm up -g --no-audit --no-fund --loglevel=error
-  fi
-}
-
 git_status() {
 
   CURRENT_BRANCH=$(git cb)
