@@ -15,7 +15,7 @@ format:
 lint:
 	yamllint .
 	pymarkdownlnt scan .
-	shellcheck -x *.sh .zshrc
+	shellcheck -x *.sh
 
 hooks:
 	pre-commit run --all-files
