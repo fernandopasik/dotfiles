@@ -60,9 +60,6 @@
     "enabled": true,
     "failIfUnavailable": true,
     "filesystem": {
-      "allowWrite": [
-        "~/repos"
-      ],
       "denyRead": [
         "~/.aws",
         "~/.bash_history",
