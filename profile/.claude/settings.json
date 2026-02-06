@@ -18,9 +18,7 @@
       "Bash(git log:*)",
       "Bash(npm run:*)",
       "Bash(pnpm run:*)",
-      "Bash(yarn run:*)",
-      "Edit(~/repos/**)",
-      "Write(~/repos/**)"
+      "Bash(yarn run:*)"
     ],
     "ask": [
       "Bash(bundle:*)",
@@ -96,6 +94,11 @@
         "~/.yarnrc",
         "~/.zsh_history",
         "~/.zshrc"
+      ],
+      "denyWrite": [
+        "./.claude/settings.json",
+        "/etc/claude-code/managed-settings.json",
+        "~/.claude/settings.json"
       ]
     }
   }
