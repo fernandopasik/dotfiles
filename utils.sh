@@ -50,19 +50,7 @@ git_status() {
   STATUS=$(git -c color.ui=always cbf)
 
   if [ "$CURRENT_BRANCH_ORIGIN" ]; then
-    COMMITS_BEHIND=$(git behind)
-    COMMITS_AHEAD=$(git ahead)
-
-    if [ "$COMMITS_BEHIND" -gt 0 ] || [ "$COMMITS_AHEAD" -gt 0 ]; then
-      STATUS="$STATUS "
-      if [ "$COMMITS_BEHIND" -gt 0 ]; then
-        STATUS="$STATUS↓$COMMITS_BEHIND"
-      fi
-
-      if [ "$COMMITS_AHEAD" -gt 0 ]; then
-        STATUS="$STATUS↑$COMMITS_AHEAD"
-      fi
-    fi
+    STATUS="$STATUS $(git behind-ahead)"
   fi
 
   UNMERGED_FILES=$(git ls-files --unmerged | cut -f2 | sort -u | wc -l)
