@@ -45,7 +45,7 @@ EOF
 }
 
 git_status() {
-  CURRENT_BRANCH_ORIGIN=$(git cbo)
+  CURRENT_BRANCH_ORIGIN=$(git cbo 2>/dev/null)
 
   STATUS="$(git -c color.ui=always cbf)"
 
