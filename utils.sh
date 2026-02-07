@@ -9,7 +9,7 @@ repos() {
   REPOS=~/repos/
   cd "$REPOS" || exit
 
-  dirs=$(find . -mindepth 1 -maxdepth 1 -type d -exec basename {} \;)
+  dirs=$(find . -mindepth 1 -maxdepth 1 -type d -exec basename {} \; | sort)
 
   max=0
   while IFS= read -r d; do
