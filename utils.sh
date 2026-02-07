@@ -45,13 +45,9 @@ EOF
 }
 
 git_status() {
-
-  CURRENT_BRANCH=$(git cb)
   CURRENT_BRANCH_ORIGIN=$(git cbo)
 
-  ESC=$(printf "\033")
-
-  STATUS="↪️  ${ESC}[1;96m$CURRENT_BRANCH${ESC}[0m"
+  STATUS=$(git -c color.ui=always cbf)
 
   if [ "$CURRENT_BRANCH_ORIGIN" ]; then
     COMMITS_BEHIND=$(git behind)
