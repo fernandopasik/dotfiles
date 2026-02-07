@@ -45,10 +45,8 @@ EOF
 }
 
 git_status() {
-  STATUS="$(git -c color.ui=always cbf)"
-  if [ "$(git cbo 2>/dev/null)" ]; then
-    STATUS="$STATUS $(git behind-ahead)"
-  fi
+  ORIGIN=$(git cbo 2>/dev/null)
+  STATUS="$(git -c color.ui=always cbf)${ORIGIN:+ $(git behind-ahead)}"
 
   UNMERGED_FILES=$(git ls-files --unmerged | cut -f2 | sort -u | wc -l)
   UNSTAGED_CHANGED_FILES=$(git diff --name-only | wc -l)
