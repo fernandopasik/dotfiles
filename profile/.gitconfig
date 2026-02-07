@@ -65,6 +65,10 @@ rebase = true
 # Make `git push` push relevant annotated tags when pushing branches out.
 followTags = true
 
+[pretty]
+commit = tformat:%C(red)%h %C(green)(%ci) %C(bold blue)<%an> %C(reset)%s%C(yellow)%d%C(reset)
+commit-one = format:%C(red)%h %C(green)(%ci) %C(bold blue)<%an> %C(reset)%s%C(yellow)%d%C(reset)
+
 [alias]
 a = "add"
 aa = "add ."
@@ -85,8 +89,8 @@ d = "diff"
 del = "branch -D"
 delb = "!git checkout $(git main); git branch -D @{-1}"
 fp = "push --force-with-lease"
-l = "log --pretty=tformat:'%C(red)%h %C(green)(%ci) %C(bold blue)<%an> %C(reset)%s%C(yellow)%d%C(reset)'"
-last = "l -1"
+l = "log --pretty=commit"
+last = "log -1 --pretty=commit-one"
 lastd = "last --pretty=format:'%ci%n'"
 lastt = "last --pretty=format:'%ct%n'"
 lg= "l --graph"
