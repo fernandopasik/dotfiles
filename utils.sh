@@ -73,7 +73,7 @@ git_status() {
     fi
   fi
 
-  STASHED=$(git stash list | wc -l)
+  STASHED=$(git stl | wc -l)
   if [ "$STASHED" -gt 0 ]; then
     STATUS="$STATUS 📥 $STASHED"
   fi
