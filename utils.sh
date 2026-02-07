@@ -45,11 +45,8 @@ EOF
 }
 
 git_status() {
-  CURRENT_BRANCH_ORIGIN=$(git cbo 2>/dev/null)
-
   STATUS="$(git -c color.ui=always cbf)"
-
-  if [ "$CURRENT_BRANCH_ORIGIN" ]; then
+  if [ "$(git cbo 2>/dev/null)" ]; then
     STATUS="$STATUS $(git behind-ahead)"
   fi
 
