@@ -45,6 +45,7 @@ EOF
 }
 
 git_status() {
+  git rev-parse --git-dir > /dev/null || return
   ORIGIN=$(git cbo 2>/dev/null)
   STATUS="$(git -c color.ui=always cbf)${ORIGIN:+ $(git behind-ahead)}"
   if [ -z "$(git status --porcelain)" ]; then
