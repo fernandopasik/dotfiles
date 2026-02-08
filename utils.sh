@@ -53,6 +53,6 @@ git_status() {
   else
     ST="$ST $(git changes)"
   fi
-  ST="$ST$(git stc | awk '{print ($1>0)?" 📥 "$1:""}')"
+  ST="$ST $(git stashcf)"
   printf "%s" "$ST"
 }
