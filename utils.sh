@@ -51,26 +51,10 @@ git_status() {
   if [ -z "$(git status --porcelain)" ]; then
     STATUS="$STATUS ✅"
   else
-    UNMERGED_FILES=$(git ls-files --unmerged | cut -f2 | sort -u | wc -l)
-    UNSTAGED_CHANGED_FILES=$(git diff --name-only | wc -l)
-    UNTRACKED_FILES=$(git ls-files --others --exclude-standard | wc -l)
-    STAGED_FILES=$(git diff --cached --name-only | wc -l)
-
-    if [ "$UNMERGED_FILES" -gt 0 ]; then
-      STATUS="$STATUS ❌ $UNMERGED_FILES"
-    fi
-
-    if [ "$UNSTAGED_CHANGED_FILES" -gt 0 ]; then
-      STATUS="$STATUS ⭕ $UNSTAGED_CHANGED_FILES"
-    fi
-
-    if [ "$STAGED_FILES" -gt 0 ]; then
-      STATUS="$STATUS ➕ $STAGED_FILES"
-    fi
-
-    if [ "$UNTRACKED_FILES" -gt 0 ]; then
-      STATUS="$STATUS ...$UNTRACKED_FILES"
-    fi
+    STATUS="$STATUS$(git unmergedc | awk '{if($1>0) printf " ❌ %d", $1}')"
+    STATUS="$STATUS$(git unstagedc | awk '{if($1>0) printf " ⭕ %d", $1}')"
+    STATUS="$STATUS$(git stagedc | awk '{if($1>0) printf " ➕ %d", $1}')"
+    STATUS="$STATUS$(git untrackedc | awk '{if($1>0) printf " ... %d", $1}')"
   fi
 
   STASHED=$(git stl | wc -l)
