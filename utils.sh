@@ -51,10 +51,10 @@ git_status() {
   if [ -z "$(git status --porcelain)" ]; then
     STATUS="$STATUS ✅"
   else
-    STATUS="$STATUS$(git unmergedc | awk '{if($1>0) printf " ❌ %d", $1}')"
-    STATUS="$STATUS$(git unstagedc | awk '{if($1>0) printf " ⭕ %d", $1}')"
-    STATUS="$STATUS$(git stagedc | awk '{if($1>0) printf " ➕ %d", $1}')"
-    STATUS="$STATUS$(git untrackedc | awk '{if($1>0) printf " ... %d", $1}')"
+    STATUS="$STATUS$(git unmergedc  | awk '{print ($1>0)?" ❌ "$1:""}')"
+    STATUS="$STATUS$(git unstagedc  | awk '{print ($1>0)?" ⭕ "$1:""}')"
+    STATUS="$STATUS$(git stagedc    | awk '{print ($1>0)?" ➕ "$1:""}')"
+    STATUS="$STATUS$(git untrackedc | awk '{print ($1>0)?" ... "$1:""}')"
   fi
 
   STASHED=$(git stl | wc -l)
