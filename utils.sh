@@ -46,8 +46,7 @@ EOF
 
 git_status() {
   git rev-parse --git-dir > /dev/null || return
-  ORIGIN=$(git cbo 2>/dev/null)
-  ST="$(git cbf)${ORIGIN:+ $(git behind-ahead)}"
+  ST="$(git cbf)$(git cbo 2>/dev/null >/dev/null && git behind-ahead)"
   if [ -z "$(git sp)" ]; then
     ST="$ST ✅"
   else
