@@ -47,7 +47,6 @@ EOF
 git_status() {
   ORIGIN=$(git cbo 2>/dev/null)
   STATUS="$(git -c color.ui=always cbf)${ORIGIN:+ $(git behind-ahead)}"
-
   if [ -z "$(git status --porcelain)" ]; then
     STATUS="$STATUS ✅"
   else
@@ -56,11 +55,6 @@ git_status() {
     STATUS="$STATUS$(git stagedc    | awk '{print ($1>0)?" ➕ "$1:""}')"
     STATUS="$STATUS$(git untrackedc | awk '{print ($1>0)?" ... "$1:""}')"
   fi
-
-  STASHED=$(git stl | wc -l)
-  if [ "$STASHED" -gt 0 ]; then
-    STATUS="$STATUS 📥 $STASHED"
-  fi
-
+  STATUS="$STATUS$(git stc | awk '{print ($1>0)?" 📥 "$1:""}')"
   printf "%s" "$STATUS"
 }
