@@ -47,15 +47,15 @@ EOF
 git_status() {
   git rev-parse --git-dir > /dev/null || return
   ORIGIN=$(git cbo 2>/dev/null)
-  STATUS="$(git -c color.ui=always cbf)${ORIGIN:+ $(git behind-ahead)}"
+  ST="$(git -c color.ui=always cbf)${ORIGIN:+ $(git behind-ahead)}"
   if [ -z "$(git status --porcelain)" ]; then
-    STATUS="$STATUS ✅"
+    ST="$ST ✅"
   else
-    STATUS="$STATUS$(git unmergedc  | awk '{print ($1>0)?" ❌ "$1:""}')"
-    STATUS="$STATUS$(git unstagedc  | awk '{print ($1>0)?" ⭕ "$1:""}')"
-    STATUS="$STATUS$(git stagedc    | awk '{print ($1>0)?" ➕ "$1:""}')"
-    STATUS="$STATUS$(git untrackedc | awk '{print ($1>0)?" ... "$1:""}')"
+    ST="$ST$(git unmergedc  | awk '{print ($1>0)?" ❌ "$1:""}')"
+    ST="$ST$(git unstagedc  | awk '{print ($1>0)?" ⭕ "$1:""}')"
+    ST="$ST$(git stagedc    | awk '{print ($1>0)?" ➕ "$1:""}')"
+    ST="$ST$(git untrackedc | awk '{print ($1>0)?" ... "$1:""}')"
   fi
-  STATUS="$STATUS$(git stc | awk '{print ($1>0)?" 📥 "$1:""}')"
-  printf "%s" "$STATUS"
+  ST="$ST$(git stc | awk '{print ($1>0)?" 📥 "$1:""}')"
+  printf "%s" "$ST"
 }
