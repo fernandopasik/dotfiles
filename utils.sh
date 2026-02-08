@@ -51,10 +51,7 @@ git_status() {
   if [ -z "$(git status --porcelain)" ]; then
     ST="$ST ✅"
   else
-    ST="$ST$(git unmergedc  | awk '{print ($1>0)?" ❌ "$1:""}')"
-    ST="$ST$(git unstagedc  | awk '{print ($1>0)?" ⭕ "$1:""}')"
-    ST="$ST$(git stagedc    | awk '{print ($1>0)?" ➕ "$1:""}')"
-    ST="$ST$(git untrackedc | awk '{print ($1>0)?" ... "$1:""}')"
+    ST="$ST $(git changes)"
   fi
   ST="$ST$(git stc | awk '{print ($1>0)?" 📥 "$1:""}')"
   printf "%s" "$ST"
