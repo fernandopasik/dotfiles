@@ -43,8 +43,3 @@ $dirs
 EOF
 
 }
-
-git_status() {
-  git rev-parse --git-dir > /dev/null || return
-  printf "%s" "$(git cbf) $(git behind-ahead) $(git is-clean || git changes) $(git stashcf)"
-}
