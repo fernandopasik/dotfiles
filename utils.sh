@@ -46,5 +46,5 @@ EOF
 
 git_status() {
   git rev-parse --git-dir > /dev/null || return
-  printf "%s" "$(git cbf) $(git cbo 2>/dev/null >/dev/null && git behind-ahead) $(git is-clean || git changes) $(git stashcf)"
+  printf "%s" "$(git cbf) $(git behind-ahead) $(git is-clean || git changes) $(git stashcf)"
 }
