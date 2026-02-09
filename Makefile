@@ -16,6 +16,7 @@ lint:
 	yamllint .
 	pymarkdownlnt scan .
 	shellcheck -x *.sh
+#	sed 's/.*= "!\(.*\)"/\1/;t;s/.*//' profile/.gitconfig | sed 's/\\"/"/g' | shellcheck -s sh -
 
 hooks:
 	pre-commit run --all-files
