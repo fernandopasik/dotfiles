@@ -5,15 +5,7 @@ repos() {
   cd "$REPOS" || exit
 
   dirs=$(find . -mindepth 1 -maxdepth 1 -type d -exec basename {} \; | sort)
-
-  max=0
-  while IFS= read -r d; do
-    len=$(printf "%s" "$d" | wc -c)
-    len=$((len - 1))
-    [ "$len" -gt "$max" ] && max=$len
-  done <<EOF
-$dirs
-EOF
+  max=$(printf '%s\n' "$dirs" | awk '{ if(length>m) m=length } END{print m}')
 
   while IFS= read -r d; do
     len=$(printf "%s" "$d" | wc -c)
