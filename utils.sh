@@ -1,11 +1,6 @@
 #!/bin/sh
 repos() {
-  one_line=0
-  if [ "$1" = "-s" ]; then
-    one_line=1
-    shift
-  fi
-
+  [ "$1" = "-s" ] && { one_line=1; shift; } || one_line=0
   REPOS=~/repos/
   cd "$REPOS" || exit
 
