@@ -15,9 +15,7 @@ repos() {
     fi
 
     if [ -d "$d" ] && [ -e "$d/.git" ]; then
-      cd "$d" || exit
-      "$@"
-      cd "$REPOS" || exit
+      ( cd "$d" && "$@" )
     fi
 
     [ $# -ne 0 ] && printf "\n"
