@@ -1,8 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
-  "autoUpdatesChannel": "stable",
   "cleanupPeriodDays": 7,
-  "enableAllProjectMcpServers": false,
   "env": {
     "CLAUDE_CODE_DISABLE_FEEDBACK_SURVEY": "1",
     "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
@@ -20,6 +18,20 @@
       "Bash(pnpm run:*)",
       "Bash(yarn run:*)"
     ],
+    "deny": [
+      "Bash(chmod:*)",
+      "Bash(chown:*)",
+      "Bash(curl:*)",
+      "Bash(git push:*)",
+      "Bash(ssh:*)",
+      "Bash(su:*)",
+      "Bash(sudo:*)",
+      "Bash(wget:*)",
+      "Read(**/.env.*)",
+      "Read(**/.env)",
+      "Read(**/.secrets)",
+      "Read(**/secrets.*)"
+    ],
     "ask": [
       "Bash(bundle:*)",
       "Bash(gem:*)",
@@ -35,24 +47,11 @@
       "WebFetch",
       "WebSearch"
     ],
-    "deny": [
-      "Bash(chmod:*)",
-      "Bash(chown:*)",
-      "Bash(curl:*)",
-      "Bash(git push:*)",
-      "Bash(ssh:*)",
-      "Bash(su:*)",
-      "Bash(sudo:*)",
-      "Bash(wget:*)",
-      "Read(**/.env.*)",
-      "Read(**/.env)",
-      "Read(**/.secrets)",
-      "Read(**/secrets.*)"
-    ],
     "defaultMode": "default",
-    "disableAutoMode": "disable",
-    "disableBypassPermissionsMode": "disable"
+    "disableBypassPermissionsMode": "disable",
+    "disableAutoMode": "disable"
   },
+  "enableAllProjectMcpServers": false,
   "enabledPlugins": {
     "chrome-devtools-mcp@claude-plugins-official": true,
     "cloudflare@claude-plugins-official": true,
@@ -69,11 +68,15 @@
     "typescript-lsp@claude-plugins-official": true
   },
   "sandbox": {
-    "allowUnsandboxedCommands": false,
-    "autoAllowBashIfSandboxed": false,
     "enabled": true,
-    "failIfUnavailable": true,
+    "autoAllowBashIfSandboxed": false,
+    "allowUnsandboxedCommands": false,
     "filesystem": {
+      "denyWrite": [
+        "./.claude/settings.json",
+        "/etc/claude-code/managed-settings.json",
+        "~/.claude/settings.json"
+      ],
       "denyRead": [
         "~/.aws",
         "~/.azure",
@@ -94,12 +97,9 @@
         "~/.yarnrc",
         "~/.zsh_history",
         "~/.zshrc"
-      ],
-      "denyWrite": [
-        "./.claude/settings.json",
-        "/etc/claude-code/managed-settings.json",
-        "~/.claude/settings.json"
       ]
-    }
-  }
+    },
+    "failIfUnavailable": true
+  },
+  "autoUpdatesChannel": "stable"
 }
