@@ -13,11 +13,7 @@ repos() {
     else
       printf "%-*s  " "$max" "$d"
     fi
-
-    if [ -d "$d" ] && [ -e "$d/.git" ]; then
-      ( cd "$d" && "$@" )
-    fi
-
+    [ -e "$d/.git" ] && ( cd "$d" && "$@" )
     [ $# -ne 0 ] && printf "\n"
    done
 }
