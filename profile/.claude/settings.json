@@ -65,7 +65,16 @@
     "playwright@claude-plugins-official": true,
     "security-guidance@claude-plugins-official": true,
     "skill-creator@claude-plugins-official": true,
-    "typescript-lsp@claude-plugins-official": true
+    "typescript-lsp@claude-plugins-official": true,
+    "firebase@firebase": true
+  },
+  "extraKnownMarketplaces": {
+    "firebase": {
+      "source": {
+        "source": "github",
+        "repo": "firebase/firebase-tools"
+      }
+    }
   },
   "sandbox": {
     "enabled": true,
