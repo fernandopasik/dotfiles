@@ -25,7 +25,7 @@ EOF
     len=$((len - 1))
     pad=$((max - len + 2))
 
-    if [ $one_line -eq 0 ]; then
+    if [ "$one_line" -eq 0 ]; then
       printf "%s\n" "$d"
     else
       printf "%s%*s" "$d" "$pad" ""
