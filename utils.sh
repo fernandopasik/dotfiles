@@ -8,14 +8,11 @@ repos() {
   max=$(printf '%s\n' "$dirs" | awk '{ if(length>m) m=length } END{print m}')
 
   while IFS= read -r d; do
-    len=$(printf "%s" "$d" | wc -c)
-    len=$((len - 1))
-    pad=$((max - len + 2))
 
     if [ "$one_line" -eq 0 ]; then
       printf "%s\n" "$d"
     else
-      printf "%s%*s" "$d" "$pad" ""
+      printf "%-*s  " "$max" "$d"
     fi
 
     if [ -d "$d" ] && [ -e "$d/.git" ]; then
