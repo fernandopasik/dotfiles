@@ -19,6 +19,7 @@ aliases:
     done
     echo "📦 All repos cloned"
   repo configure: '!gh api repos/{owner}/{repo} --method PATCH --input "$HOME/.config/gh/github-repo.json"'
+  repo visibility: api repos/{owner}/{repo} --jq '.visibility'
   repo private: repo list --source --visibility private --no-archived
   repo public: repo list --source --visibility public --no-archived
   repo status: |
