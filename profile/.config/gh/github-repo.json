@@ -11,6 +11,8 @@
   "has_issues": true,
   "has_projects": false,
   "has_wiki": false,
+  "merge_commit_message": "PR_BODY",
+  "merge_commit_title": "PR_TITLE",
   "security_and_analysis": {
     "dependabot_security_updates": {
       "status": "enabled"
