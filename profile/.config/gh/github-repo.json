@@ -25,5 +25,6 @@
     }
   },
   "squash_merge_commit_message": "PR_BODY",
-  "squash_merge_commit_title": "COMMIT_OR_PR_TITLE"
+  "squash_merge_commit_title": "COMMIT_OR_PR_TITLE",
+  "web_commit_signoff_required": false
 }
