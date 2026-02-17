@@ -10,9 +10,7 @@
   "has_downloads": true,
   "has_issues": true,
   "has_projects": false,
-  "has_pull_requests": true,
   "has_wiki": false,
-  "pull_request_creation_policy": "all",
   "security_and_analysis": {
     "dependabot_security_updates": {
       "status": "enabled"
@@ -25,6 +23,5 @@
     }
   },
   "squash_merge_commit_message": "COMMIT_MESSAGES",
-  "squash_merge_commit_title": "COMMIT_OR_PR_TITLE",
-  "use_squash_pr_title_as_default": true
+  "squash_merge_commit_title": "COMMIT_OR_PR_TITLE"
 }
