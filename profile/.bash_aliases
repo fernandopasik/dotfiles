@@ -1,5 +1,6 @@
 #!/bin/sh
 alias la='ls -lahA'
+alias du1='du -h -d 1 | sort -h'
 
 repos() {
   { [ "$1" = "-s" ] && shift; } || [ $# -eq 0 ] && sep='' || sep='\n'
