@@ -42,5 +42,5 @@ repos:
         args: [-x]
         entry: shellcheck
         language: system
-        types: [shell]
-        files: (\.sh$)
+        types_or: [shell, file]
+        files: (\.sh$|\.bash_aliases$)

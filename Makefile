@@ -15,7 +15,7 @@ format:
 lint:
 	yamllint .
 	pymarkdownlnt scan .
-	shellcheck -x *.sh
+	shellcheck -x profile/.bash_aliases
 	sed 's/.*= "!\(.*\)"/\1/;t;s/.*//' profile/.gitconfig | sed 's/\\"/"/g' | shellcheck -s sh -
 
 hooks:
