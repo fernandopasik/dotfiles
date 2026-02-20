@@ -28,7 +28,7 @@ aliases:
       --template '{{range .}}{{.nameWithOwner}} {{.defaultBranchRef.name}}{{"\n"}}{{end}}' | \
     while read -r repo branch; do
       padded=$(printf '%-60s' "$repo")
-      gh run list --repo "$repo" --branch "$branch" --limit 1 --json conclusion \
+      gh run list --repo "$repo" --branch "$branch" --limit 1 --json conclusion,updatedAt \
         --template '{{range .}}'"$padded"'{{""}}
           {{- if eq .conclusion "success" -}}
             {{color "green" .conclusion}}
@@ -36,7 +36,7 @@ aliases:
             {{color "red" .conclusion}}
           {{- else -}}
             {{color "yellow" .conclusion}}
-          {{- end}}{{"\n"}}
+          {{- end}}{{"   "}}{{timeago .updatedAt}}{{"\n"}}
         {{- end}}'
     done
   security: |-
