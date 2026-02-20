@@ -35,6 +35,7 @@
     "ask": [
       "Bash(bundle:*)",
       "Bash(gem:*)",
+      "Bash(mv:*)",
       "Bash(npm:*)",
       "Bash(npx:*)",
       "Bash(pip:*)",
