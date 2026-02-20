@@ -8,4 +8,5 @@ repos() {
     printf "\n%b%-*s  %b" "$sep" "$max" "$d" "$sep"
     (cd "$d" && "$@")
   done
+  printf '\n'
 }
