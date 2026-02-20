@@ -1,4 +1,6 @@
 #!/bin/sh
+alias la='ls -lahA'
+
 repos() {
   { [ "$1" = "-s" ] && shift; } || [ $# -eq 0 ] && sep='' || sep='\n'
   cd ~/repos/ || exit
