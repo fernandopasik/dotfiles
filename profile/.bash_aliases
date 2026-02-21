@@ -14,3 +14,17 @@ repos() {
   done
   printf '\n'
 }
+
+up() {
+  if command -v brew > /dev/null 2>&1; then
+    brew update > /dev/null 2>&1
+    brew upgrade
+    brew cleanup
+  elif command -v apt > /dev/null 2>&1; then
+    sudo apt update -qq
+    apt list --upgradable 2>/dev/null
+    sudo apt upgrade -y
+    sudo apt autoremove -y
+    sudo apt clean
+  fi
+}
