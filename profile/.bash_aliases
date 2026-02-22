@@ -2,6 +2,7 @@
 alias la='ls -lahA'
 alias du1='du -h -d 1 | sort -h'
 alias dus='du -sh'
+alias restic-timers="systemctl list-timers 'restic*' --all --no-pager"
 
 repos() {
   { [ "$1" = "-s" ] && shift; } || [ $# -eq 0 ] && sep='' || sep='\n'
