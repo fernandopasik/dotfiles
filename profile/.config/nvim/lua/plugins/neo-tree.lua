@@ -31,5 +31,5 @@ return {
       vim.api.nvim_set_hl(0, "NeoTreeGitIgnored", { fg = "#626262" })
     end,
     lazy = false,
-  }
+  },
 }
