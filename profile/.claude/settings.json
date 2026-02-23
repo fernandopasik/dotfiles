@@ -91,6 +91,7 @@
   },
   "sandbox": {
     "enabled": true,
+    "failIfUnavailable": true,
     "autoAllowBashIfSandboxed": false,
     "allowUnsandboxedCommands": false,
     "filesystem": {
@@ -120,8 +121,7 @@
         "~/.zsh_history",
         "~/.zshrc"
       ]
-    },
-    "failIfUnavailable": true
+    }
   },
   "autoUpdatesChannel": "stable"
 }
