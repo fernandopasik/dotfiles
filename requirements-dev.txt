@@ -1,7 +1,6 @@
 mdformat==1.0.0
 mdformat-front-matters==2.0.0
 mdformat-gfm==1.0.0
-mdformat-space-control==0.4.10
 pre-commit==4.6.2
 pre-commit-hooks==6.0.0
 pymarkdownlnt==0.9.40
