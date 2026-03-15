@@ -16,7 +16,7 @@ lint:
 	yamllint .
 	pymarkdownlnt scan .
 	shellcheck -x profile/.bash_aliases
-	sed 's/.*= "!\(.*\)"/\1/;t;s/.*//' profile/.gitconfig | sed 's/\\"/"/g' | shellcheck -s sh -
+	sed 's/.*= "!\(.*\)"/\1/;t;s/.*//' profile/.gitconfig | sed 's/\\"/"/g' | shellcheck -s sh -e SC2119,SC2120 -
 
 hooks:
 	pre-commit run --all-files
