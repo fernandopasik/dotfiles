@@ -11,6 +11,7 @@ install:
 format:
 	pre-commit run --all-files yamlfmt
 	mdformat .
+	stylua profile/.config/nvim/
 
 lint:
 	yamllint .
