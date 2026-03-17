@@ -14,10 +14,6 @@ repos:
       - id: commitlint
         stages: [commit-msg]
         additional_dependencies: ['@commitlint/config-conventional']
-  - repo: https://github.com/JohnnyMorganz/StyLua
-    rev: v2.5.2
-    hooks:
-      - id: stylua
   - repo: local
     hooks:
       - id: yamllint
@@ -44,6 +40,12 @@ repos:
         language: system
         types_or: [shell, file]
         files: (\.sh$|\.bash_aliases$)
+      - id: stylua
+        name: stylua
+        args: [-a]
+        entry: stylua
+        language: system
+        types: [lua]
       - id: yamlfmt
         name: yamlfmt
         entry: yamlfmt
