@@ -8,6 +8,14 @@
       "headers": {
         "Authorization": "Bearer proxy-managed"
       }
+    },
+    "searxng": {
+      "type": "local",
+      "command": ["npx", "-y", "mcp-searxng"],
+      "environment": {
+        "SEARXNG_URL": "https://searx.pasik.com.ar/"
+      },
+      "enabled": true
     }
   },
   "provider": {
