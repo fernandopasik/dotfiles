@@ -9,7 +9,7 @@ install:
 	pre-commit install
 
 format:
-	pre-commit run --all-files yamlfmt
+	yamlfmt .
 	mdformat .
 	stylua profile/.config/nvim/
 

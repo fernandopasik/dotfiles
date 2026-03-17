@@ -1,4 +1,5 @@
 git+https://github.com/johnnymorganz/stylua@v2.5.2
+google-yamlfmt==0.21.0
 mdformat==1.0.0
 mdformat-front-matters==2.0.0
 mdformat-gfm==1.0.0
