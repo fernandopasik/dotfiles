@@ -19,6 +19,8 @@ vim.opt.scrolloff = 10
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
+vim.opt.signcolumn = "yes"
+
 vim.opt.splitbelow = true
 vim.opt.splitkeep = "screen"
 vim.opt.splitright = true
