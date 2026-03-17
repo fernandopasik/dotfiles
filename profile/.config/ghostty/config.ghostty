@@ -1,0 +1,5 @@
+background-blur = true
+background-opacity = 0.85
+language = en
+quit-after-last-window-closed = true
+shell-integration-features = ssh-terminfo,ssh-env
