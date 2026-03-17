@@ -30,7 +30,7 @@ up() {
   fi
 }
 
-venv() (
+venv() {
   d=$PWD
   while [ "$d" != / ] && [ ! -f "$d/.venv/bin/activate" ]; do
     d=${d%/*}
@@ -39,4 +39,4 @@ venv() (
   if [ -f "$d/.venv/bin/activate" ]; then . "$d/.venv/bin/activate"
   elif [ -n "${VIRTUAL_ENV:-}" ] && command -v deactivate >/dev/null 2>&1; then deactivate
   fi
-)
+}
