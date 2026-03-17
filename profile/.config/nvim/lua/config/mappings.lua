@@ -14,3 +14,5 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 map("n", "-", "<cmd>Oil<CR>", { desc = "Open parant directory in Oil" })
+map("n", "<A-Up>", "<cmd>move .-2<CR>==", { desc = "Move line up" })
+map("n", "<A-Down>", "<cmd>move .+1<CR>==", { desc = "Move line down" })
