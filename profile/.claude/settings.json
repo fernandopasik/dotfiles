@@ -121,7 +121,11 @@
     "filesystem": {
       "denyWrite": [
         "./.claude/settings.json",
+        "./.claude/settings.local.json",
+        "./.mcp.json",
         "/etc/claude-code/managed-settings.json",
+        "~/.claude.json",
+        "~/.claude/credentials.json",
         "~/.claude/settings.json"
       ],
       "denyRead": [
