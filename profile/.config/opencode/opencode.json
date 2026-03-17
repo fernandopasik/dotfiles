@@ -1,0 +1,28 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "mcp-gateway": {
+      "type": "remote",
+      "url": "http://mcp-gateway.docker.internal/mcp",
+      "enabled": true,
+      "headers": {
+        "Authorization": "Bearer proxy-managed"
+      }
+    }
+  },
+  "provider": {
+    "ollama": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Ollama (local)",
+      "options": {
+        "baseURL": "http://host.docker.internal:11434/v1"
+      },
+      "models": {
+        "qwen3.5:9b": {
+          "name": "Qwen 3.5 9B"
+        }
+      }
+    }
+  },
+  "model": "ollama/qwen3.5:9b"
+}
