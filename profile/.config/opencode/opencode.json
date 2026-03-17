@@ -18,11 +18,14 @@
         "baseURL": "http://host.docker.internal:11434/v1"
       },
       "models": {
+        "gemma4:12b": {
+          "name": "Gemma 4 12B"
+        },
         "qwen3.5:9b": {
           "name": "Qwen 3.5 9B"
         }
       }
     }
   },
-  "model": "ollama/qwen3.5:9b"
+  "model": "ollama/gemma4:12b"
 }
