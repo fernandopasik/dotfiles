@@ -11,11 +11,11 @@ install:
 format:
 	yamlfmt .
 	mdformat .
-	stylua profile/.config/nvim/
+	stylua -a .
 
 lint:
 	yamllint .
-	pymarkdownlnt scan .
+	pymarkdownlnt scan -r --respect-gitignore .
 	shellcheck -x profile/.bash_aliases
 	sed 's/.*= "!\(.*\)"/\1/;t;s/.*//' profile/.gitconfig | sed 's/\\"/"/g' | shellcheck -s sh -e SC2119,SC2120 -
 
